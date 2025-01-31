@@ -1,0 +1,213 @@
+[
+    {
+        "id": "6350440f05be62bd",
+        "type": "tab",
+        "label": "MaxEnt (with uncertainty)",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "7bb5d8b93187aef9",
+        "type": "inject",
+        "z": "6350440f05be62bd",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 100,
+        "wires": [
+            [
+                "f529e17d74edd444"
+            ]
+        ]
+    },
+    {
+        "id": "f529e17d74edd444",
+        "type": "notebook-node",
+        "z": "6350440f05be62bd",
+        "name": "Install packages",
+        "script": "# !git clone https://github.com/Nkosana-263/elapid.git\n# %cd /workspace/shared/Copernicus_Marine/DTOs/ISRA/ml4sdm/notebooks/elapid\n# %cd -\n# import sys\n# sys.path.append('elapid')\n# !pip uninstall elapid -y\n# !pip install -e .\n# %cd -\n# !pip install uncertainties",
+        "language": "python",
+        "displayoutput": false,
+        "x": 420,
+        "y": 100,
+        "wires": [
+            [
+                "eed6d7922394698f"
+            ]
+        ]
+    },
+    {
+        "id": "eed6d7922394698f",
+        "type": "notebook-node",
+        "z": "6350440f05be62bd",
+        "name": "Import packages",
+        "script": "# Import required libraries\nimport elapid as ela\nimport numpy as np\nimport pandas as pd\nimport geopandas as gpd\nimport glob\nimport rasterio\nimport os\nfrom rasterio.plot import show\nfrom pathlib import Path\nfrom uncertainties import unumpy",
+        "language": "python",
+        "displayoutput": false,
+        "x": 690,
+        "y": 100,
+        "wires": [
+            [
+                "bc51aefb1c86cc17"
+            ]
+        ]
+    },
+    {
+        "id": "84806426cf9275c9",
+        "type": "notebook-node",
+        "z": "6350440f05be62bd",
+        "name": "Load species occurence data",
+        "script": "occurrence_data_path = Path(\"/workspace/shared/Copernicus_Marine/DTOs/ISRA/ml4sdm/data/Species Occurences/Presence data/Presence_Urosalpinx_cinerea.csv\")\n# occurrence_data_path = Path(\"../data/Species Occurences/Presence data/Presence_Urosalpinx_cinerea.csv\")\n\n# Load occurrence data\npresence_df = pd.read_csv(occurrence_data_path)\n\npresence_df.head()",
+        "language": "python",
+        "displayoutput": true,
+        "x": 940,
+        "y": 220,
+        "wires": [
+            [
+                "4c7a49ed9ab6fe7d"
+            ]
+        ]
+    },
+    {
+        "id": "4c7a49ed9ab6fe7d",
+        "type": "notebook-node",
+        "z": "6350440f05be62bd",
+        "name": "Convert to GeoDataFrame",
+        "script": "presence_gdf = gpd.GeoDataFrame(\n    presence_df,\n    geometry=gpd.points_from_xy(presence_df.longitude, presence_df.latitude),\n    crs=\"EPSG:4326\"\n)",
+        "language": "python",
+        "displayoutput": false,
+        "x": 1660,
+        "y": 220,
+        "wires": [
+            [
+                "f086fb4b73a9c192"
+            ]
+        ]
+    },
+    {
+        "id": "8505476339f6e84a",
+        "type": "notebook-node",
+        "z": "6350440f05be62bd",
+        "name": "Train model",
+        "script": "model = ela.MaxentModel(transform='cloglog', beta_multiplier=2.0, tau=0.5)\nmodel.fit(x, y)",
+        "language": "python",
+        "displayoutput": true,
+        "x": 1650,
+        "y": 360,
+        "wires": [
+            [
+                "b167a08d121a631a"
+            ]
+        ]
+    },
+    {
+        "id": "01bb962680064d0a",
+        "type": "notebook-node",
+        "z": "6350440f05be62bd",
+        "name": "Visualise nominal values",
+        "script": "import matplotlib.pyplot as plt\n\n# write the model predictions to disk\n# output_raster = 'maxent-predictions.nc'\noutput_raster = '/workspace/shared/Copernicus_Marine/DTOs/ISRA/ml4sdm/notebooks/maxent-predictions.nc'\n\n# ela.apply_model_to_rasters(model, rasters, output_raster, quiet=False)\n\nwith rasterio.open(output_raster, 'r') as src:\n    pred = src.read(1, masked=True)\n    \n# plot the suitability map\nfig, ax = plt.subplots(1, 1, figsize=(7, 6), dpi=100)\nplot = ax.imshow(pred, vmin=0, vmax=1, cmap='YlOrRd')\nax.set_title('$Urosalpinx \\ cinerea$ suitability')\nax.set_xticks([])\nax.set_yticks([])\ncbar = plt.colorbar(plot, ax=ax, label=\"relative occurrence probability\", pad=0.04)\nplt.tight_layout()\n",
+        "language": "python",
+        "displayoutput": true,
+        "x": 2650,
+        "y": 220,
+        "wires": [
+            [
+                "40d0a955e2db858f"
+            ]
+        ]
+    },
+    {
+        "id": "40d0a955e2db858f",
+        "type": "notebook-node",
+        "z": "6350440f05be62bd",
+        "name": "Visualise uncertainty",
+        "script": "with rasterio.open(\"/workspace/shared/Copernicus_Marine/DTOs/ISRA/ml4sdm/notebooks/maxent-uncertainties.nc\", 'r') as src:\n    stdevs = src.read(1, masked=True)\n    \n# plot the uncertainties\nfig, ax = plt.subplots(1, 1, figsize=(7, 6), dpi=100)\nplot = ax.imshow(stdevs, vmin=0, vmax=0.05, cmap='GnBu')\nax.set_title('$Urosalpinx \\ cinerea$ prediction uncertainty')\nax.set_xticks([])\nax.set_yticks([])\ncbar = plt.colorbar(plot, ax=ax, label=\"level of uncertainty\", pad=0.04)\nplt.tight_layout()",
+        "language": "python",
+        "displayoutput": true,
+        "x": 3240,
+        "y": 180,
+        "wires": [
+            [
+                "0b69f9eb671b7584"
+            ]
+        ]
+    },
+    {
+        "id": "bc51aefb1c86cc17",
+        "type": "notebook-node",
+        "z": "6350440f05be62bd",
+        "name": "Load environmental data",
+        "script": "from osgeo import gdal\nimport os\nimport numpy as np\n\ndef create_layer(value, input_file, output_dir):\n    # Ensure the output directory exists\n    if not os.path.exists(output_dir):\n        os.makedirs(output_dir)\n\n    filename = os.path.splitext(os.path.basename(input_file))[0].replace(\"mean\", \"std\")\n\n    intermediate_tif = os.path.join(output_dir, f\"{filename}.tif\")\n    output_asc = os.path.join(output_dir, f\"{filename}.asc\")\n\n    dataset = gdal.Open(input_file, gdal.GA_ReadOnly)\n    if dataset is None:\n        raise FileNotFoundError(f\"Unable to open file {input_file}\")\n    \n    # Get metadata from the input file\n    geotransform = dataset.GetGeoTransform()\n    projection = dataset.GetProjection()\n    cols = dataset.RasterXSize\n    rows = dataset.RasterYSize\n    nodata_value = dataset.GetRasterBand(1).GetNoDataValue()\n\n    # Create a GeoTIFF with the constant value\n    driver = gdal.GetDriverByName(\"GTiff\")\n    out_dataset = driver.Create(intermediate_tif, cols, rows, 1, gdal.GDT_Float32)\n    if out_dataset is None:\n        raise RuntimeError(f\"Failed to create intermediate GeoTIFF file: {intermediate_tif}\")\n    \n    out_dataset.SetGeoTransform(geotransform)\n    out_dataset.SetProjection(projection)\n    \n    # Read the original data to preserve the NoData regions\n    original_band = dataset.GetRasterBand(1)\n    original_data = original_band.ReadAsArray()\n\n    # Create an array with the constant value\n    data = np.full((rows, cols), value, dtype=np.float32)\n\n    # Set the NoData value for land areas (i.e., where the original data has NoData)\n    data[original_data == nodata_value] = nodata_value\n\n    # Write the data array to the output raster band\n    out_band = out_dataset.GetRasterBand(1)\n    out_band.WriteArray(data)\n    out_band.FlushCache()\n    \n    out_band.SetNoDataValue(nodata_value)\n    out_dataset.FlushCache()\n\n    # # Verify the intermediate GeoTIFF\n    # intermediate_dataset = gdal.Open(intermediate_tif)\n    # if intermediate_dataset:\n    #     intermediate_band = intermediate_dataset.GetRasterBand(1)\n    #     intermediate_array = intermediate_band.ReadAsArray()\n    #     print(f\"Intermediate GeoTIFF data:\\n{intermediate_array}\")\n    \n    # Convert GeoTIFF to ASCII Grid\n    gdal.Translate(output_asc, intermediate_tif, format=\"AAIGrid\")\n\n    # print(f\"File created successfully: {output_asc}\")\n    return output_asc\n    \nparam_names = {\n    \"hcaf_salinitymean.asc\": [\"SalinityMean\", \"Mean Surface Salinity (psu)\"],\n    # \"hcaf_landdist.asc\": [\"Dist\", \"Distance from land (m)\"],\n    \"hcaf_depthmean.asc\": [\"DepthMean\", \"Mean Depth (m)\"],\n    \"hcaf_primprodmean.asc\": [\"PrimProdMean\", \"Mean Primary Productivity (mgC·m-3·day-1)\"],\n    \"hcaf_sstanmean.asc\": [\"SSTAnMean\", \"Mean Surface Temperature (°C)\"],\n    \"hcaf_sbtanmean.asc\": [\"SBTAnMean\", \"Mean Bottom Temperature (°C)\"],\n    \"hcaf_salinitybmean.asc\": [\"SalinityBMean\", \"Mean Bottom Salinity (psu)\"],\n    # \"hcaf_iceconann.asc\": [\"IceConAnn\", \"Mean Sea Ice Concentration (0-1 fraction)\"]\n}\n\nstd = {\n    # \"hcaf_salinitymean.asc\": \"hcaf_salinitysd.asc\",\n    \"hcaf_depthmean.asc\": \"hcaf_depthsd.asc\",\n    \"hcaf_sstanmean.asc\": \"hcaf_sstansd.asc\",\n}\n\n# for parameters where we currenly don't have standard deviations let's \n# use those provided in data quality metadata (or otherwise computed)\nstd_deviations = {\n    \"hcaf_salinitymean.asc\": 1.54,\n    # \"hcaf_landdist.asc\":,\n    \"hcaf_primprodmean.asc\": 3.27,\n    \"hcaf_sbtanmean.asc\": 2.1,\n    \"hcaf_salinitybmean.asc\": 1.32,\n    \"hcaf_iceconann.asc\": 0.42\n}\n\n# env_data_folder = Path(\"../../Environmental Niche Modelling/Environmental and geophysical parameters/res 0.5/Uncertain\")\nenv_data_folder = Path(\"/workspace/shared/Copernicus_Marine/DTOs/ISRA/Environmental Niche Modelling/Environmental and geophysical parameters/res 0.5/Uncertain\")\n\noutput_dir = \"out\"\nfor param in param_names.keys():\n    if not param in std.keys():\n        stdev = std_deviations[param]\n        file_path = os.path.join(env_data_folder, param)\n        asc_file = create_layer(stdev, file_path, output_dir)\n        std[param] = asc_file\n    else:\n        std[param] = os.path.join(env_data_folder, std[param])\n\n# env_data_folder = Path(\"../data/Environmental Parameters/Global/Annual/2019_res_05\")\nrasters = []\nrasters_std = []\nlabels = []\n\n# for asc_file in env_data_folder.glob(\"*.asc\"):\nfor filename in param_names.keys():\n    asc_file = os.path.join(env_data_folder, filename)\n    param_name = param_names[filename.split()[0]][0]\n    # param_name = param_names[asc_file.stem][0]\n    \n    with rasterio.open(asc_file) as src:\n        rasters.append(asc_file)\n        labels.append(param_name)\n        show(src)\n        \n    # std_asc_file = os.path.join(env_data_folder, std[filename])\n    std_asc_file = std[filename]\n    \n    with rasterio.open(std_asc_file) as src:\n        rasters_std.append(std_asc_file)\n        show(src)",
+        "language": "python",
+        "displayoutput": true,
+        "x": 370,
+        "y": 220,
+        "wires": [
+            [
+                "84806426cf9275c9"
+            ]
+        ]
+    },
+    {
+        "id": "f086fb4b73a9c192",
+        "type": "notebook-node",
+        "z": "6350440f05be62bd",
+        "name": "Spatial Sampling and Feature Extraction",
+        "script": "from rasterio import Affine\nfrom rasterio.enums import Resampling\nfrom rasterio.warp import reproject, calculate_default_transform\n\nbackground_count = 10000 # Number of background points\nbackground = ela.sample_raster(rasters[0], count=background_count)\nbackground = background.set_crs(\"EPSG:4326\", allow_override=True)\n\n# Function to check and set CRS on .asc raster files\ndef set_raster_crs(raster_path, target_crs):\n    with rasterio.open(raster_path) as src:\n        # If the CRS is not set, assign the target CRS\n        if src.crs is None:\n            # print(f\"Setting CRS...\")\n            transform, width, height = calculate_default_transform(src.crs, target_crs, src.width, src.height, *src.bounds)\n            kwargs = src.meta.copy()\n            kwargs.update({\n                'crs': target_crs,\n                'transform': transform,\n                'width': width,\n                'height': height\n            })\n            # Transformation\n            # with rasterio.open(f\"transformed/{raster_path.stem}\", 'w', **kwargs) as dest:\n            with rasterio.open(f\"/workspace/shared/Copernicus_Marine/DTOs/ISRA/ml4sdm/notebooks/transformed/{raster_path.split('/')[-1]}\", 'w', **kwargs) as dest:\n                for i in range(1, src.count + 1):\n                    reproject(\n                        source=rasterio.band(src, i),\n                        destination=rasterio.band(dest, i),\n                        src_transform=src.transform,\n                        src_crs=src.crs,\n                        dst_transform=transform,\n                        dst_crs=target_crs,\n                        resampling=Resampling.nearest\n                    )\n            return f\"/workspace/shared/Copernicus_Marine/DTOs/ISRA/ml4sdm/notebooks/transformed/{raster_path.split('/')[-1]}\" \n            # return f\"transformed/{raster_path.stem}\" \n\n    return raster_path\n    \n# Ensure CRS is set for each ASC file\nrasters = [set_raster_crs(file, \"EPSG:4326\") for file in rasters]\nrasters_std = [set_raster_crs(file, \"EPSG:4326\") for file in rasters_std]\n\n# Merge datasets and read the covariates at each point location\nmerged = ela.stack_geodataframes(presence_gdf, background, add_class_label=True)\nannotated = ela.annotate(merged, rasters, rasters_std, drop_na=True, quiet=False)\n\nannotated.dropna(inplace=True)\nx = annotated.drop(columns=['class', 'geometry'])\ny = annotated['class']\n\n",
+        "language": "python",
+        "displayoutput": false,
+        "x": 2060,
+        "y": 220,
+        "wires": [
+            [
+                "8505476339f6e84a"
+            ]
+        ]
+    },
+    {
+        "id": "b167a08d121a631a",
+        "type": "notebook-node",
+        "z": "6350440f05be62bd",
+        "name": "Evaluate model",
+        "script": "from sklearn import metrics\n\npred = model.predict(x)\nauc = metrics.roc_auc_score(y, unumpy.nominal_values(pred))\nprint(f\"Training AUC score: {auc:0.3f}\")\nprint(\"\\nSample model predictions:\", pred[:10])",
+        "language": "python",
+        "displayoutput": true,
+        "x": 1940,
+        "y": 360,
+        "wires": [
+            [
+                "01bb962680064d0a"
+            ]
+        ]
+    },
+    {
+        "id": "0b69f9eb671b7584",
+        "type": "notebook-node",
+        "z": "6350440f05be62bd",
+        "name": "Save model",
+        "script": "\nmodel_path = '/workspace/shared/Copernicus_Marine/DTOs/ISRA/ml4sdm/notebooks/maxent-model.ela'\nela.save_object(model, model_path)\nprint(\"Model saved to:\", model_path)\n",
+        "language": "python",
+        "displayoutput": true,
+        "x": 3850,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    }
+]

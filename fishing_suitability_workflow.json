@@ -1,0 +1,481 @@
+[
+    {
+        "id": "efd7e8a58f263c16",
+        "type": "tab",
+        "label": "Fishing Suitability Model",
+        "disabled": false,
+        "info": "Python implementation Training a Fishing Suitability Model for Common Sole using Machine Learning",
+        "env": []
+    },
+    {
+        "id": "e80e1cbb70aa7379",
+        "type": "inject",
+        "z": "efd7e8a58f263c16",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 100,
+        "y": 60,
+        "wires": [
+            [
+                "11e948be969181c4"
+            ]
+        ]
+    },
+    {
+        "id": "11e948be969181c4",
+        "type": "notebook-node",
+        "z": "efd7e8a58f263c16",
+        "name": "Install packages",
+        "script": "!pip install copernicusmarine\n!pip install plotly\n!pip install bokeh==2.4.2\n!pip uninstall -y scikit-learn\n!pip install scikit-learn==1.5.2\n!pip install scikit-optimize\n!pip install datacompy",
+        "language": "python",
+        "displayoutput": false,
+        "x": 300,
+        "y": 60,
+        "wires": [
+            [
+                "a96f65d695f9647d"
+            ]
+        ]
+    },
+    {
+        "id": "a96f65d695f9647d",
+        "type": "notebook-node",
+        "z": "efd7e8a58f263c16",
+        "name": "Import packages",
+        "script": "import os\nimport pandas as pd\nimport numpy as np\nimport copernicusmarine\nfrom datetime import datetime, timedelta\nimport subprocess\nimport glob\nimport rasterio\nfrom rasterio.windows import Window\nfrom multiprocessing import Pool\nimport xarray as xr\nfrom scipy.ndimage import generic_filter\nfrom shapely.geometry import Point\nimport geopandas as gpd\nimport rioxarray\nimport seaborn as sns\nimport plotly.express as px\nimport matplotlib.pyplot as plt\nfrom pandas.plotting import register_matplotlib_converters\nfrom sklearn.model_selection import train_test_split, StratifiedKFold, cross_val_score, GridSearchCV\nfrom sklearn.preprocessing import StandardScaler, OneHotEncoder\nfrom sklearn.pipeline import Pipeline\nfrom sklearn.compose import ColumnTransformer\nfrom sklearn.linear_model import LogisticRegression\nfrom sklearn.ensemble import RandomForestClassifier\nfrom sklearn.metrics import roc_auc_score, f1_score, precision_recall_curve, auc, brier_score_loss, balanced_accuracy_score\nfrom sklearn.impute import SimpleImputer\nfrom xgboost import XGBClassifier\nfrom lightgbm import LGBMClassifier\nimport lightgbm as lgb\nimport xgboost as xgb\nimport dask\nfrom dask.diagnostics import ProgressBar\nimport tqdm\nimport cupy as cp",
+        "language": "python",
+        "displayoutput": false,
+        "x": 570,
+        "y": 60,
+        "wires": [
+            [
+                "2fe57a8bf480d698"
+            ]
+        ]
+    },
+    {
+        "id": "2fe57a8bf480d698",
+        "type": "notebook-node",
+        "z": "efd7e8a58f263c16",
+        "name": "Load catch data",
+        "script": "# Read the catch data\ncatch_data = pd.read_csv(\"/workspace/shared/Copernicus_Marine/DTOs/North-Sea Fisheries/Fishing-Sutability-ILVO/Data/Raw/Catch/catch_data_v1.csv\")\n\n# Calculate the mean effort to catch 50kg or more\nfiltered_data = catch_data[catch_data['Weight'] >= 50].dropna(subset=['SpeedGround', 'HaulDur'])\nmean_speed = filtered_data['SpeedGround'].mean()\nmean_hauldur = filtered_data['HaulDur'].mean()\n\n# Calculate Catch Per Unit Effort (CPUE) threshold\nSOL_CPUE_thres = 50 / (mean_speed * mean_hauldur)\n\n# Process the catch data\ncatch_data = catch_data.dropna(subset=['SpeedGround', 'HaulDur'])\ncatch_data['CPUE'] = catch_data['Weight'] / (catch_data['SpeedGround'] * catch_data['HaulDur'])\ncatch_data['Catch'] = pd.Categorical(np.where(catch_data['CPUE'] >= SOL_CPUE_thres, 1, 0))\n\n# Display the first few rows of the processed data\ncatch_data.head()",
+        "language": "python",
+        "displayoutput": true,
+        "x": 420,
+        "y": 260,
+        "wires": [
+            [
+                "3149a75a62286a92"
+            ]
+        ]
+    },
+    {
+        "id": "f8adf58f1faeaa1b",
+        "type": "notebook-node",
+        "z": "efd7e8a58f263c16",
+        "name": "Download CMEMS data",
+        "script": "!python \"/workspace/shared/Copernicus Marine/DTOs/North-Sea Fisheries/Fishing-Sutability-ILVO/Scripts/download_cmems_data.py\"",
+        "language": "python",
+        "displayoutput": false,
+        "x": 650,
+        "y": 200,
+        "wires": [
+            [
+                "cd5e4dbd1e153083"
+            ]
+        ]
+    },
+    {
+        "id": "5918ee387aefb6fb",
+        "type": "comment",
+        "z": "efd7e8a58f263c16",
+        "name": "Coupling Catch Data with Environmental Data",
+        "info": "",
+        "x": 1530,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "cd5e4dbd1e153083",
+        "type": "notebook-node",
+        "z": "efd7e8a58f263c16",
+        "name": "Process CMEMS data",
+        "script": "!python \"/workspace/shared/Copernicus Marine/DTOs/North-Sea Fisheries/Fishing-Sutability-ILVO/Scripts/process_cmems_data.py\"",
+        "language": "python",
+        "displayoutput": false,
+        "x": 920,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3149a75a62286a92",
+        "type": "notebook-node",
+        "z": "efd7e8a58f263c16",
+        "name": "Convert to GeoDataFrame",
+        "script": "catch_data['ID'] = catch_data.index + 1\ncatch_data['geometry'] = catch_data.apply(lambda row: Point(row['Longitude'], row['Latitude']), axis=1)\ncatch_gdf = gpd.GeoDataFrame(catch_data, geometry='geometry', crs='EPSG:4326')",
+        "language": "python",
+        "displayoutput": false,
+        "x": 1380,
+        "y": 260,
+        "wires": [
+            [
+                "f77047cabca95478"
+            ]
+        ]
+    },
+    {
+        "id": "f77047cabca95478",
+        "type": "notebook-node",
+        "z": "efd7e8a58f263c16",
+        "name": "Append Bathymetry and Substrate Parameters",
+        "script": "bathymetry = rioxarray.open_rasterio(\"/workspace/shared/Copernicus_Marine/DTOs/North-Sea Fisheries/Fishing-Sutability-ILVO/Data/Processed/Parameters/bathymetry.tif\")\nsubstrates = rioxarray.open_rasterio(\"/workspace/shared/Copernicus_Marine/DTOs/North-Sea Fisheries/Fishing-Sutability-ILVO/Data/Processed/Parameters/Substrates.tif\")\n\ncatch_gdf['depth'] = catch_gdf.apply(lambda row: bathymetry.sel(x=row.geometry.x, \n                                                                y=row.geometry.y, method='nearest').values[0], axis=1)\n# Extract long_name attributes\nlong_names = substrates.attrs['long_name']\n\n# Convert to dataset and rename variables\nsubstrate_layers = substrates.to_dataset('band')\nfor i, long_name in enumerate(long_names, start=1):\n    substrate_layers = substrate_layers.rename({i: long_name.replace(\" \", \"_\")})\n\n# Append substrate data to GeoDataFrame\nfor var in substrate_layers:\n    catch_gdf[var] = catch_gdf.apply(lambda row: substrate_layers[var].sel(x=row.geometry.x, y=row.geometry.y, method='nearest').values, axis=1)",
+        "language": "python",
+        "displayoutput": false,
+        "x": 1760,
+        "y": 260,
+        "wires": [
+            [
+                "439a31e881259abb"
+            ]
+        ]
+    },
+    {
+        "id": "439a31e881259abb",
+        "type": "notebook-node",
+        "z": "efd7e8a58f263c16",
+        "name": "Append CMEMS Data",
+        "script": "import warnings\nwarnings.filterwarnings(\"ignore\")\n\n# Function to extract single value from different possible formats\ndef extract_value(values):\n    if np.ndim(values) == 0:  # Check if values is a scalar (0-dimensional array)\n        return values.item()  # Convert scalar array to Python scalar\n    elif np.ndim(values) == 1:  # Check if values is a 1-dimensional array\n        return values[0]  # Return the first element of the array\n    else:\n        raise ValueError(\"Unsupported shape for values: {}\".format(np.shape(values)))\n\ndef extract_cmems_data(file, param, catch_gdf):\n    ds = xr.open_dataset(file)\n    ds['time'] = pd.to_datetime(ds['time']).date\n\n    dates = catch_gdf['Date'].unique()\n    all_data = []\n\n    def process_single_date(date):\n        subset_gdf = catch_gdf[catch_gdf['Date'] == date].copy()\n        subset_gdf.reset_index(drop=True, inplace=True)\n        \n        if date in ds.time:\n            raster_data = ds.sel(time=date)\n            data_var = raster_data[params_map[param]]\n\n            try:\n                subset_gdf[param] = subset_gdf.apply(lambda row: extract_value(data_var.sel(longitude=row.geometry.x, latitude=row.geometry.y, method='nearest').values), axis=1)\n            except Exception as e:\n                print(f\"Filename: {file}\")\n                print(f\"Date at which it fails: {date}\")\n        # else:\n        #     subset_gdf[param] = float('nan')\n        return subset_gdf[[\"ID\", param]]\n\n    for date in tqdm.tqdm(dates, total=len(dates)):\n        subset_gdf = process_single_date(date)\n        all_data.append(subset_gdf)\n        \n    # delayed_results = [dask.delayed(process_single_date)(date) for date in catch_gdf['Date'].unique()]\n    # results = dask.compute(*delayed_results)\n\n    return pd.concat(all_data)\n    \n# Append CMEMS Data\nnc_files = glob.glob(\"/workspace/shared/Copernicus_Marine/DTOs/North-Sea Fisheries/Fishing-Sutability-ILVO/Data/Processed/Parameters/processed_*.nc\")\nparameters = [os.path.basename(f).replace(\"processed_\", \"\").replace(\".nc\", \"\") for f in nc_files]\n\n# Mapping parameter names to actual variable names in raster data\nparams_map = {\"wave\": \"VHM0\",\n             \"ssh\": \"zos\",\n             \"seabed_pH\": \"ph\",\n             \"bottomT\": \"bottomT\",\n             \"seabed_DO\": \"o2\",\n             \"current_u\": \"uo\",\n             \"current_v\": \"vo\",\n             \"seabed_salinity\": \"so\",\n             \"pp\": \"nppv\",}\n\ncatch_gdf['Date'] = pd.to_datetime(catch_gdf['DateTime']).dt.date\n\n# Generate the complete date range\nfull_dates = pd.date_range(start=catch_gdf['Date'].min(), end=catch_gdf['Date'].max()).date\n\n# Create an expanded dataframe with all combinations of ID and Date\nexpanded_catch_gdf = catch_gdf[['ID']].drop_duplicates()\nexpanded_catch_gdf = expanded_catch_gdf.assign(key=1).merge(pd.DataFrame({'Date': full_dates, 'key': 1}), on='key').drop('key', axis=1)\n\n# with pbar:\nfor i, (file, param) in enumerate(zip(nc_files, parameters)):\n    print(f\"Extracting data from {file}...\")\n    result = extract_cmems_data(file, param, catch_gdf)\n    print(f\"Finished extracting data. {i+1}/{len(nc_files)}\\n\")\n\n    # Merge each result with expanded_catch_gdf\n    expanded_catch_gdf = pd.merge(expanded_catch_gdf, result, on=['ID'], how='left')\n    \n# Filter rows to match the original catch_gdf dates\ncatch_gdf = pd.merge(catch_gdf, expanded_catch_gdf, on=['ID', 'Date'], how='left')\n",
+        "language": "python",
+        "displayoutput": false,
+        "x": 1520,
+        "y": 380,
+        "wires": [
+            [
+                "285eaf03bfc49b9e"
+            ]
+        ]
+    },
+    {
+        "id": "e64be15a541e48cb",
+        "type": "comment",
+        "z": "efd7e8a58f263c16",
+        "name": "Data Pipeline Integrity Checks",
+        "info": "",
+        "x": 1900,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "0aef504dd2f08479",
+        "type": "notebook-node",
+        "z": "efd7e8a58f263c16",
+        "name": "Load the original dataset from R and py dataset",
+        "script": "# Load the original dataset from R\ndf_r = pd.read_csv(\"/workspace/shared/Copernicus_Marine/DTOs/North-Sea Fisheries/Fishing-Sutability-ILVO/Data/Processed/catch_envi_v1_R.csv\")\ndf_r = df_r.sort_values(by=[\"ID\"])\n\n# Load py dataset\ndf_py = pd.read_csv(\"/workspace/shared/Copernicus_Marine/DTOs/North-Sea Fisheries/Fishing-Sutability-ILVO/Data/Processed/catch_envi_v1.csv\")\ndf_py = df_py.sort_values(by=[\"ID\"])\n\n# Dictionary for renaming columns in df_r\ncols_to_rename = {\"x\": \"Longitude\", \"y\": \"Latitude\", \"Rock_._boulders\": \"Rock_&_boulders\",\n                 \"Coarse.grained_sediment\": \"Coarse-grained_sediment\", \"DO\": \"seabed_DO\",\n                 \"pH\": \"seabed_pH\", \"salinity\": \"seabed_salinity\", \"lag1_current_u\": \"current_u_lag_1d\",\n                 \"lag1_current_v\": \"current_v_lag_1d\", \"lag1_ssh\": \"ssh_lag_1d\", \"lag1_wave\": \"wave_lag_1d\", \n                  \"lag2_current_u\": \"current_u_lag_2d\", \"lag2_current_v\": \"current_v_lag_2d\", \n                  \"lag2_ssh\": \"ssh_lag_2d\", \"lag2_wave\": \"wave_lag_2d\", \"lag7_bottomT\": \"bottomT_lag_7d\", \n                  \"lag7_DO\": \"seabed_DO_lag_7d\", \"lag7_pH\": \"seabed_pH_lag_7d\", \"lag7_pp\": \"pp_lag_7d\", \n                  \"lag7_salinity\": \"seabed_salinity_lag_7d\",\n                  \"lag14_bottomT\": \"bottomT_lag_14d\", \"lag14_DO\": \"seabed_DO_lag_14d\", \"lag14_pH\": \"seabed_pH_lag_14d\", \n                  \"lag14_pp\": \"pp_lag_14d\", \"lag14_salinity\": \"seabed_salinity_lag_14d\"}\n\n# Rename columns in df_r\ndf_r = df_r.rename(columns=cols_to_rename)\n\n# Select columns in df_py that are in df_r\ndf_py = df_py[df_r.columns]",
+        "language": "python",
+        "displayoutput": false,
+        "x": 1840,
+        "y": 840,
+        "wires": [
+            [
+                "8e3b6f7a5d708fd2"
+            ]
+        ]
+    },
+    {
+        "id": "8e3b6f7a5d708fd2",
+        "type": "notebook-node",
+        "z": "efd7e8a58f263c16",
+        "name": "Perform comparison",
+        "script": "import datacompy\n\n# Perform comparison\ncompare = datacompy.Compare(\n    df_r,\n    df_py,\n    join_columns=['ID', 'Date', 'Longitude', 'Latitude'],\n    abs_tol=0.001,\n    rel_tol=0,\n    df1_name='R DataFrame', \n    df2_name='Python DataFrame'\n)\n\n# Print comparison report\nprint(compare.report())",
+        "language": "python",
+        "displayoutput": true,
+        "x": 1820,
+        "y": 940,
+        "wires": [
+            [
+                "747c877ac908ca1e"
+            ]
+        ]
+    },
+    {
+        "id": "747c877ac908ca1e",
+        "type": "notebook-node",
+        "z": "efd7e8a58f263c16",
+        "name": "Feature Engineering",
+        "script": "register_matplotlib_converters()\n\n# Load the catch_envi data\ncatch_envi = pd.read_csv(\"/workspace/shared/Copernicus_Marine/DTOs/North-Sea Fisheries/Fishing-Sutability-ILVO/Data/Processed/catch_envi_v1.csv\")\n\n# Arrange data by DateTime and perform mutations\ncatch_envi = catch_envi.sort_values(by='DateTime')\ncatch_envi = catch_envi.assign(\n    ordinalDay=pd.to_datetime(catch_envi['DateTime']).dt.dayofyear,\n    Year=pd.to_datetime(catch_envi['DateTime']).dt.year,\n    Catch=catch_envi['Catch'].astype('category'),\n    current=np.sqrt(catch_envi['current_u']**2 + catch_envi['current_v']**2),\n    current_lag_1d=np.sqrt(catch_envi['current_u_lag_1d']**2 + catch_envi['current_v_lag_1d']**2),\n    current_lag_2d=np.sqrt(catch_envi['current_u_lag_2d']**2 + catch_envi['current_v_lag_2d']**2),\n    ssh_delta_1d=catch_envi['ssh'] - catch_envi['ssh_lag_1d'],\n    ssh_delta_2d=catch_envi['ssh'] - catch_envi['ssh_lag_2d'],\n    wave_delta_1d=catch_envi['wave'] - catch_envi['wave_lag_1d'],\n    wave_delta_2d=catch_envi['wave'] - catch_envi['wave_lag_2d'],\n    current_u_delta_1d=catch_envi['current_u'] - catch_envi['current_u_lag_1d'],\n    current_u_delta_2d=catch_envi['current_u'] - catch_envi['current_u_lag_2d'],\n    current_v_delta_1d=catch_envi['current_v'] - catch_envi['current_v_lag_1d'],\n    current_v_delta_2d=catch_envi['current_v'] - catch_envi['current_v_lag_2d'],\n    seabed_DO_delta_7d=catch_envi['seabed_DO'] - catch_envi['seabed_DO_lag_7d'],\n    seabed_DO_delta_14d=catch_envi['seabed_DO'] - catch_envi['seabed_DO_lag_14d'],\n    seabed_pH_delta_7d=catch_envi['seabed_pH'] - catch_envi['seabed_pH_lag_7d'],\n    seabed_pH_delta_14d=catch_envi['seabed_pH'] - catch_envi['seabed_pH_lag_14d'],\n    pp_delta_7d=catch_envi['pp'] - catch_envi['pp_lag_7d'],\n    pp_delta_15d=catch_envi['pp'] - catch_envi['pp_lag_14d'],\n    seabed_salinity_delta_7d=catch_envi['seabed_salinity'] - catch_envi['seabed_salinity_lag_7d'],\n    seabed_salinity_delta_14d=catch_envi['seabed_salinity'] - catch_envi['seabed_salinity_lag_14d'],\n    bottomT_delta_7d=catch_envi['bottomT'] - catch_envi['bottomT_lag_7d'],\n    bottomT_delta_1d=catch_envi['bottomT'] - catch_envi['bottomT_lag_14d']\n)\n\ncatch_envi = catch_envi.assign(\n    current_delta_1d=catch_envi['current'] - catch_envi['current_lag_1d'],\n    current_delta_2d=catch_envi['current'] - catch_envi['current_lag_2d'])\n\ncatch_envi.head()",
+        "language": "python",
+        "displayoutput": false,
+        "x": 200,
+        "y": 1160,
+        "wires": [
+            [
+                "3452cccec5b18d98"
+            ]
+        ]
+    },
+    {
+        "id": "3452cccec5b18d98",
+        "type": "notebook-node",
+        "z": "efd7e8a58f263c16",
+        "name": "Correlation Analysis",
+        "script": "# List of all predictor variables\nall_vars = catch_envi.drop(columns=[\"ID\", \"Date\", \"DateTime\", \"geometry\", \"Latitude\", \"Longitude\", \"Catch\"]).columns\n\n# Calculate the correlation matrix\ncor_matrix = catch_envi[all_vars].corr(method='pearson')\n\n# Plot the correlation matrix using seaborn\nplt.figure(figsize=(15, 12))\nheatmap = sns.heatmap(cor_matrix, annot=False, cmap='coolwarm', cbar=True)\nplt.title(\"Correlation Matrix of Predictors\", size=18)\nplt.xticks(rotation=45, ha='right')\nplt.tight_layout()\n\n# Convert the seaborn heatmap to a plotly figure for interactivity\nfig = px.imshow(cor_matrix, color_continuous_scale='RdBu_r', origin='lower')\nfig.update_layout(\n    title='Correlation Matrix of Predictors',\n    xaxis=dict(tickangle=45),\n    yaxis=dict(tickangle=0),\n    title_x=0.5\n)\n# Calculate correlation matrix\ncorr_matrix = catch_envi[all_vars].corr().abs()\n\n# Create a mask for highly correlated features\nthreshold = 0.8\nhighly_correlated = (corr_matrix.abs() > threshold) & (corr_matrix.abs() < 1.0)\n\n# Find pairs of highly correlated features\ncorrelated_features = set()\nfor i in range(len(highly_correlated.columns)):\n    for j in range(i):\n        if highly_correlated.iloc[i, j]:\n            correlated_features.add(highly_correlated.columns[i])\n            correlated_features.add(highly_correlated.columns[j])\n\n\nfig.show()",
+        "language": "python",
+        "displayoutput": true,
+        "x": 180,
+        "y": 1280,
+        "wires": [
+            [
+                "f0d08c8389ece1bd"
+            ]
+        ]
+    },
+    {
+        "id": "ebc068fbe44b9695",
+        "type": "notebook-node",
+        "z": "efd7e8a58f263c16",
+        "name": "Train/test split",
+        "script": "# Data Splitting\ncatch_envi['Date'] = pd.to_datetime(catch_envi['Date'])\ntest_set = catch_envi[catch_envi['Date'] >= pd.to_datetime('2023-08-15')].dropna()\ntrain_set = catch_envi[catch_envi['Date'] < pd.to_datetime('2023-08-15')]\n\nX_train = train_set[mdl_vars]\ny_train = train_set['Catch']\nX_test = test_set[mdl_vars]\ny_test = test_set['Catch']",
+        "language": "python",
+        "displayoutput": false,
+        "x": 1360,
+        "y": 1360,
+        "wires": [
+            [
+                "24455d91e66e2873"
+            ]
+        ]
+    },
+    {
+        "id": "408cdb88eadf8c4b",
+        "type": "notebook-node",
+        "z": "efd7e8a58f263c16",
+        "name": "XGBoost",
+        "script": "# xgb_model = XGBClassifier(n_estimators=10_000, \n#                           booster='gbtree', \n#                           eval_metric='logloss', \n#                           device='cuda',\n#                           random_state=0)\n                          \n# xgb_search_space = {\n#     'learning_rate': Real(0.01, 0.3, 'log-uniform'),\n#     'max_depth': Integer(3, 15),\n#     'max_delta_step': Real(0, 10, 'uniform'),\n#     'subsample': Real(0.5, 1.0, 'uniform'), \n#     'colsample_bytree': Real(0.5, 1.0, 'uniform'),  \n#     'colsample_bylevel': Real(0.5, 1.0, 'uniform'),\n#     'reg_lambda': Real(1e-3, 10.0, 'log-uniform'),\n#     'reg_alpha': Real(1e-3, 1.0, 'log-uniform'),\n#     'gamma': Real(0, 5.0, 'uniform'),                 \n#     'min_child_weight': Real(1.0, 10.0, 'uniform'),      \n#     'scale_pos_weight': Real(1.0, 100.0, 'log-uniform')   \n# }\n\n# xgb_best_params = tuneHyperparams(X_train, y_train, xgb_model, xgb_search_space, \"XGBoost\", runTime=4)\nxgb_best_params = OrderedDict([('colsample_bylevel', 0.8511692286963506),\n             ('colsample_bytree', 0.8655818106699045),\n             ('gamma', 2.8176470431150906),\n             ('learning_rate', 0.01),\n             ('max_delta_step', 4.078575328250555),\n             ('max_depth', 15),\n             ('min_child_weight', 1.0),\n             ('reg_alpha', 0.001257605795868349),\n             ('reg_lambda', 0.001),\n             ('scale_pos_weight', 1.0),\n             ('subsample', 1.0)])\n             \npprint.pprint(xgb_best_params)",
+        "language": "python",
+        "displayoutput": true,
+        "x": 1820,
+        "y": 1500,
+        "wires": [
+            [
+                "2d85d71831aedafd"
+            ]
+        ]
+    },
+    {
+        "id": "2d85d71831aedafd",
+        "type": "notebook-node",
+        "z": "efd7e8a58f263c16",
+        "name": "LightGBM",
+        "script": "# lgbm_model = lgb.LGBMClassifier(boosting_type='gbdt',\n#                          metric='auc',\n#                          objective='binary',\n#                          # device='gpu',\n#                          n_jobs=-1, \n#                          verbose=-1,\n#                          random_state=0)\n                         \n# lgbm_search_space = {\n#     'learning_rate': Real(0.01, 0.3, 'log-uniform'),\n#     'n_estimators': Integer(100, 2000),                 \n#     'num_leaves': Integer(20, 255),                   \n#     'max_depth': Integer(-1, 16),                      \n#     'min_child_samples': Integer(10, 100),            \n#     'max_bin': Integer(128, 512),                     \n#     'subsample': Real(0.6, 1.0, 'uniform'),            \n#     'subsample_freq': Integer(0, 5),                   \n#     'colsample_bytree': Real(0.6, 1.0, 'uniform'),     \n#     'min_child_weight': Real(1e-3, 10.0, 'log-uniform'), \n#     'reg_lambda': Real(1e-3, 10.0, 'log-uniform'),     \n#     'reg_alpha': Real(1e-3, 10.0, 'log-uniform'),    \n#     'scale_pos_weight': Real(1.0, 100.0, 'log-uniform')\n# }\n    \n# lgbm_best_params = tuneHyperparams(X_train, y_train, lgbm_model, lgbm_search_space, \"LightGBM\", runTime=4)\n\nlgbm_best_params = {\n    'colsample_bytree': 0.710009891715757,\n    'learning_rate': 0.028126257031071942,\n    'max_depth': 8,\n    'min_child_samples': 50,\n    'min_child_weight': 0.09744585342422737,\n    'n_estimators': 1882,\n    'num_leaves': 44,\n    'reg_alpha': 0.2106505487417217,\n    'reg_lambda': 0.004693690181228968,\n    'subsample': 0.6255651412267006,\n    'subsample_for_bin': 200000,\n    'subsample_freq': 4,\n    'max_bin': 498,\n    'scale_pos_weight': 3.858929258376704}\n    \npprint.pprint(lgbm_best_params)",
+        "language": "python",
+        "displayoutput": true,
+        "x": 2040,
+        "y": 1500,
+        "wires": [
+            [
+                "c25eb9ebe8999cfc"
+            ]
+        ]
+    },
+    {
+        "id": "24455d91e66e2873",
+        "type": "notebook-node",
+        "z": "efd7e8a58f263c16",
+        "name": "Feature selection",
+        "script": "from sklearn.metrics import make_scorer\n\n# Converting average precision score into a scorer suitable for model selection\nroc_auc = make_scorer(roc_auc_score, greater_is_better=True)\n\nos.environ[\"CUDA_VISIBLE_DEVICES\"] = \"2, 3\"\n\nfrom sklearn.feature_selection import RFECV\n\n# models = {\"Penalized GLM\": LogisticRegression(penalty='elasticnet', \n#                                               solver='saga', \n#                                               max_iter=10000),\nmodels = {\n          \"Random Forest\": RandomForestClassifier(n_estimators=1000, \n                                                 random_state=0),\n          \n          \"XGBoost\": XGBClassifier(n_estimators=1000,\n                                        booster='gbtree',\n                                        # device=\"cuda\",\n                                        eval_metric='logloss', \n                                        random_state=0),\n          \n          \"LightGBM\": lgb.LGBMClassifier(n_estimators=1000,\n                                         boosting_type='gbdt',\n                                         objective='binary',\n                                         verbose=-1,\n                                         random_state=0)\n         }\n\nfeatures = {}\ncv_results = {}\n\ncv = StratifiedKFold(5, shuffle=True, random_state=0)\nmin_features_to_select = 10  # Minimum number of features to consider\n\n# for model_type, model in models.items():\n            \n#     rfecv = RFECV(\n#         estimator=model,\n#         step=1,\n#         cv=cv,\n#         scoring=roc_auc,\n#         min_features_to_select=min_features_to_select,\n#         n_jobs=-1,\n#     )\n    \n#     rfecv.fit(X_train, y_train)\n    \n#     print(f\"Model type: {model_type}, Optimal number of features: {rfecv.n_features_}\")\n    \n#     top_features = rfecv.get_feature_names_out()\n#     features[model_type] = top_features\n\n#     cv_results[model_type] = rfecv.cv_results_\n    \n# for model_name, results in cv_results.items():\n#     cv_result = pd.DataFrame(results)\n    \n#     plt.figure()\n#     plt.xlabel(\"Number of features selected\")\n#     plt.ylabel(\"Mean test ROC AUC\")\n#     plt.errorbar(\n#         x=cv_result.index,\n#         y=cv_result[\"mean_test_score\"],\n#         yerr=cv_result[\"std_test_score\"],\n#     )\n#     plt.title(f\"Recursive Feature Elimination \\nwith correlated features for {model_name}\")\n#     plt.show()\n\nfeatures = {\n    \"Random Forest\": X_train.columns.tolist(),\n    \"XGBoost\": X_train.columns.tolist(),\n    \"LightGBM\": X_train.columns.tolist()\n}\n",
+        "language": "python",
+        "displayoutput": false,
+        "x": 1650,
+        "y": 1360,
+        "wires": [
+            [
+                "f89f7bf91a03242c"
+            ]
+        ]
+    },
+    {
+        "id": "f89f7bf91a03242c",
+        "type": "notebook-node",
+        "z": "efd7e8a58f263c16",
+        "name": "Hyperparameter Tuning Setup",
+        "script": "from time import time\nimport pprint\nimport joblib\nfrom sklearn.model_selection import cross_val_score\nfrom skopt import BayesSearchCV\nfrom skopt.callbacks import DeadlineStopper, DeltaYStopper\nfrom skopt.space import Real, Categorical, Integer\nfrom skopt.utils import use_named_args\nfrom skopt import gp_minimize, forest_minimize\nfrom skopt import gbrt_minimize, dummy_minimize\nfrom collections import OrderedDict\n\n# # Reporting util for different optimizers\n# def report_perf(optimizer, X, y, title=\"model\", callbacks=None):\n#     \"\"\"\n#     A wrapper for measuring time and performances of different optmizers\n    \n#     optimizer = a sklearn or a skopt optimizer\n#     X = the training set \n#     y = our target\n#     title = a string label for the experiment\n#     \"\"\"\n#     start = time()\n    \n#     if callbacks is not None:\n#         optimizer.fit(X, y, callback=callbacks)\n#     else:\n#         optimizer.fit(X, y)\n        \n#     d=pd.DataFrame(optimizer.cv_results_)\n#     best_score = optimizer.best_score_\n#     best_score_std = d.iloc[optimizer.best_index_].std_test_score\n#     best_params = optimizer.best_params_\n    \n#     print((title + \" took %.2f seconds,  candidates checked: %d, best CV score: %.3f \"\n#           + u\"\\u00B1\"+\" %.3f\") % (time() - start, \n#                                   len(optimizer.cv_results_['params']),\n#                                   best_score,\n#                                   best_score_std))    \n#     print('Best parameters:')\n#     pprint.pprint(best_params)\n#     print()\n\n#     d.to_csv(f\"{optimizer.estimator.__class__.__name__}_cv_results.csv\")\n    \n#     return best_params\n    \n# # Setting a 5-fold stratified cross-validation\n# skf = StratifiedKFold(n_splits=5, shuffle=True, random_state=0)\n\n# def tuneHyperparams(X, y, model, search_space, model_type, runTime=2):\n#     opt = BayesSearchCV(estimator=model,                                    \n#                     search_spaces=search_space,                      \n#                     scoring=roc_auc,                                  \n#                     cv=skf,                                           \n#                     n_iter=10000,                                      # max number of trials\n#                     n_points=3,                                       # number of hyperparameter sets evaluated at the same time\n#                     n_jobs=-1,                                        # number of jobs\n#                     return_train_score=False,                         \n#                     refit=False,                                      \n#                     optimizer_kwargs={'base_estimator': 'GP'},        # optmizer parameters: we use Gaussian Process (GP)\n#                     random_state=0)\n\n#     overdone_control = DeltaYStopper(delta=0.0001)               # Stop if the gain of the optimization becomes too small\n#     time_limit_control = DeadlineStopper(total_time=60 * 60 * runTime)     # Impose a time limit (default=2hours)\n\n#     if model_type == \"XGBoost\":\n#         X = cp.array(X[features[model_type]])\n#     else:\n#         X = X[features[model_type]]\n    \n#     best_params = report_perf(opt, X, y, model_type, \n#                               callbacks=[overdone_control, time_limit_control])\n\n#     return best_params",
+        "language": "python",
+        "displayoutput": false,
+        "x": 1970,
+        "y": 1360,
+        "wires": [
+            [
+                "ca60897e36850404"
+            ]
+        ]
+    },
+    {
+        "id": "285eaf03bfc49b9e",
+        "type": "notebook-node",
+        "z": "efd7e8a58f263c16",
+        "name": "Spatial Clustering - Find Number of Clusters",
+        "script": "# Grouping coordinates\nfrom sklearn.cluster import KMeans\n\nK_clusters = range(1,10)\nkmeans = [KMeans(n_clusters=i) for i in K_clusters]\nY_axis = catch_gdf[['Latitude']]\nX_axis = catch_gdf[['Longitude']]\nscore = [kmeans[i].fit(Y_axis).score(Y_axis) for i in range(len(kmeans))]\n\n# Visualize\nplt.plot(K_clusters, score)\nplt.xlabel('Number of Clusters')\nplt.ylabel('Score')\nplt.title('Elbow Curve')\nplt.show()",
+        "language": "python",
+        "displayoutput": true,
+        "x": 250,
+        "y": 720,
+        "wires": [
+            [
+                "6d27834d7ff5b898"
+            ]
+        ]
+    },
+    {
+        "id": "6d27834d7ff5b898",
+        "type": "notebook-node",
+        "z": "efd7e8a58f263c16",
+        "name": "Spatial Clustering - Fit Algorithm",
+        "script": "kmeans = KMeans(n_clusters = 5, init ='k-means++')\nkmeans.fit(catch_gdf[[\"Latitude\", \"Longitude\"]]) # Compute k-means clustering.\ncatch_gdf['cluster_label'] = kmeans.fit_predict(catch_gdf[[\"Latitude\", \"Longitude\"]])\ncenters = kmeans.cluster_centers_ # Coordinates of cluster centers.\nlabels = kmeans.predict(catch_gdf[[\"Latitude\", \"Longitude\"]]) # Labels of each point\n\ncatch_gdf.plot.scatter(x = 'Latitude', y = 'Longitude', c=labels, s=50, cmap='viridis')\nplt.scatter(centers[:, 0], centers[:, 1], c='black', s=200, alpha=0.5)",
+        "language": "python",
+        "displayoutput": true,
+        "x": 810,
+        "y": 720,
+        "wires": [
+            [
+                "22378fc0a362bcdb"
+            ]
+        ]
+    },
+    {
+        "id": "22378fc0a362bcdb",
+        "type": "notebook-node",
+        "z": "efd7e8a58f263c16",
+        "name": "Add lagged features",
+        "script": "# Add lagged features\ncatch_gdf = catch_gdf.sort_values(\"Date\")\n\nfor param in tqdm.tqdm(parameters, total=len(parameters)):\n    group = catch_gdf.groupby(\"cluster_label\")[param]\n    group_means = group.transform(\"mean\")\n    \n    if param in ['current_u', 'current_v', 'ssh', 'wave']:\n        for lag in [1, 2]: # 1-day and 2-day lags\n            catch_gdf[f'{param}_lag_{lag}d'] = group.shift(lag).fillna(group_means)\n\n    elif param in ['bottomT', 'seabed_DO', 'seabed_salinity', 'seabed_pH', 'pp']:\n        for lag in [7, 14]: # 7-day and 14-day lags\n            catch_gdf[f'{param}_lag_{lag}d'] = group.shift(lag).fillna(group_means)",
+        "language": "python",
+        "displayoutput": false,
+        "x": 1680,
+        "y": 720,
+        "wires": [
+            [
+                "fdb9e766db5a5aa7"
+            ]
+        ]
+    },
+    {
+        "id": "fdb9e766db5a5aa7",
+        "type": "notebook-node",
+        "z": "efd7e8a58f263c16",
+        "name": "Export to CSV",
+        "script": "# Save to .csv file\ncsv_path = \"/workspace/shared/Copernicus_Marine/DTOs/North-Sea Fisheries/Fishing-Sutability-ILVO/Data/Processed/catch_envi_v1.csv\"\ncatch_gdf.to_csv(csv_path, index=False)\nprint(\"CSV saved to:\", csv_path)\n",
+        "language": "python",
+        "displayoutput": true,
+        "x": 2220,
+        "y": 720,
+        "wires": [
+            [
+                "0aef504dd2f08479"
+            ]
+        ]
+    },
+    {
+        "id": "f0d08c8389ece1bd",
+        "type": "notebook-node",
+        "z": "efd7e8a58f263c16",
+        "name": "Remove highly correlated features",
+        "script": "# Remove highly correlated or less informative variables\nmdl_vars = catch_envi.drop(columns=[\"ID\", \"DateTime\", \"Date\", \"Longitude\", \"Latitude\", \"geometry\", \"Catch\"] + list(correlated_features)).columns\nprint(\"Model variables:\", mdl_vars)",
+        "language": "python",
+        "displayoutput": true,
+        "x": 860,
+        "y": 1280,
+        "wires": [
+            [
+                "de73291fad2a9265"
+            ]
+        ]
+    },
+    {
+        "id": "de73291fad2a9265",
+        "type": "notebook-node",
+        "z": "efd7e8a58f263c16",
+        "name": "Preprocessing",
+        "script": "from sklearn.base import BaseEstimator, TransformerMixin\n\nclass TargetEncode(BaseEstimator, TransformerMixin):\n    \n    def __init__(self, categories='auto', k=1, f=1, \n                 noise_level=0, random_state=None):\n        if type(categories)==str and categories!='auto':\n            self.categories = [categories]\n        else:\n            self.categories = categories\n        self.k = k\n        self.f = f\n        self.noise_level = noise_level\n        self.encodings = dict()\n        self.prior = None\n        self.random_state = random_state\n        \n    def add_noise(self, series, noise_level):\n        return series * (1 + noise_level *   \n                         np.random.randn(len(series)))\n        \n    def fit(self, X, y=None):\n        if type(self.categories)=='auto':\n            self.categories = np.where(X.dtypes == type(object()))[0]\n        \n        temp = X.loc[:, self.categories].copy()\n        temp['target'] = y\n        self.prior = np.mean(y)\n        for variable in self.categories:\n            avg = (temp.groupby(by=variable)['target']\n                       .agg(['mean', 'count']))\n            # Compute smoothing \n            smoothing = (1 / (1 + np.exp(-(avg['count'] - self.k) /                 \n                         self.f)))\n            # The bigger the count the less full_avg is accounted\n            self.encodings[variable] = dict(self.prior * (1 -  \n                             smoothing) + avg['mean'] * smoothing)\n            \n        return self\n        \n        \n    def transform(self, X):\n            Xt = X.copy()\n            for variable in self.categories:\n                Xt[variable].replace(self.encodings[variable], \n                                     inplace=True)\n                unknown_value = {value:self.prior for value in \n                                 X[variable].unique() \n                                 if value not in \n                                 self.encodings[variable].keys()}\n                if len(unknown_value) > 0:\n                    Xt[variable].replace(unknown_value, inplace=True)\n                Xt[variable] = Xt[variable].astype(float)\n                if self.noise_level > 0:\n                    if self.random_state is not None:\n                        np.random.seed(self.random_state)\n                    Xt[variable] = self.add_noise(Xt[variable], \n                                                  self.noise_level)\n            return Xt\n            \n    def fit_transform(self, X, y=None):\n            self.fit(X, y)\n            return self.transform(X)\n            \ncatch_envi[\"cluster_label\"] = catch_envi[\"cluster_label\"].astype('category')\n\n# Target Encode cluster label\nte = TargetEncode(categories='cluster_label')\nte.fit(catch_envi[mdl_vars], catch_envi['Catch'].astype(\"int\"))\n\ncatch_envi[\"cluster_label\"] = te.transform(catch_envi[['cluster_label']]).values",
+        "language": "python",
+        "displayoutput": false,
+        "x": 1140,
+        "y": 1160,
+        "wires": [
+            [
+                "ebc068fbe44b9695"
+            ]
+        ]
+    },
+    {
+        "id": "ca60897e36850404",
+        "type": "notebook-node",
+        "z": "efd7e8a58f263c16",
+        "name": "Random Forest",
+        "script": "# rf_model = RandomForestClassifier(n_estimators=500,\n#                                   random_state=0)\n\n# rf_search_space = {\n#     'n_estimators': Integer(100, 1000),                      # Number of trees in the forest\n#     'criterion': Categorical(['gini', 'entropy']),           # Splitting criterion\n#     'max_depth': Integer(5, 50),                             # Maximum depth of the tree\n#     'min_samples_split': Integer(2, 20),                     # Minimum samples to split a node\n#     'min_samples_leaf': Integer(1, 10),                      # Minimum samples at a leaf node\n#     'max_features': Categorical(['sqrt', 'log2']),           # Features considered at each split\n#     'class_weight': Categorical(['balanced', 'balanced_subsample']),  # Handle imbalanced data\n#     'bootstrap': Categorical([True]),                        # Always bootstrap for OOB support\n#     'oob_score': Categorical([True]),                        # Use OOB samples to estimate accuracy\n#     'ccp_alpha': Real(0.0, 0.01, 'uniform'),                 # Pruning complexity (small range)\n# }\n\n# rf_best_params = tuneHyperparams(X_train, y_train, rf_model, rf_search_space, \"Random Forest\", runTime=4)\n\nrf_best_params = OrderedDict([('bootstrap', True),\n             ('ccp_alpha', 0.0006177892877658948),\n             ('class_weight', 'balanced_subsample'),\n             ('criterion', 'entropy'),\n             ('max_depth', 34),\n             ('max_features', 'sqrt'),\n             ('min_samples_leaf', 1),\n             ('min_samples_split', 2),\n             ('n_estimators', 1000),\n             ('oob_score', True)])\n             \npprint.pprint(rf_best_params)",
+        "language": "python",
+        "displayoutput": true,
+        "x": 1140,
+        "y": 1500,
+        "wires": [
+            [
+                "408cdb88eadf8c4b"
+            ]
+        ]
+    },
+    {
+        "id": "e0a7a0f43c4b8b69",
+        "type": "comment",
+        "z": "efd7e8a58f263c16",
+        "name": "Connect below if you'd like to re-download the data,",
+        "info": "",
+        "x": 790,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "c25eb9ebe8999cfc",
+        "type": "notebook-node",
+        "z": "efd7e8a58f263c16",
+        "name": "Model Training & Evaluation",
+        "script": "models = {\"Random Forest\": RandomForestClassifier(random_state=0,\n                                                 **rf_best_params),\n          \n          \"XGBoost\": XGBClassifier(n_estimators=10_000,\n                                   booster='gbtree', \n                                   eval_metric='logloss',\n                                   device='cuda',\n                                   random_state=0,\n                                   **xgb_best_params),\n\n         \"LightGBM\": lgb.LGBMClassifier(boosting_type='gbdt',\n                                        metric='auc',\n                                        objective='binary',\n                                        # device='gpu',\n                                        n_jobs=-1, \n                                        verbose=-1,\n                                        random_state=0,\n                                        **lgbm_best_params)}\n\n\nmodel_metrics = pd.DataFrame()\n\nfor model_type, model in models.items():\n    model_features = features[model_type]\n\n    if model_type == \"XGBoost\":\n        model.fit(cp.array(X_train[model_features]), y_train)\n        y_pred = model.predict(cp.array(X_test[model_features]))\n        y_prob = model.predict_proba(cp.array(X_test[model_features]))[:, 1]\n    else:\n        model.fit(X_train[model_features], y_train)\n        y_pred = model.predict(X_test[model_features])\n        y_prob = model.predict_proba(X_test[model_features])[:, 1]\n\n    # Sort by probabilities\n    sorted_indices = np.argsort(y_prob)[::-1]\n    y_test_sorted = y_test.to_numpy()[sorted_indices]\n    y_prob_sorted = y_prob[sorted_indices]\n    \n    precision, recall, _ = precision_recall_curve(y_test_sorted, y_prob_sorted)\n\n    metrics = {\n            'Algorithm': model_type,\n            'Brier': brier_score_loss(y_test, y_prob),\n            'ROC_AUC': roc_auc_score(y_test, y_prob),\n            'PR_AUC': auc(recall, precision),\n            'Balanced_Accuracy': balanced_accuracy_score(y_test, y_pred),\n            'F1': f1_score(y_test, y_pred)\n        }\n\n    model_metrics = pd.concat([model_metrics, pd.DataFrame([metrics])], ignore_index=True)\n    models [model_type] = model\n    \n# Set the aesthetic style of the plots\nsns.set(style=\"whitegrid\")\n\n# Plotting the metrics\nfig, axes = plt.subplots(nrows=2, ncols=3, figsize=(18, 12))\nfig.suptitle('Model Performance Metrics', fontsize=20)\n\n# Iterate through the metrics and create a bar plot for each\nfor i, metric in enumerate(model_metrics.columns[1:]):\n    row, col = divmod(i, 3)\n    sns.barplot(x='Algorithm', y=metric, data=model_metrics, ax=axes[row, col], palette='viridis')\n    axes[row, col].set_title(f'{metric} Score', fontsize=15)\n    axes[row, col].set_xlabel('')\n    axes[row, col].set_ylabel(metric)\n\n# Remove the last empty subplot (if any)\nif len(model_metrics.columns[1:]) < 6:\n    fig.delaxes(axes[1, 2])\n\n# Adjust layout\nplt.tight_layout(rect=[0, 0, 1, 0.96])\nplt.show()",
+        "language": "python",
+        "displayoutput": true,
+        "x": 2500,
+        "y": 1500,
+        "wires": [
+            [
+                "9e07eaa6815f28bf"
+            ]
+        ]
+    },
+    {
+        "id": "9e07eaa6815f28bf",
+        "type": "notebook-node",
+        "z": "efd7e8a58f263c16",
+        "name": "Save Models",
+        "script": "import pickle\n\n# Directory to save the models\nmodel_dir = 'saved_models'\nos.makedirs(model_dir, exist_ok=True)\n\n# Save each model in the dictionary\nfor model_name, model in models.items():\n    model_path = os.path.join(model_dir, f'{model_name}.pkl')\n    \n    with open(model_path, 'wb') as file:\n        pickle.dump(model, file)\n    print(\"Model saved to:\", model_path)\n    print(f'Model {model_name} saved to {model_path}')",
+        "language": "python",
+        "displayoutput": true,
+        "x": 3070,
+        "y": 1500,
+        "wires": [
+            []
+        ]
+    }
+]
