@@ -15,10 +15,10 @@ Follow the instructions below to import and run a worfklow on Flow Cell.
 
    ![image](https://github.com/user-attachments/assets/d60a8ad2-f718-4673-9b83-ec6748c5c901)
 
-5. To run a worfklow, click the button on the **timestamp** node.
-
-6. The worfklow will load in the GUI as shown below. To deploy the workflow, click **Deploy**.
+5. The worfklow will load in the GUI as shown below. To deploy the workflow, click **Deploy**.
 
    ![image](https://github.com/user-attachments/assets/280c8e7d-7c72-462c-94e4-c239dc9abf1a)
+
+6. To run a worfklow, click the button on the **timestamp** node.
 
 
