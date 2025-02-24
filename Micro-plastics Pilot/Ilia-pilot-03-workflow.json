@@ -1,0 +1,543 @@
+[
+    {
+        "id": "655ad04f64789ebf",
+        "type": "tab",
+        "label": "Iliad pilot 03",
+        "disabled": false
+    },
+    {
+        "id": "79f8f12a-9806-4eed-b0ab-1dadc77b8e0c",
+        "type": "group",
+        "z": "655ad04f64789ebf",
+        "name": "Iliad pilot pilot ID 03: environmental monitoring ...",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "d4810418-7168-4d43-b374-d1c34b6efd8b",
+            "e4785021-e9ab-4e94-a0cf-25c1532f4e81",
+            "385d2a30-ba60-4789-ac06-53043b227931",
+            "033b518f-3537-43b5-87e7-5d54dae0c0f9",
+            "4ab4f753-b6f4-46d1-9858-3ea9a92b4df3"
+        ],
+        "x": 218,
+        "y": 187,
+        "w": 5614,
+        "h": 186
+    },
+    {
+        "id": "fc858cb9-e016-489e-ba34-154aff26a8ae",
+        "type": "group",
+        "z": "655ad04f64789ebf",
+        "name": "Set up OpenDrift for sediment transport ",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "92b2775f-58a4-4681-b4d3-aeab2ce74151",
+            "42191ceb-b736-4883-b16a-862947089bb0"
+        ],
+        "x": 5884,
+        "y": 213,
+        "w": 1798,
+        "h": 134
+    },
+    {
+        "id": "d4810418-7168-4d43-b374-d1c34b6efd8b",
+        "type": "group",
+        "z": "655ad04f64789ebf",
+        "g": "79f8f12a-9806-4eed-b0ab-1dadc77b8e0c",
+        "name": "imports",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "e1dc340d-ca99-4588-ad1f-b74697af4cce"
+        ],
+        "x": 244,
+        "y": 239,
+        "w": 252,
+        "h": 82
+    },
+    {
+        "id": "e4785021-e9ab-4e94-a0cf-25c1532f4e81",
+        "type": "group",
+        "z": "655ad04f64789ebf",
+        "g": "79f8f12a-9806-4eed-b0ab-1dadc77b8e0c",
+        "name": "Load environment variables from .env file",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "e823eb55-80a8-4719-82e1-2da95c8fdfdf"
+        ],
+        "x": 564,
+        "y": 239,
+        "w": 412,
+        "h": 82
+    },
+    {
+        "id": "385d2a30-ba60-4789-ac06-53043b227931",
+        "type": "group",
+        "z": "655ad04f64789ebf",
+        "g": "79f8f12a-9806-4eed-b0ab-1dadc77b8e0c",
+        "name": "Setup access to Influx DB",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "84c4d8fc-0c3e-4c6c-9f5d-29809623658a",
+            "956bb807-4e0c-498f-b5f2-696766cf021c"
+        ],
+        "x": 1064,
+        "y": 239,
+        "w": 662,
+        "h": 82
+    },
+    {
+        "id": "033b518f-3537-43b5-87e7-5d54dae0c0f9",
+        "type": "group",
+        "z": "655ad04f64789ebf",
+        "g": "79f8f12a-9806-4eed-b0ab-1dadc77b8e0c",
+        "name": "Retrieve particle measurements",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "dc0622d7-9a14-4a15-b369-c977fad979da",
+            "692ab85d-28eb-4430-8c23-6a3a5ac06c62",
+            "8ed8d391-8a9a-4d7c-96d5-93f796546684"
+        ],
+        "x": 1734,
+        "y": 213,
+        "w": 2348,
+        "h": 134
+    },
+    {
+        "id": "4ab4f753-b6f4-46d1-9858-3ea9a92b4df3",
+        "type": "group",
+        "z": "655ad04f64789ebf",
+        "g": "79f8f12a-9806-4eed-b0ab-1dadc77b8e0c",
+        "name": "Compute settling speed (Stokes) for transport simu...",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "c9937aa0-1642-487d-ab0e-8bb5886163e9",
+            "1c3f5c3b-085b-4495-8399-d7640ef08ac2",
+            "543aa83f-a1e9-43fb-84ab-f7b076d25556",
+            "f27e1f14-8cd4-46b2-9d43-0eb6dd406a8d"
+        ],
+        "x": 4134,
+        "y": 239,
+        "w": 1672,
+        "h": 82
+    },
+    {
+        "id": "42191ceb-b736-4883-b16a-862947089bb0",
+        "type": "group",
+        "z": "655ad04f64789ebf",
+        "g": "fc858cb9-e016-489e-ba34-154aff26a8ae",
+        "name": "Plot results and create animation",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "7e440a08-8e73-4ecd-80fb-891f6511d907",
+            "2d3ec24b-3f7c-47ae-b26c-9efb9b47eeed",
+            "60b2691c-07ba-490d-b971-9df5ce7bc2c0",
+            "fe32ec81-7b07-49d0-adba-8598982747e7"
+        ],
+        "x": 6224,
+        "y": 239,
+        "w": 1432,
+        "h": 82
+    },
+    {
+        "id": "692ab85d-28eb-4430-8c23-6a3a5ac06c62",
+        "type": "group",
+        "z": "655ad04f64789ebf",
+        "g": "033b518f-3537-43b5-87e7-5d54dae0c0f9",
+        "name": "Store measurements as csv file",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "d017d107-ba42-4118-a91d-926c434bce2a"
+        ],
+        "x": 2204,
+        "y": 239,
+        "w": 332,
+        "h": 82
+    },
+    {
+        "id": "8ed8d391-8a9a-4d7c-96d5-93f796546684",
+        "type": "group",
+        "z": "655ad04f64789ebf",
+        "g": "033b518f-3537-43b5-87e7-5d54dae0c0f9",
+        "name": "Some sanity checks and plotting",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "4534d75e-e183-45ed-b354-e0a87b4648ee",
+            "1248b02d-9021-4432-b961-6b80f12c627a",
+            "a0f02879-a98c-48e4-8c61-2146dcb383a5",
+            "00dcf55b-0253-4c7f-a333-04118d3bbc9d"
+        ],
+        "x": 2584,
+        "y": 239,
+        "w": 1472,
+        "h": 82
+    },
+    {
+        "id": "dbef0cf4-a0a8-4524-ad3c-e48311df8757",
+        "type": "inject",
+        "z": "655ad04f64789ebf",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 80,
+        "wires": [
+            [
+                "e1dc340d-ca99-4588-ad1f-b74697af4cce"
+            ]
+        ]
+    },
+    {
+        "id": "e1dc340d-ca99-4588-ad1f-b74697af4cce",
+        "type": "notebook-node",
+        "z": "655ad04f64789ebf",
+        "g": "d4810418-7168-4d43-b374-d1c34b6efd8b",
+        "name": "%matplotlib inline",
+        "script": "%matplotlib inline\nimport os\nfrom datetime import datetime, timedelta\nimport numpy as np\nimport xarray as xr\nimport pandas as pd\nimport seaborn as sns\nimport matplotlib.pyplot as plt\nimport cmocean\n\nfrom opendrift.models.oceandrift import OceanDrift\nfrom opendrift.models.leeway import Leeway\nfrom opendrift.readers import reader_netCDF_CF_generic, reader_global_landmask\nfrom opendrift.models.openoil import OpenOil\nfrom opendrift.models.sedimentdrift import SedimentDrift\n\nimport influxdb_client\nfrom dotenv import load_dotenv",
+        "language": "python",
+        "displayoutput": true,
+        "x": 380,
+        "y": 280,
+        "wires": [
+            [
+                "e823eb55-80a8-4719-82e1-2da95c8fdfdf"
+            ]
+        ]
+    },
+    {
+        "id": "e823eb55-80a8-4719-82e1-2da95c8fdfdf",
+        "type": "notebook-node",
+        "z": "655ad04f64789ebf",
+        "g": "e4785021-e9ab-4e94-a0cf-25c1532f4e81",
+        "name": "# Load environment variables from .env file",
+        "script": "# Load environment variables from .env file\nload_dotenv()\n        \n# Get credentials from environment variables\nINFLUXDB_USERNAME = os.getenv(\"INFLUXDB_USERNAME\")\nINFLUXDB_PASSWORD = os.getenv(\"INFLUXDB_PASSWORD\")\nINFLUXDB_URL = os.getenv(\"INFLUXDB_URL\")\nINFLUXDB_BUCKET = os.getenv(\"INFLUXDB_BUCKET\")\n\nINFLUXDB_TOKEN = f\"{INFLUXDB_USERNAME}:{INFLUXDB_PASSWORD}\"\n\nSILCAMDB_BUCKET=os.getenv(\"SILCAMDB_BUCKET\")\nSILCAMDB_RET=os.getenv(\"SILCAMDB_RET\")\nSILCAM_BUCKET=f\"{SILCAMDB_BUCKET}/{SILCAMDB_RET}\"",
+        "language": "python",
+        "displayoutput": true,
+        "x": 780,
+        "y": 280,
+        "wires": [
+            [
+                "84c4d8fc-0c3e-4c6c-9f5d-29809623658a"
+            ]
+        ]
+    },
+    {
+        "id": "84c4d8fc-0c3e-4c6c-9f5d-29809623658a",
+        "type": "notebook-node",
+        "z": "655ad04f64789ebf",
+        "g": "385d2a30-ba60-4789-ac06-53043b227931",
+        "name": "class Influx:",
+        "script": "class Influx:\n    def __init__(self):\n        self.bucket = ''\n        self.url = ''\n        self.token = ''\n\nclass ObservatoryInflux(Influx):\n    def __init__(self):\n        self.bucket = INFLUXDB_BUCKET\n        self.token = INFLUXDB_TOKEN\n        self.url = INFLUXDB_URL\n\nclass SilCamInflux(Influx):\n    def __init__(self):\n        self.bucket = SILCAM_BUCKET\n        self.token = INFLUXDB_TOKEN\n        self.url = INFLUXDB_URL\n\n    def get_silcam_data_as_df(self, start_date, end_date):\n        '''Retrieve Munkholmen buoy SilCam particle volume concentration from InfluxDB'''\n    \n        query = f'''\n            from(bucket:\"{self.bucket}\")\n                |> range(start: {start_date} , stop: {end_date})\n                |> filter(fn:(r) => r._measurement == \"silcam_total_volume_concentration_munkholmen\")\n                |> pivot(rowKey:[\"_time\"], columnKey: [\"_field\"], valueColumn: \"_value\")\n            '''\n        \n        with influxdb_client.InfluxDBClient(url=self.url, token=self.token) as client:\n            df = client.query_api().query_data_frame(query)\n    \n        return df ",
+        "language": "python",
+        "displayoutput": true,
+        "x": 1180,
+        "y": 280,
+        "wires": [
+            [
+                "956bb807-4e0c-498f-b5f2-696766cf021c"
+            ]
+        ]
+    },
+    {
+        "id": "956bb807-4e0c-498f-b5f2-696766cf021c",
+        "type": "notebook-node",
+        "z": "655ad04f64789ebf",
+        "g": "385d2a30-ba60-4789-ac06-53043b227931",
+        "name": "obs_db= ObservatoryInflux()",
+        "script": "obs_db= ObservatoryInflux()\nsilcam_db=SilCamInflux()",
+        "language": "python",
+        "displayoutput": true,
+        "x": 1580,
+        "y": 280,
+        "wires": [
+            [
+                "dc0622d7-9a14-4a15-b369-c977fad979da"
+            ]
+        ]
+    },
+    {
+        "id": "dc0622d7-9a14-4a15-b369-c977fad979da",
+        "type": "notebook-node",
+        "z": "655ad04f64789ebf",
+        "g": "033b518f-3537-43b5-87e7-5d54dae0c0f9",
+        "name": "start_date, end_date='2023-02-06T00:00:00Z', '2023...",
+        "script": "start_date, end_date='2023-02-06T00:00:00Z', '2023-02-10T00:00:00Z'\nsilcamdf = silcam_db.get_silcam_data_as_df(start_date, end_date)\nsilcamdf.head()",
+        "language": "python",
+        "displayoutput": true,
+        "x": 1980,
+        "y": 280,
+        "wires": [
+            [
+                "d017d107-ba42-4118-a91d-926c434bce2a"
+            ]
+        ]
+    },
+    {
+        "id": "d017d107-ba42-4118-a91d-926c434bce2a",
+        "type": "notebook-node",
+        "z": "655ad04f64789ebf",
+        "g": "692ab85d-28eb-4430-8c23-6a3a5ac06c62",
+        "name": "# Store SilCam data in csv file",
+        "script": "# Store SilCam data in csv file\nsilcam_export = silcamdf.set_index('_time').iloc[:, 12:]\n#silcam_export.columns = ['unit'] + [f'{s}' for s in np.round(silcam_export.columns[1:].astype(float))]\nsilcam_export.columns = np.round(silcam_export.columns.astype(float), 1)\nsilcam_export = silcam_export.sort_index(axis=1)\nsilcam_export.to_csv('/workspace/shared/Copernicus_Marine/DTOs/Micro-plastics/examples/netCDF-example_observatory/silcam-particle-volume-concentration-microlitre-per-litre-per-micrometer-bin.csv')\n\nsilcam_export.head()",
+        "language": "python",
+        "displayoutput": true,
+        "x": 2380,
+        "y": 280,
+        "wires": [
+            [
+                "4534d75e-e183-45ed-b354-e0a87b4648ee"
+            ]
+        ]
+    },
+    {
+        "id": "4534d75e-e183-45ed-b354-e0a87b4648ee",
+        "type": "notebook-node",
+        "z": "655ad04f64789ebf",
+        "g": "8ed8d391-8a9a-4d7c-96d5-93f796546684",
+        "name": "# Check unit and measurement type",
+        "script": "# Check unit and measurement type\nsilcamdf['unit'][0], silcamdf['_measurement'][0]",
+        "language": "python",
+        "displayoutput": true,
+        "x": 2780,
+        "y": 280,
+        "wires": [
+            [
+                "1248b02d-9021-4432-b961-6b80f12c627a"
+            ]
+        ]
+    },
+    {
+        "id": "1248b02d-9021-4432-b961-6b80f12c627a",
+        "type": "notebook-node",
+        "z": "655ad04f64789ebf",
+        "g": "8ed8d391-8a9a-4d7c-96d5-93f796546684",
+        "name": "#",
+        "script": "#\n# Extract and plot the volume distribution data\n#\nvoldist = silcamdf.set_index('_time').iloc[:, 11:]\nvoldist.columns = [np.round(float(d), 1) for d in voldist.columns]\nvoldist = voldist.sort_index(axis=1)\n\nsns.heatmap(voldist.T, vmin=0, vmax=50)\n\nvoldist.head()",
+        "language": "python",
+        "displayoutput": true,
+        "x": 3180,
+        "y": 280,
+        "wires": [
+            [
+                "a0f02879-a98c-48e4-8c61-2146dcb383a5"
+            ]
+        ]
+    },
+    {
+        "id": "a0f02879-a98c-48e4-8c61-2146dcb383a5",
+        "type": "notebook-node",
+        "z": "655ad04f64789ebf",
+        "g": "8ed8d391-8a9a-4d7c-96d5-93f796546684",
+        "name": "#",
+        "script": "#\n# Calculate and plot total volume concentration\n#\nax = voldist.mean(axis=0).plot(drawstyle='steps', figsize=(14, 4))\nax.set_ylabel('Volume distribution (µL/L)')\nax.set_xlabel('Particle diameter, bin center (µm)')\nax.set_xscale('log')\n_ = ax.set_title(f'SilCam mean particle size distribution, $N$={voldist.shape[0]}, {voldist.index.values[0]}-{voldist.index.values[-1]}')",
+        "language": "python",
+        "displayoutput": true,
+        "x": 3580,
+        "y": 280,
+        "wires": [
+            [
+                "00dcf55b-0253-4c7f-a333-04118d3bbc9d"
+            ]
+        ]
+    },
+    {
+        "id": "00dcf55b-0253-4c7f-a333-04118d3bbc9d",
+        "type": "notebook-node",
+        "z": "655ad04f64789ebf",
+        "g": "8ed8d391-8a9a-4d7c-96d5-93f796546684",
+        "name": "#",
+        "script": "#\n# Load, calculate and plot total volume concentration for consecutive 24h periods\n#\nfig, ax = plt.subplots(figsize=(14, 4))\n\ndates = [f'2023-02-{day:02d}T00:00:00Z' for day in [6, 7, 8, 9, 10]]\nfor i in range(len(dates)-1):\n    silcam_ = silcam_db.get_silcam_data_as_df(dates[i], dates[i+1])\n    \n    voldist_ = silcam_.set_index('_time').iloc[:, 11:]\n    voldist_.columns = [np.round(float(d), 1) for d in voldist_.columns]\n    voldist_ = voldist_.sort_index(axis=1)\n    \n    voldist_.mean(axis=0).plot(drawstyle='steps', ax=ax, label=dates[i])\n    \nax.set_ylabel('Volume distribution (µL/L)')\nax.set_xlabel('Particle diameter, bin center (µm)')\nax.set_xscale('log')\nax.legend()\n_ = ax.set_title(f'SilCam 24h mean particle size distribution')",
+        "language": "python",
+        "displayoutput": true,
+        "x": 3980,
+        "y": 280,
+        "wires": [
+            [
+                "c9937aa0-1642-487d-ab0e-8bb5886163e9"
+            ]
+        ]
+    },
+    {
+        "id": "c9937aa0-1642-487d-ab0e-8bb5886163e9",
+        "type": "notebook-node",
+        "z": "655ad04f64789ebf",
+        "g": "4ab4f753-b6f4-46d1-9858-3ea9a92b4df3",
+        "name": "def stokes_settling_speed(d, g=9.81, mu=1.4e-3, rh...",
+        "script": "def stokes_settling_speed(d, g=9.81, mu=1.4e-3, rhos=3300.0, rhow=1027.0):\n    '''Stokes' law, settling speed from particle diameter [m/s]'''\n    \n    delta_rho = rhos - rhow\n\n    return g * delta_rho / (18.0 * mu) * d**2\n",
+        "language": "python",
+        "displayoutput": true,
+        "x": 4380,
+        "y": 280,
+        "wires": [
+            [
+                "1c3f5c3b-085b-4495-8399-d7640ef08ac2"
+            ]
+        ]
+    },
+    {
+        "id": "1c3f5c3b-085b-4495-8399-d7640ef08ac2",
+        "type": "notebook-node",
+        "z": "655ad04f64789ebf",
+        "g": "4ab4f753-b6f4-46d1-9858-3ea9a92b4df3",
+        "name": "#",
+        "script": "#\n# Calculate and plot total volume concentration as a function of settling speed (per Stokes' law)\n#\nspeed_dist = voldist.mean(axis=0)\nspeed_dist.index = stokes_settling_speed(1e-6*speed_dist.index, g=9.81, mu=1.4e-3, rhos=1027.0+50, rhow=1027.0)\nax = speed_dist.plot(drawstyle='steps', figsize=(14, 4), label=r'$\\Delta\\rho$ = 50 kg/m$^3$')\n\nspeed_dist.index = stokes_settling_speed(1e-6*voldist.mean(axis=0).index, g=9.81, mu=1.4e-3, rhos=1027.0+500, rhow=1027.0)\nspeed_dist.plot(drawstyle='steps', ax=ax, label=r'$\\Delta\\rho$ = 500 kg/m$^3$')\nax.legend()\n#ax.set_xlim(0, 1)\nax.set_xscale('log')\n\nax.set_ylabel('Volume distribution (µL/L)')\nax.set_xlabel('Particle settling speed, bin center (m/s)')\nax.set_title(f'SilCam mean particle size distribution, $N$={voldist.shape[0]}, {voldist.index.values[0]}-{voldist.index.values[-1]}')",
+        "language": "python",
+        "displayoutput": true,
+        "x": 4780,
+        "y": 280,
+        "wires": [
+            [
+                "543aa83f-a1e9-43fb-84ab-f7b076d25556"
+            ]
+        ]
+    },
+    {
+        "id": "543aa83f-a1e9-43fb-84ab-f7b076d25556",
+        "type": "notebook-node",
+        "z": "655ad04f64789ebf",
+        "g": "4ab4f753-b6f4-46d1-9858-3ea9a92b4df3",
+        "name": "#",
+        "script": "#\n# Simple calculation of number of Lagrangian particles per (non-zero) sinking speed bin.\n# Use the rescaled histogram so that the sum is equal to total number of Lagrangian particles.\n#\nnum_particle_total = 1000\nexcess_density = 5\nwater_density = 1027.0\nspeed_dist.index = stokes_settling_speed(1e-6*voldist.mean(axis=0).index, g=9.81, mu=1.4e-3, \n                                         rhos=water_density+excess_density, rhow=water_density)\nspeed_dist_nonzero = speed_dist[speed_dist>0]\nspeed_dist_nonzero = (num_particle_total * speed_dist_nonzero / speed_dist_nonzero.sum()).astype(int)\nspeed_dist_nonzero.index.name = 'Sinking speed (m/s)'\nspeed_dist_nonzero.name = 'Number of Lagrangian particles for bin'\nspeed_dist_nonzero = speed_dist_nonzero.to_frame().astype(int)\nspeed_dist_nonzero.head()",
+        "language": "python",
+        "displayoutput": true,
+        "x": 5180,
+        "y": 280,
+        "wires": [
+            [
+                "f27e1f14-8cd4-46b2-9d43-0eb6dd406a8d"
+            ]
+        ]
+    },
+    {
+        "id": "f27e1f14-8cd4-46b2-9d43-0eb6dd406a8d",
+        "type": "notebook-node",
+        "z": "655ad04f64789ebf",
+        "g": "4ab4f753-b6f4-46d1-9858-3ea9a92b4df3",
+        "name": "speed_dist_nonzero['Sinking speed (m/day)'] = spee...",
+        "script": "speed_dist_nonzero['Sinking speed (m/day)'] = speed_dist_nonzero.index * 86400\nspeed_dist_nonzero.head()",
+        "language": "python",
+        "displayoutput": true,
+        "x": 5580,
+        "y": 280,
+        "wires": [
+            [
+                "92b2775f-58a4-4681-b4d3-aeab2ce74151"
+            ]
+        ]
+    },
+    {
+        "id": "92b2775f-58a4-4681-b4d3-aeab2ce74151",
+        "type": "notebook-node",
+        "z": "655ad04f64789ebf",
+        "g": "fc858cb9-e016-489e-ba34-154aff26a8ae",
+        "name": "#",
+        "script": "#\n# Set up and run simulation with speed classes sampled from distribution\n#\nopendrift = SedimentDrift(loglevel=100)  # Set loglevel to 0 for debug information\n\nncfile = '/workspace/shared/Copernicus_Marine/DTOs/Micro-plastics/examples/netCDF-example_observatory/silcam-particle-transport-norkyst.nc'\n#reader_adcp = reader_netCDF_CF_generic.Reader('test_data_fates_smoothed.nc')\n#o.add_reader([reader_adcp])\n\nreader_norkyst = reader_netCDF_CF_generic.Reader(\n    'https://thredds.met.no/thredds/dodsC/sea/norkyst800m/1h/aggregate_be')\nreader_landmask = reader_global_landmask.Reader()\n                      # extent=[2, 59, 8, 63])  # lonmin, latmin, lonmax, latmax\nopendrift.add_reader([reader_landmask, reader_norkyst])\n\n\n# Seed oil elements at defined position and time\nfor speed, num_particles in speed_dist_nonzero.iterrows():\n    opendrift.seed_elements(lon=10.372166666666667, lat=63.4575, z=-10, radius=50, number=int(num_particles.values[0]),\n                    time=reader_norkyst.start_time, terminal_velocity=-speed)\n\nopendrift.set_config('environment:fallback:y_wind', 5)\nopendrift.set_config('environment:fallback:x_wind', 5)\nopendrift.set_config('drift:current_uncertainty', .02)\nopendrift.set_config('drift:wind_uncertainty', 1)\nopendrift.set_config('vertical_mixing:diffusivitymodel', 'windspeed_Large1994')\nopendrift.set_config('environment:fallback:sea_floor_depth_below_sea_level', 100)  # 100m depth\nopendrift.set_config('general:use_auto_landmask', True)\nopendrift.set_config('general:coastline_action', 'previous')\n\n\n# Running model\nopendrift.run(end_time=reader_norkyst.start_time + timedelta(hours=24),\n      time_step=60, time_step_output=600, outfile=ncfile)\n\nprint ('OpenDrift simulation completed!')",
+        "language": "python",
+        "displayoutput": true,
+        "x": 5980,
+        "y": 280,
+        "wires": [
+            [
+                "7e440a08-8e73-4ecd-80fb-891f6511d907"
+            ]
+        ]
+    },
+    {
+        "id": "7e440a08-8e73-4ecd-80fb-891f6511d907",
+        "type": "notebook-node",
+        "z": "655ad04f64789ebf",
+        "g": "42191ceb-b736-4883-b16a-862947089bb0",
+        "name": "#2 Print and plot results",
+        "script": "#2 Print and plot results\n#print(opendrift)\nopendrift.plot_property('z')\nplt.savefig(ncfile[:-3] + '-z.png')",
+        "language": "python",
+        "displayoutput": true,
+        "x": 6380,
+        "y": 280,
+        "wires": [
+            [
+                "2d3ec24b-3f7c-47ae-b26c-9efb9b47eeed"
+            ]
+        ]
+    },
+    {
+        "id": "2d3ec24b-3f7c-47ae-b26c-9efb9b47eeed",
+        "type": "notebook-node",
+        "z": "655ad04f64789ebf",
+        "g": "42191ceb-b736-4883-b16a-862947089bb0",
+        "name": "opendrift.plot(linecolor='terminal_velocity', buff...",
+        "script": "opendrift.plot(linecolor='terminal_velocity', buffer=.1, show_elements=False, fast=False)",
+        "language": "python",
+        "displayoutput": true,
+        "x": 6780,
+        "y": 280,
+        "wires": [
+            [
+                "60b2691c-07ba-490d-b971-9df5ce7bc2c0"
+            ]
+        ]
+    },
+    {
+        "id": "60b2691c-07ba-490d-b971-9df5ce7bc2c0",
+        "type": "notebook-node",
+        "z": "655ad04f64789ebf",
+        "g": "42191ceb-b736-4883-b16a-862947089bb0",
+        "name": "Cell 3",
+        "script": "\n\nopendrift.animation(color='z', buffer=0.04, fast=False, blit=True, cmap=cmocean.cm.dense_r, \n            clabel='Particle depth (m)', vmin=-100., vmax=0., fps=15,\n            filename='munkholmen_particles_opendrift_test.mp4')",
+        "language": "python",
+        "displayoutput": true,
+        "x": 7180,
+        "y": 280,
+        "wires": [
+            [
+                "fe32ec81-7b07-49d0-adba-8598982747e7"
+            ]
+        ]
+    },
+    {
+        "id": "fe32ec81-7b07-49d0-adba-8598982747e7",
+        "type": "notebook-node",
+        "z": "655ad04f64789ebf",
+        "g": "42191ceb-b736-4883-b16a-862947089bb0",
+        "name": "Cell 4",
+        "script": "",
+        "language": "python",
+        "displayoutput": true,
+        "x": 7580,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    }
+]
