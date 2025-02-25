@@ -1,0 +1,1727 @@
+[
+    {
+        "id": "e6016786cd22663d",
+        "type": "tab",
+        "label": "Tidal Energy Pilot - Visualise Simulation Output",
+        "disabled": false
+    },
+    {
+        "id": "ebc9909a-bda1-4734-a5e5-6661dc215b5f",
+        "type": "group",
+        "z": "e6016786cd22663d",
+        "name": "Tidal turbine output visualisation",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "d80e121c-8162-443a-9e16-90ffaa0bd4b4",
+            "b4d5f021-e071-4c04-82c3-5f8beaf07864",
+            "e9acf409-5ec6-4571-848c-17c706d3f5ce",
+            "61d19dec-922e-47d5-a5b1-e373fa7dafaf",
+            "345b2f65-17ec-4019-94d9-9e41457a6347"
+        ],
+        "x": 218,
+        "y": 161,
+        "w": 26824,
+        "h": 238
+    },
+    {
+        "id": "d80e121c-8162-443a-9e16-90ffaa0bd4b4",
+        "type": "group",
+        "z": "e6016786cd22663d",
+        "g": "ebc9909a-bda1-4734-a5e5-6661dc215b5f",
+        "name": "1. Preamble",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "a91a52a7-cf65-4b7b-b3eb-6031b74ee4e7",
+            "a84722df-cfd7-465c-90ab-a9c696fdbe1c",
+            "0f267ec5-b476-4196-83e3-cbd15bf231db",
+            "5e2f363c-9395-4037-855e-44c4fe1b3bda",
+            "413eef62-5392-4113-8c96-3fbc90725e75",
+            "65bf4f1d-5588-48d4-aeee-ff3ddd4a5aa1",
+            "83779a03-44e5-4332-a04c-8a6175077c57"
+        ],
+        "x": 244,
+        "y": 239,
+        "w": 2322,
+        "h": 107
+    },
+    {
+        "id": "b4d5f021-e071-4c04-82c3-5f8beaf07864",
+        "type": "group",
+        "z": "e6016786cd22663d",
+        "g": "ebc9909a-bda1-4734-a5e5-6661dc215b5f",
+        "name": "2. Flow field aggregation (peak, mean)",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "0444d52a-7df9-4f6f-8265-30d71cb26a46",
+            "ee11c333-6c0c-4fea-9b4f-04b263c9f13c",
+            "1f0e8faa-9923-4dce-9fd3-ca413451a291",
+            "68245016-a62c-43fa-a21e-b58b504126f0",
+            "8491aad6-2f44-41d8-af4a-644135b371cf",
+            "3d097177-5a59-42e8-8d7d-8c44b2cd5566",
+            "d7cb939b-5c1a-495b-b63d-e491576d6c12",
+            "944532e5-1e86-4363-aea8-30920eeb795c",
+            "73747639-bbf4-4a91-b620-3ebd565fec56"
+        ],
+        "x": 354,
+        "y": 187,
+        "w": 10314,
+        "h": 186
+    },
+    {
+        "id": "e9acf409-5ec6-4571-848c-17c706d3f5ce",
+        "type": "group",
+        "z": "e6016786cd22663d",
+        "g": "ebc9909a-bda1-4734-a5e5-6661dc215b5f",
+        "name": "3. Vector plots",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "3c89fce8-4475-4706-b4e8-44b1630959d1",
+            "c94f1888-bf3f-4bf2-99cb-2d405bc33c76",
+            "d2a58c7e-7cc6-41cb-939e-073aca9296f1"
+        ],
+        "x": 10508,
+        "y": 213,
+        "w": 3314,
+        "h": 134
+    },
+    {
+        "id": "61d19dec-922e-47d5-a5b1-e373fa7dafaf",
+        "type": "group",
+        "z": "e6016786cd22663d",
+        "g": "ebc9909a-bda1-4734-a5e5-6661dc215b5f",
+        "name": "4. Derived quantity - Energy flux",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "886dd8c9-70a9-4b38-a805-fffbe0d0069e",
+            "8afc3ff4-6684-4144-8387-58db43a11f1f",
+            "7bf3eb7b-c075-48f6-8c5d-0cc78e76532f",
+            "4d245159-4956-4bde-ba43-7965d6e6b1a0",
+            "396c15ea-e59c-48ad-adae-3fa3ff754e14",
+            "6397cd15-7337-4479-abb8-421c4ec5dc5b",
+            "2d33e3c7-3bc7-49e0-8215-6c44c232f2b1",
+            "c495ac2a-5c23-4d34-bcac-27eab5d7ca23"
+        ],
+        "x": 354,
+        "y": 213,
+        "w": 26258,
+        "h": 134
+    },
+    {
+        "id": "345b2f65-17ec-4019-94d9-9e41457a6347",
+        "type": "group",
+        "z": "e6016786cd22663d",
+        "g": "ebc9909a-bda1-4734-a5e5-6661dc215b5f",
+        "name": "Time series",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "4b35da6d-87ed-4261-a419-167c4f6565f6"
+        ],
+        "x": 26524,
+        "y": 239,
+        "w": 492,
+        "h": 82
+    },
+    {
+        "id": "83779a03-44e5-4332-a04c-8a6175077c57",
+        "type": "group",
+        "z": "e6016786cd22663d",
+        "g": "d80e121c-8162-443a-9e16-90ffaa0bd4b4",
+        "name": "Display the change in flow field",
+        "style": {
+            "label": true
+        },
+        "nodes": [],
+        "x": 380,
+        "y": 280,
+        "w": 200,
+        "h": 40
+    },
+    {
+        "id": "0444d52a-7df9-4f6f-8265-30d71cb26a46",
+        "type": "group",
+        "z": "e6016786cd22663d",
+        "g": "b4d5f021-e071-4c04-82c3-5f8beaf07864",
+        "name": "a) Comparing PF0N and PF0G",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "89b67c97-d14b-4946-9d00-f03f628caa1f"
+        ],
+        "x": 2524,
+        "y": 239,
+        "w": 492,
+        "h": 82
+    },
+    {
+        "id": "ee11c333-6c0c-4fea-9b4f-04b263c9f13c",
+        "type": "group",
+        "z": "e6016786cd22663d",
+        "g": "b4d5f021-e071-4c04-82c3-5f8beaf07864",
+        "name": "b) Comparing PF0AN and PF0A",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "6598184d-234e-44bc-9bc2-50a340cb2bef"
+        ],
+        "x": 2924,
+        "y": 239,
+        "w": 492,
+        "h": 82
+    },
+    {
+        "id": "1f0e8faa-9923-4dce-9fd3-ca413451a291",
+        "type": "group",
+        "z": "e6016786cd22663d",
+        "g": "b4d5f021-e071-4c04-82c3-5f8beaf07864",
+        "name": "c) Comparing PF1N and PF1G",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "c065ec2f-93b8-4f62-ace3-3e09ca4465e0"
+        ],
+        "x": 3324,
+        "y": 239,
+        "w": 492,
+        "h": 82
+    },
+    {
+        "id": "68245016-a62c-43fa-a21e-b58b504126f0",
+        "type": "group",
+        "z": "e6016786cd22663d",
+        "g": "b4d5f021-e071-4c04-82c3-5f8beaf07864",
+        "name": "d) Comparing PF1AN and PF1A",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "568cdfe5-25a3-4ab2-89ad-3804d4ee3b22",
+            "5cd5ce0c-691b-45bd-bf24-badfde71919f"
+        ],
+        "x": 3724,
+        "y": 239,
+        "w": 892,
+        "h": 82
+    },
+    {
+        "id": "8491aad6-2f44-41d8-af4a-644135b371cf",
+        "type": "group",
+        "z": "e6016786cd22663d",
+        "g": "b4d5f021-e071-4c04-82c3-5f8beaf07864",
+        "name": "e) Comparing PF2N with PF2G",
+        "style": {
+            "label": true
+        },
+        "nodes": [],
+        "x": 380,
+        "y": 280,
+        "w": 202,
+        "h": 40
+    },
+    {
+        "id": "3d097177-5a59-42e8-8d7d-8c44b2cd5566",
+        "type": "group",
+        "z": "e6016786cd22663d",
+        "g": "b4d5f021-e071-4c04-82c3-5f8beaf07864",
+        "name": "f) Comparing PF2AN with PF2A",
+        "style": {
+            "label": true
+        },
+        "nodes": [],
+        "x": 380,
+        "y": 280,
+        "w": 206,
+        "h": 40
+    },
+    {
+        "id": "d7cb939b-5c1a-495b-b63d-e491576d6c12",
+        "type": "group",
+        "z": "e6016786cd22663d",
+        "g": "b4d5f021-e071-4c04-82c3-5f8beaf07864",
+        "name": "Comparing PF0N and PF0G",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "36c869ee-e67d-4616-b513-3fa687762f54"
+        ],
+        "x": 4524,
+        "y": 239,
+        "w": 492,
+        "h": 82
+    },
+    {
+        "id": "944532e5-1e86-4363-aea8-30920eeb795c",
+        "type": "group",
+        "z": "e6016786cd22663d",
+        "g": "b4d5f021-e071-4c04-82c3-5f8beaf07864",
+        "name": "Comparing PF1N and PF1A",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "dda1aefd-e18d-4173-8050-02ad28c090a7",
+            "5b18e95e-bd6a-4cf0-ba18-3c3c78362f7c"
+        ],
+        "x": 4924,
+        "y": 213,
+        "w": 3318,
+        "h": 134
+    },
+    {
+        "id": "73747639-bbf4-4a91-b620-3ebd565fec56",
+        "type": "group",
+        "z": "e6016786cd22663d",
+        "g": "b4d5f021-e071-4c04-82c3-5f8beaf07864",
+        "name": "Comparing PF1AN with PF1A visc=5",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "fc7cadf4-94ff-4618-8435-94d17d59f20f"
+        ],
+        "x": 8108,
+        "y": 213,
+        "w": 2534,
+        "h": 134
+    },
+    {
+        "id": "3c89fce8-4475-4706-b4e8-44b1630959d1",
+        "type": "group",
+        "z": "e6016786cd22663d",
+        "g": "e9acf409-5ec6-4571-848c-17c706d3f5ce",
+        "name": "a) Quiver on a triangular mesh",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "154d7a8d-c55b-46f8-8d63-23919567be1b",
+            "9c7f67b8-89ef-4da3-9bb4-b83e4d4f47c6",
+            "4a430f8f-3912-4c58-a6cc-796173cc58c3",
+            "89929d18-b332-4863-801e-f952bd7e9325"
+        ],
+        "x": 10534,
+        "y": 239,
+        "w": 1522,
+        "h": 82
+    },
+    {
+        "id": "c94f1888-bf3f-4bf2-99cb-2d405bc33c76",
+        "type": "group",
+        "z": "e6016786cd22663d",
+        "g": "e9acf409-5ec6-4571-848c-17c706d3f5ce",
+        "name": "b) Quiver on a regular mesh",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "c3769e94-df91-4ef6-8281-16fccd830e71",
+            "a15980da-07bd-4d65-a5c6-fd2585b4324f",
+            "1f476d6d-2001-4dd1-9903-a30f5a60cb9d"
+        ],
+        "x": 12254,
+        "y": 239,
+        "w": 1152,
+        "h": 82
+    },
+    {
+        "id": "d2a58c7e-7cc6-41cb-939e-073aca9296f1",
+        "type": "group",
+        "z": "e6016786cd22663d",
+        "g": "e9acf409-5ec6-4571-848c-17c706d3f5ce",
+        "name": "c) Contour and vector on the same mesh",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "80e65883-1a6b-4dca-9509-4fb79c9c998c"
+        ],
+        "x": 13344,
+        "y": 239,
+        "w": 452,
+        "h": 82
+    },
+    {
+        "id": "886dd8c9-70a9-4b38-a805-fffbe0d0069e",
+        "type": "group",
+        "z": "e6016786cd22663d",
+        "g": "61d19dec-922e-47d5-a5b1-e373fa7dafaf",
+        "name": "Kinetic and potential energies, fluxes",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "5f6191f6-611c-4f44-89f7-93bc998cf9f7",
+            "b4358b43-b9f0-477a-9391-d2e150d928c2",
+            "caa5848d-ed60-4cb5-acfb-d1bcdd95a247",
+            "2e6d81ee-869f-4fba-b4d8-c25391bb9a25",
+            "f7221a99-a736-48f8-bc89-65fa65905284",
+            "f3d5d2fa-4881-48ea-a9f2-c0bb22c122d5",
+            "ff48048b-42b4-46b6-811e-e2861fefbf53",
+            "6d90159f-d775-43be-bd1f-e06b77d8cb9d",
+            "e5faf319-120e-4442-b36d-148db068b8a7",
+            "5a087705-14ac-45d2-aeff-657b43c3e94c",
+            "a6f35de4-b152-4d48-a3a6-6a4bd2f4026b",
+            "a99b9c14-3590-4196-9b00-182e0a27a0c3",
+            "68d0f4aa-dbed-4b68-b26f-3bd13300f248",
+            "b19ef519-b903-4340-b7f0-0beaa005ea62"
+        ],
+        "x": 13864,
+        "y": 239,
+        "w": 5542,
+        "h": 82
+    },
+    {
+        "id": "8afc3ff4-6684-4144-8387-58db43a11f1f",
+        "type": "group",
+        "z": "e6016786cd22663d",
+        "g": "61d19dec-922e-47d5-a5b1-e373fa7dafaf",
+        "name": "a) Comparing PF0N and PF0G",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "ff70d9c5-e86b-44bf-8cee-447f270b7b12",
+            "0464841b-d4c6-411a-8e90-7aaee5a13c60"
+        ],
+        "x": 19354,
+        "y": 239,
+        "w": 862,
+        "h": 82
+    },
+    {
+        "id": "7bf3eb7b-c075-48f6-8c5d-0cc78e76532f",
+        "type": "group",
+        "z": "e6016786cd22663d",
+        "g": "61d19dec-922e-47d5-a5b1-e373fa7dafaf",
+        "name": "b) Compare PF0AN and PF0A",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "7f2188c3-7193-4e88-9b4b-4a9f718e4847"
+        ],
+        "x": 20124,
+        "y": 239,
+        "w": 492,
+        "h": 82
+    },
+    {
+        "id": "4d245159-4956-4bde-ba43-7965d6e6b1a0",
+        "type": "group",
+        "z": "e6016786cd22663d",
+        "g": "61d19dec-922e-47d5-a5b1-e373fa7dafaf",
+        "name": "c) Compare PF1N and PF1G",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "8d16d529-1d8a-42f9-8f41-396899a4aa36"
+        ],
+        "x": 20524,
+        "y": 239,
+        "w": 492,
+        "h": 82
+    },
+    {
+        "id": "396c15ea-e59c-48ad-adae-3fa3ff754e14",
+        "type": "group",
+        "z": "e6016786cd22663d",
+        "g": "61d19dec-922e-47d5-a5b1-e373fa7dafaf",
+        "name": "d) Compare PF1AN and PF1A",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "3f00e8d1-205a-41ed-b290-12d3e4f07fdf"
+        ],
+        "x": 20924,
+        "y": 239,
+        "w": 492,
+        "h": 82
+    },
+    {
+        "id": "6397cd15-7337-4479-abb8-421c4ec5dc5b",
+        "type": "group",
+        "z": "e6016786cd22663d",
+        "g": "61d19dec-922e-47d5-a5b1-e373fa7dafaf",
+        "name": "e) Comparing PF2N with PF2G",
+        "style": {
+            "label": true
+        },
+        "nodes": [],
+        "x": 380,
+        "y": 280,
+        "w": 202,
+        "h": 40
+    },
+    {
+        "id": "2d33e3c7-3bc7-49e0-8215-6c44c232f2b1",
+        "type": "group",
+        "z": "e6016786cd22663d",
+        "g": "61d19dec-922e-47d5-a5b1-e373fa7dafaf",
+        "name": "f) Comparing PF2AN with PF2A",
+        "style": {
+            "label": true
+        },
+        "nodes": [],
+        "x": 380,
+        "y": 280,
+        "w": 206,
+        "h": 40
+    },
+    {
+        "id": "c495ac2a-5c23-4d34-bcac-27eab5d7ca23",
+        "type": "group",
+        "z": "e6016786cd22663d",
+        "g": "61d19dec-922e-47d5-a5b1-e373fa7dafaf",
+        "name": "g) Supplementary code",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "4cba9af8-0101-43ab-bf6a-3c4ad23c46c5",
+            "2d0e7a33-999e-487f-bd82-e3c7839f772f",
+            "0224554b-1324-408d-92b3-07e9141a1cc5",
+            "01401177-a33a-4b2b-a215-c35272900c5e",
+            "b9085044-2bcd-46ca-809c-2bcd89e526b9",
+            "c8fb789c-b3c5-4b41-9a10-3599d56ac28c",
+            "7d315ca8-1652-4543-9432-bd460ceccebd",
+            "9a9358d2-e885-4d52-a6bd-4e14b422c5e6",
+            "319abe10-3355-4ae8-9439-dc499cc7268e",
+            "7c452ada-af19-4d62-b0df-85c3c9245a70",
+            "391ef868-aaf0-48a8-b892-66742dd9a008",
+            "e71695c1-9e7a-4fc4-8128-03bf611d728b",
+            "62f445fe-62a8-4cd7-9a15-4d54bdc36186"
+        ],
+        "x": 21344,
+        "y": 239,
+        "w": 5242,
+        "h": 82
+    },
+    {
+        "id": "5b18e95e-bd6a-4cf0-ba18-3c3c78362f7c",
+        "type": "group",
+        "z": "e6016786cd22663d",
+        "g": "944532e5-1e86-4363-aea8-30920eeb795c",
+        "name": "Projection failed",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "65b81fdd-2f12-4676-b5c4-b7322d036c43",
+            "35b22f32-1b67-4be8-bdf4-cc894c694579",
+            "eb5551ae-33e3-4966-9d6a-8045b8b9f817",
+            "81130f70-5adb-4e76-836e-346cb7e66ab1",
+            "6dcc0e46-0175-4e76-8381-7f2257ad14e3",
+            "1a18485b-c305-41f1-9c3b-f83e23af41e6",
+            "675e010e-d76c-4c65-9524-9ca15a8cab8b"
+        ],
+        "x": 5354,
+        "y": 239,
+        "w": 2862,
+        "h": 82
+    },
+    {
+        "id": "fc7cadf4-94ff-4618-8435-94d17d59f20f",
+        "type": "group",
+        "z": "e6016786cd22663d",
+        "g": "73747639-bbf4-4a91-b620-3ebd565fec56",
+        "name": "Results using Ambient = PF1AN on locally refined g...",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "ad9e24bc-99db-4f38-a89a-6d5268be46dc",
+            "9fccf026-8b21-4a3b-8172-c3967a04caa9",
+            "ba69cc49-7a2b-4c8b-b72d-28b49879e4dc",
+            "d86cdc6d-d301-4fed-a4b4-fa3f7e1d4b04",
+            "d6ced9b4-04b0-4e99-90da-7ab87eb2fdf0",
+            "cd81e8f9-00b3-4336-9a81-38de648152dd"
+        ],
+        "x": 8134,
+        "y": 239,
+        "w": 2482,
+        "h": 82
+    },
+    {
+        "id": "4a077173-ce90-4d05-b324-0f01d421b972",
+        "type": "inject",
+        "z": "e6016786cd22663d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 80,
+        "wires": [
+            [
+                "a91a52a7-cf65-4b7b-b3eb-6031b74ee4e7"
+            ]
+        ]
+    },
+    {
+        "id": "a91a52a7-cf65-4b7b-b3eb-6031b74ee4e7",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "d80e121c-8162-443a-9e16-90ffaa0bd4b4",
+        "name": "from thetis import *",
+        "script": "from thetis import *\nimport os",
+        "language": "python",
+        "displayoutput": true,
+        "x": 380,
+        "y": 280,
+        "wires": [
+            [
+                "a84722df-cfd7-465c-90ab-a9c696fdbe1c"
+            ]
+        ]
+    },
+    {
+        "id": "a84722df-cfd7-465c-90ab-a9c696fdbe1c",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "d80e121c-8162-443a-9e16-90ffaa0bd4b4",
+        "name": "import matplotlib as mpl",
+        "script": "import matplotlib as mpl\nimport matplotlib.pyplot as plt\n\nmpl.rcParams['font.size'] = 12\nX_LL, Y_LL = 489500, 6500800\nX_EXT, Y_EXT = 5200, 2600",
+        "language": "python",
+        "displayoutput": true,
+        "x": 780,
+        "y": 280,
+        "wires": [
+            [
+                "0f267ec5-b476-4196-83e3-cbd15bf231db"
+            ]
+        ]
+    },
+    {
+        "id": "0f267ec5-b476-4196-83e3-cbd15bf231db",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "d80e121c-8162-443a-9e16-90ffaa0bd4b4",
+        "name": "def map_show(t, field, mesh_, show_mesh=False,",
+        "script": "def map_show(t, field, mesh_, show_mesh=False,\n             colormap=\"PiYG\", clabel='Surface Elevation, m', \n             show_title=True, savefile=None, **options):\n    fig = plt.figure(figsize=(6,3))\n    axes = fig.gca()\n    contours = tricontourf(field, axes=axes, cmap=colormap, **options)\n\n    if show_mesh:\n        triplot(mesh_, axes=axes,\n                interior_kw={\"linewidths\":0.05,\"edgecolors\":'0.1','alpha':0.1})\n    axes.set_xlim([X_LL, X_LL + X_EXT])\n    axes.set_ylim([Y_LL, Y_LL + Y_EXT])\n    axes.set_aspect(\"equal\")\n    cbar = fig.colorbar(contours, label=clabel, ax=axes, extend='max')\n    offset_x = lambda x, _: f'{(x - X_LL)/1000:g}'\n    offset_y = lambda y, _: f'{(y - Y_LL)/1000:g}'\n    axes.xaxis.set_major_formatter(offset_x)\n    axes.yaxis.set_major_formatter(offset_y)\n    if show_title:\n        plt.title(f'Time step: {t}')\n    plt.xlabel('Easting (km)')\n    plt.ylabel('Northing (km)')\n    plt.tight_layout()\n    if type(savefile) is str:\n        plt.savefig(savefile)\n    plt.show()",
+        "language": "python",
+        "displayoutput": true,
+        "x": 1180,
+        "y": 280,
+        "wires": [
+            [
+                "5e2f363c-9395-4037-855e-44c4fe1b3bda"
+            ]
+        ]
+    },
+    {
+        "id": "5e2f363c-9395-4037-855e-44c4fe1b3bda",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "d80e121c-8162-443a-9e16-90ffaa0bd4b4",
+        "name": "import matplotlib",
+        "script": "import matplotlib\nfrom matplotlib.patches import Polygon\n\n# Compact plots for making matrices\ndef map_show_compact(t, field, mesh_, show_mesh=False, hatch_outlier=False,\n             colormap=\"PiYG\", clabel='', contourline=False,\n             title_=\"\", savefile=None, **options):\n    mpl.rcParams['font.size'] = 10\n    fig = plt.figure(figsize=(4,2))\n    plt.subplots_adjust(left=0.05, right=0.8)\n    axes = fig.gca()\n    if hatch_outlier:\n        cmap = matplotlib.colormaps[colormap]\n        COLOR_MAX = cmap(0.95)\n        axes.add_patch(Polygon([(X_LL+3200, Y_LL+2000), (X_LL+3200, Y_LL+2500), (X_LL+4000, Y_LL+2500), (X_LL+4300, Y_LL+2600), \n                                (X_LL+5200, Y_LL+2600), (X_LL+5200, Y_LL+0), (X_LL+1000, Y_LL+0), (X_LL+1000, Y_LL+2600), (X_LL+1800, Y_LL+2600), (X_LL+2500, Y_LL+2000), \n                               ],\n                                     facecolor=COLOR_MAX))\n    contours = tricontourf(field, axes=axes, cmap=colormap, **options)\n    # contours.cmap.set_over('r')\n    # contours.set_clim(-80,80)\n    if contourline:\n        tricontour(field, axes=axes, colors='gray', linewidths=0.05, **options)\n    if title_ is not None:\n        plt.annotate(title_, xy=(X_LL + 200, Y_LL + 200), ha='center', va='center')\n    if show_mesh:\n        triplot(mesh_, axes=axes,\n                interior_kw={\"linewidths\":0.05,\"edgecolors\":'0.1','alpha':0.1})\n    axes.set_xlim([X_LL, X_LL + X_EXT])\n    axes.set_ylim([Y_LL, Y_LL + Y_EXT])\n    axes.set_aspect(\"equal\")\n    axes.set_xticks([X_LL + offset for offset in [1000, 2000, 3000, 4000, 5000] ])\n    axes.set_yticks([Y_LL + offset for offset in [1000, 2000] ])\n    cax = fig.add_axes([axes.get_position().x1+0.01,axes.get_position().y0,0.02,axes.get_position().height]) # https://stackoverflow.com/a/56900830\n    # cax = fig.add_axes([axes.get_position().x1+0.05,axes.get_position().y0,0.02,axes.get_position().height])\n    cbar = fig.colorbar(contours, label=clabel, cax=cax)\n    offset_x = lambda x, _: f'{(x - X_LL)/1000:g}'\n    offset_y = lambda y, _: f'{(y - Y_LL)/1000:g}'\n    axes.xaxis.set_major_formatter(offset_x)\n    axes.yaxis.set_major_formatter(offset_y)\n    axes.tick_params(axis=\"y\",direction=\"in\", pad=-12)  # https://stackoverflow.com/a/47874059\n    axes.tick_params(axis=\"x\",direction=\"in\", pad=-15)\n    \n    if type(savefile) is str:\n        plt.savefig(savefile)\n    plt.show()",
+        "language": "python",
+        "displayoutput": true,
+        "x": 1580,
+        "y": 280,
+        "wires": [
+            [
+                "413eef62-5392-4113-8c96-3fbc90725e75"
+            ]
+        ]
+    },
+    {
+        "id": "413eef62-5392-4113-8c96-3fbc90725e75",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "d80e121c-8162-443a-9e16-90ffaa0bd4b4",
+        "name": "import matplotlib",
+        "script": "import matplotlib\nfrom matplotlib.patches import Polygon\n\n# Compact plots for making matrices, quiver plot from field_and_vector\ndef quiver_compact(t, field, vector_field, mesh_, show_mesh=False, hatch_outlier=True,\n             colormap=\"PiYG\", clabel='', clims=(-80,80), format_num='%.1E', contourline=False,\n             refveclen=1, veclegend=r'$10^6 J m/s$', arrowwidth=0.05,\n             vecposx=0.5, vecposy=0.9, coordinates='figure',\n             title_=\"\", savefile=None, **options):\n    mpl.rcParams['font.size'] = 10\n    fig = plt.figure(figsize=(4,2))\n    plt.subplots_adjust(left=0.05, right=0.8)\n    axes = fig.gca()\n    if hatch_outlier:\n        cmap = matplotlib.cm.get_cmap('RdBu_r'); COLOR_MAX = cmap(0.95)\n        axes.add_patch(Polygon([(X_LL+3200, Y_LL+2000), (X_LL+3200, Y_LL+2500), (X_LL+4000, Y_LL+2500), (X_LL+4300, Y_LL+2600), \n                                (X_LL+5200, Y_LL+2600), (X_LL+5200, Y_LL+0), (X_LL+1000, Y_LL+0), (X_LL+1000, Y_LL+2600), (X_LL+1800, Y_LL+2600), (X_LL+2500, Y_LL+2000), \n                               ],\n                                     facecolor=COLOR_MAX))\n    contours = tricontourf(field, axes=axes, cmap=colormap, **options)\n    if contourline:\n        tricontour(field, axes=axes, colors='gray', linewidths=0.05, **options)\n    vecs = firedrake.pyplot.quiver(vector_field, axes=axes, color='k', linewidths=arrowwidth)  # cannot do  **options here\n    axes.quiverkey(vecs, vecposx, vecposy, \n                   refveclen, veclegend, labelpos='E',)\n\n    if title_ is not None:\n        plt.annotate(title_, xy=(X_LL + 200, Y_LL + 200), ha='center', va='center')\n    if show_mesh:\n        triplot(mesh_, axes=axes,\n                interior_kw={\"linewidths\":0.05,\"edgecolors\":'0.1','alpha':0.1})\n    axes.set_xlim([X_LL, X_LL + X_EXT])\n    axes.set_ylim([Y_LL, Y_LL + Y_EXT])\n    axes.set_aspect(\"equal\")\n    axes.set_xticks([X_LL + offset for offset in [1000, 2000, 3000, 4000, 5000] ])\n    axes.set_yticks([Y_LL + offset for offset in [1000, 2000] ])\n    cax = fig.add_axes([axes.get_position().x1+0.01,axes.get_position().y0,0.02,axes.get_position().height]) # https://stackoverflow.com/a/56900830\n    # cax = fig.add_axes([axes.get_position().x1+0.05,axes.get_position().y0,0.02,axes.get_position().height])\n    cbar = fig.colorbar(contours, label=clabel, cax=cax)\n    offset_x = lambda x, _: f'{(x - X_LL)/1000:g}'\n    offset_y = lambda y, _: f'{(y - Y_LL)/1000:g}'\n    axes.xaxis.set_major_formatter(offset_x)\n    axes.yaxis.set_major_formatter(offset_y)\n    axes.tick_params(axis=\"y\",direction=\"in\", pad=-12)  # https://stackoverflow.com/a/47874059\n    axes.tick_params(axis=\"x\",direction=\"in\", pad=-15)\n    # contours.set_clim(clims)\n    if type(savefile) is str:\n        plt.savefig(savefile)\n    plt.show()",
+        "language": "python",
+        "displayoutput": true,
+        "x": 1980,
+        "y": 280,
+        "wires": [
+            [
+                "65bf4f1d-5588-48d4-aeee-ff3ddd4a5aa1"
+            ]
+        ]
+    },
+    {
+        "id": "65bf4f1d-5588-48d4-aeee-ff3ddd4a5aa1",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "d80e121c-8162-443a-9e16-90ffaa0bd4b4",
+        "name": "def compare_and_plot(baseline, modified, ",
+        "script": "def compare_and_plot(baseline, modified, \n                     folder='figout',\n                     quantity='U',\n                     scenario='pilot',\n                     subfig='(a)',\n                     fformat='pdf',\n                     levels=np.linspace(-6, 6, 13),\n                    ):\n    \"\"\" Plot and save files (*.png) separately for field difference between\n        baseline and modified scenarios, both flood and ebb stages.\n\n        :param baseline: name of baseline case (also name of folder) (`str`)\n        :param modified: name of modified case (also name of folder) (`str`)\n        :param folder: name of the output folder to store image (`str`)\n        :param quantity: name of quantity (to include in file name) (`str`)\n        :param scenario: name of scenario (to include in file name) (`str`)\n        :param subfig: e.g. (a), (b), (c), (d), to annotate in figures (`str`)\n        :param fformat: export file format (`'png'`, `'pdf'`) (`str`)\n        :param levels: list of values for color bar (`list int`)\n    \"\"\" \n    # Flood phase\n    start_fld, stop_fld = 1, 18  # layer indices\n    for step in range(start_fld, stop_fld):\n        with CheckpointFile(f'{baseline}/outputs/hdf5/Velocity2d_{step:05d}.h5', 'r') as h5f_amb_velo:\n            if step == start_fld:\n                mesh2d = h5f_amb_velo.load_mesh()\n                fs = get_functionspace(mesh2d, \"CG\", 1)\n                \n            velo_amb = h5f_amb_velo.load_function(mesh2d, name=\"velocity\")\n            uu_amb = velo_amb.sub(0)\n            vv_amb = velo_amb.sub(1)\n            if step == start_fld:\n                vel_mag_max = (uu_amb**2 + vv_amb**2)**0.5\n                vel_mag_avg = (uu_amb**2 + vv_amb**2)**0.5\n            else:\n                vel_mag = (uu_amb**2 + vv_amb**2)**0.5\n                vel_mag_max = conditional(gt(vel_mag, vel_mag_max), vel_mag, vel_mag_max)\n                vel_mag_avg = vel_mag_avg + vel_mag\n    \n    vel_mag_peak_amb = Function(fs, name=\"vel_peak_fld_base\").interpolate(vel_mag_max)\n    vel_mag_mean_amb = Function(fs, name=\"vel_mean_fld_base\").interpolate(vel_mag_avg / (stop_fld - start_fld + 1))\n    \n    for step in range(start_fld, stop_fld):\n        with CheckpointFile(f'{modified}/outputs/hdf5/Velocity2d_{step:05d}.h5', 'r') as h5f_grp_velo:\n            # if step == start_fld:\n            #     mesh2d = h5f_grp_velo.load_mesh()\n            #     fs = get_functionspace(mesh2d, \"CG\", 1)\n                \n            velo_grp = h5f_grp_velo.load_function(mesh2d, name=\"velocity\")\n            uu_grp = velo_grp.sub(0)\n            vv_grp = velo_grp.sub(1)\n            if step == start_fld:\n                vel_mag_max = (uu_grp**2 + vv_grp**2)**0.5\n                vel_mag_avg = (uu_grp**2 + vv_grp**2)**0.5\n            else:\n                vel_mag = (uu_grp**2 + vv_grp**2)**0.5\n                vel_mag_max = conditional(gt(vel_mag, vel_mag_max), vel_mag, vel_mag_max)\n                vel_mag_avg = vel_mag_avg + vel_mag\n    \n    vel_mag_peak_grp = Function(fs, name=\"vel_peak_fld_modf\").interpolate(vel_mag_max)\n    vel_mag_mean_grp = Function(fs, name=\"vel_mean_fld_modf\").interpolate(vel_mag_avg / (stop_fld - start_fld + 1))\n    \n    velmag_peak_reldiff = Function(fs, name=\"vel_peak_fld_diff\").interpolate((vel_mag_peak_grp - vel_mag_peak_amb)/ vel_mag_peak_amb * 100)\n    velmag_mean_reldiff = Function(fs, name=\"vel_mean_fld_diff\").interpolate((vel_mag_mean_grp - vel_mag_mean_amb)/ vel_mag_mean_amb * 100)\n    \n    map_show_compact(0, velmag_peak_reldiff, mesh2d, colormap=\"RdBu_r\", \n                     # clabel=r\"$\\Delta {|\\mathbf{u}|_\\max} \\, / \\, {|\\mathbf{u}|_\\max}$, %\", \n                     title_=subfig, levels=levels,\n                     savefile=os.path.join(folder, f'{quantity}_max_diff_{scenario}_fld.{fformat}')\n            )\n    map_show_compact(0, velmag_mean_reldiff, mesh2d, colormap=\"RdBu_r\", \n                     # clabel=r\"$\\Delta \\overline{|\\mathbf{u}|} \\, / \\, \\overline{|\\mathbf{u}|}$, %\", \n                     title_=subfig, levels=levels,\n                     savefile=os.path.join(folder, f'{quantity}_mean_diff_{scenario}_fld.{fformat}')\n            )\n\n    # Ebb phase\n    start_ebb, stop_ebb = 19,37\n    for step in range(start_ebb, stop_ebb):\n        with CheckpointFile(f'{baseline}/outputs/hdf5/Velocity2d_{step:05d}.h5', 'r') as h5f_amb_velo:\n            if step == start_ebb:\n                mesh2d = h5f_amb_velo.load_mesh()\n                fs = get_functionspace(mesh2d, \"CG\", 1)\n                \n            velo_amb = h5f_amb_velo.load_function(mesh2d, name=\"velocity\")\n            uu_amb = velo_amb.sub(0)\n            vv_amb = velo_amb.sub(1)\n            if step == start_ebb:\n                vel_mag_max = (uu_amb**2 + vv_amb**2)**0.5\n                vel_mag_avg = (uu_amb**2 + vv_amb**2)**0.5\n            else:\n                vel_mag = (uu_amb**2 + vv_amb**2)**0.5\n                vel_mag_max = conditional(gt(vel_mag, vel_mag_max), vel_mag, vel_mag_max)\n                vel_mag_avg = vel_mag_avg + vel_mag\n    \n    vel_mag_peak_amb = Function(fs, name=\"vel_peak_ebb_base\").interpolate(vel_mag_max)\n    vel_mag_mean_amb = Function(fs, name=\"vel_mean_ebb_base\").interpolate(vel_mag_avg / (stop_ebb - start_ebb + 1))\n\n    for step in range(start_ebb, stop_ebb):\n        with CheckpointFile(f'{modified}/outputs/hdf5/Velocity2d_{step:05d}.h5', 'r') as h5f_grp_velo:\n            # if step == start_ebb:\n            #     mesh2d = h5f_grp_velo.load_mesh()\n            #     fs = get_functionspace(mesh2d, \"CG\", 1)\n                \n            velo_grp = h5f_grp_velo.load_function(mesh2d, name=\"velocity\")\n            uu_grp = velo_grp.sub(0)\n            vv_grp = velo_grp.sub(1)\n            if step == start_ebb:\n                vel_mag_max = (uu_grp**2 + vv_grp**2)**0.5\n                vel_mag_avg = (uu_grp**2 + vv_grp**2)**0.5\n            else:\n                vel_mag = (uu_grp**2 + vv_grp**2)**0.5\n                vel_mag_max = conditional(gt(vel_mag, vel_mag_max), vel_mag, vel_mag_max)\n                vel_mag_avg = vel_mag_avg + vel_mag\n    \n    vel_mag_peak_grp = Function(fs, name=\"vel_peak_ebb_modf\").interpolate(vel_mag_max)\n    vel_mag_mean_grp = Function(fs, name=\"vel_peak_ebb_modf\").interpolate(vel_mag_avg / (stop_ebb - start_ebb + 1))\n\n    velmag_peak_reldiff_ebb = Function(fs, name=\"vel_peak_ebb_diff\").interpolate((vel_mag_peak_grp - vel_mag_peak_amb)/ vel_mag_peak_amb * 100)\n    velmag_mean_reldiff_ebb = Function(fs, name=\"vel_mean_ebb_diff\").interpolate((vel_mag_mean_grp - vel_mag_mean_amb)/ vel_mag_mean_amb * 100)\n\n    map_show_compact(0, velmag_peak_reldiff_ebb, mesh2d, colormap=\"RdBu_r\", \n                     # clabel=r\"$\\Delta {|\\mathbf{u}|_\\max} \\, / \\, {|\\mathbf{u}|_\\max}$, %\", \n                     title_=subfig, levels=levels,\n                     savefile=os.path.join(folder, f'{quantity}_max_diff_{scenario}_ebb.{fformat}')\n            )\n    map_show_compact(0, velmag_mean_reldiff_ebb, mesh2d, colormap=\"RdBu_r\", \n                     # clabel=r\"$\\Delta \\overline{|\\mathbf{u}|} \\, / \\, \\overline{|\\mathbf{u}|}$, %\", \n                     title_=subfig, levels=levels,\n                     savefile=os.path.join(folder, f'{quantity}_mean_diff_{scenario}_ebb.{fformat}')\n            )\n",
+        "language": "python",
+        "displayoutput": true,
+        "x": 2380,
+        "y": 280,
+        "wires": [
+            [
+                "89b67c97-d14b-4946-9d00-f03f628caa1f"
+            ]
+        ]
+    },
+    {
+        "id": "89b67c97-d14b-4946-9d00-f03f628caa1f",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "0444d52a-7df9-4f6f-8265-30d71cb26a46",
+        "name": "compare_and_plot('case_PF0-N_visc5', 'case_PF0-G_v...",
+        "script": "compare_and_plot('case_PF0-N_visc5', 'case_PF0-G_visc5',  # case_PF0-G_visc5_fr_Docker - 6c\n                     folder='fig_out',\n                     quantity='U',\n                     scenario='0G',\n                     subfig='(a)',\n                     fformat='pdf',\n                     levels=np.linspace(-6, 6, 13),\n                    )  ",
+        "language": "python",
+        "displayoutput": true,
+        "x": 2780,
+        "y": 280,
+        "wires": [
+            [
+                "6598184d-234e-44bc-9bc2-50a340cb2bef"
+            ]
+        ]
+    },
+    {
+        "id": "6598184d-234e-44bc-9bc2-50a340cb2bef",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "ee11c333-6c0c-4fea-9b4f-04b263c9f13c",
+        "name": "compare_and_plot('case_PF0-AN_visc5', 'case_PF0-A_...",
+        "script": "compare_and_plot('case_PF0-AN_visc5', 'case_PF0-A_visc5',\n                     folder='fig_out',\n                     quantity='U',\n                     scenario='0A',\n                     subfig='(b)',\n                     fformat='pdf',\n                     levels=np.linspace(-80, 80, 17),\n                    ) ",
+        "language": "python",
+        "displayoutput": true,
+        "x": 3180,
+        "y": 280,
+        "wires": [
+            [
+                "c065ec2f-93b8-4f62-ace3-3e09ca4465e0"
+            ]
+        ]
+    },
+    {
+        "id": "c065ec2f-93b8-4f62-ace3-3e09ca4465e0",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "1f0e8faa-9923-4dce-9fd3-ca413451a291",
+        "name": "compare_and_plot('case_PF1-N_visc5', 'case_PF1-G_v...",
+        "script": "compare_and_plot('case_PF1-N_visc5', 'case_PF1-G_visc5',   # 'case_PF1-N', 'case_PF1-G_debug', -- visc1\n                     folder='fig_out',\n                     quantity='U',\n                     scenario='1G',\n                     subfig='(c)',\n                     levels=np.linspace(-6, 6, 13),\n                    )",
+        "language": "python",
+        "displayoutput": true,
+        "x": 3580,
+        "y": 280,
+        "wires": [
+            [
+                "568cdfe5-25a3-4ab2-89ad-3804d4ee3b22"
+            ]
+        ]
+    },
+    {
+        "id": "568cdfe5-25a3-4ab2-89ad-3804d4ee3b22",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "68245016-a62c-43fa-a21e-b58b504126f0",
+        "name": "compare_and_plot('case_PF1-AN_visc5___1', 'case_PF...",
+        "script": "compare_and_plot('case_PF1-AN_visc5___1', 'case_PF1-A_visc5___1', \n                     folder='fig_out',\n                     quantity='U',\n                     scenario='1A',\n                     subfig='(d)',\n                     levels=np.linspace(-80, 80, 17),\n                    )",
+        "language": "python",
+        "displayoutput": true,
+        "x": 3980,
+        "y": 280,
+        "wires": [
+            [
+                "5cd5ce0c-691b-45bd-bf24-badfde71919f"
+            ]
+        ]
+    },
+    {
+        "id": "5cd5ce0c-691b-45bd-bf24-badfde71919f",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "68245016-a62c-43fa-a21e-b58b504126f0",
+        "name": "compare_and_plot('case_PF1-AN_visc5___1', 'case_PF...",
+        "script": "compare_and_plot('case_PF1-AN_visc5___1', 'case_PF1-A_visc5___1', \n                     folder='fig_out',\n                     quantity='U',\n                     scenario='draft',\n                     subfig='(d)',\n                     levels=np.linspace(-80, 80, 17),\n                    )  # error PF1-A_visc5 not yet contain output",
+        "language": "python",
+        "displayoutput": true,
+        "x": 4380,
+        "y": 280,
+        "wires": [
+            [
+                "36c869ee-e67d-4616-b513-3fa687762f54"
+            ]
+        ]
+    },
+    {
+        "id": "36c869ee-e67d-4616-b513-3fa687762f54",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "d7cb939b-5c1a-495b-b63d-e491576d6c12",
+        "name": "compare_and_plot('case_PF0-N', 'case_PF0-G_visc5',...",
+        "script": "compare_and_plot('case_PF0-N', 'case_PF0-G_visc5', \n                     folder='fig_out',\n                     quantity='U',\n                     scenario='pilot',\n                     subfig='(a)',\n                     levels=np.linspace(-60, 60, 13),\n                    )",
+        "language": "python",
+        "displayoutput": true,
+        "x": 4780,
+        "y": 280,
+        "wires": [
+            [
+                "dda1aefd-e18d-4173-8050-02ad28c090a7"
+            ]
+        ]
+    },
+    {
+        "id": "dda1aefd-e18d-4173-8050-02ad28c090a7",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "944532e5-1e86-4363-aea8-30920eeb795c",
+        "name": "compare_and_plot('case_PF1-N_visc5_neap', 'case_PF...",
+        "script": "compare_and_plot('case_PF1-N_visc5_neap', 'case_PF1-G_visc5', \n                     folder='fig_out',\n                     quantity='U',\n                     scenario='pilot',\n                     subfig='(a)',\n                     levels=np.linspace(-6, 6, 13),\n                    )",
+        "language": "python",
+        "displayoutput": true,
+        "x": 5180,
+        "y": 280,
+        "wires": [
+            [
+                "65b81fdd-2f12-4676-b5c4-b7322d036c43"
+            ]
+        ]
+    },
+    {
+        "id": "65b81fdd-2f12-4676-b5c4-b7322d036c43",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "5b18e95e-bd6a-4cf0-ba18-3c3c78362f7c",
+        "name": "CASE_AMBIENT = 'case_PF1-N_visc5_neap'",
+        "script": "CASE_AMBIENT = 'case_PF1-N_visc5_neap'\nCASE_ARRAY = 'case_PF1-A_visc5'",
+        "language": "python",
+        "displayoutput": true,
+        "x": 5580,
+        "y": 280,
+        "wires": [
+            [
+                "35b22f32-1b67-4be8-bdf4-cc894c694579"
+            ]
+        ]
+    },
+    {
+        "id": "35b22f32-1b67-4be8-bdf4-cc894c694579",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "5b18e95e-bd6a-4cf0-ba18-3c3c78362f7c",
+        "name": "start, stop = 1, 18",
+        "script": "start, stop = 1, 18\nfor step in range(start, stop):\n    with CheckpointFile(f'{CASE_ARRAY}/outputs/hdf5/Velocity2d_{step:05d}.h5', 'r') as h5f_arr_velo:\n        if step == start:\n            mesh199 = h5f_arr_velo.load_mesh()\n            fs199 = get_functionspace(mesh199, \"CG\", 1)\n            \n        velo_arr = h5f_arr_velo.load_function(mesh199, name=\"velocity\")\n        uu_arr = velo_arr.sub(0)\n        vv_arr = velo_arr.sub(1)\n        if step == start:\n            vel_mag_max = (uu_arr**2 + vv_arr**2)**0.5\n            vel_mag_avg = (uu_arr**2 + vv_arr**2)**0.5\n        else:\n            vel_mag = (uu_arr**2 + vv_arr**2)**0.5\n            vel_mag_max = conditional(gt(vel_mag, vel_mag_max), vel_mag, vel_mag_max)\n            vel_mag_avg = vel_mag_avg + vel_mag\n\nvmag_peak_fld_arr = Function(fs199, name=\"vmag_peak_fld_arr\").interpolate(vel_mag_max)\nvmag_mean_fld_arr = Function(fs199, name=\"vmag_mean_fld_arr\").interpolate(vel_mag_avg / (stop - start + 1))",
+        "language": "python",
+        "displayoutput": true,
+        "x": 5980,
+        "y": 280,
+        "wires": [
+            [
+                "eb5551ae-33e3-4966-9d6a-8045b8b9f817"
+            ]
+        ]
+    },
+    {
+        "id": "eb5551ae-33e3-4966-9d6a-8045b8b9f817",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "5b18e95e-bd6a-4cf0-ba18-3c3c78362f7c",
+        "name": "start, stop = 1, 18",
+        "script": "start, stop = 1, 18\nfor step in range(start, stop):\n    with CheckpointFile(f'{CASE_AMBIENT}/outputs/hdf5/Velocity2d_{step:05d}.h5', 'r') as h5f_amb_velo:\n        if step == start:\n            mesh4 = h5f_amb_velo.load_mesh()\n            fs4 = get_functionspace(mesh4, \"CG\", 1)\n            \n        velo_amb = h5f_amb_velo.load_function(mesh4, name=\"velocity\")\n        uu_amb = velo_amb.sub(0)\n        vv_amb = velo_amb.sub(1)\n        if step == start:\n            vel_mag_max = (uu_amb**2 + vv_amb**2)**0.5\n            vel_mag_avg = (uu_amb**2 + vv_amb**2)**0.5\n        else:\n            vel_mag = (uu_amb**2 + vv_amb**2)**0.5\n            vel_mag_max = conditional(gt(vel_mag, vel_mag_max), vel_mag, vel_mag_max)\n            vel_mag_avg = vel_mag_avg + vel_mag\n\nvel_mag_peak_amb = Function(fs4, name=\"vel_peak_neap\").interpolate(vel_mag_max)\nvel_mag_mean_amb = Function(fs4, name=\"vel_peak_mean\").interpolate(vel_mag_avg / (stop - start + 1))",
+        "language": "python",
+        "displayoutput": true,
+        "x": 6380,
+        "y": 280,
+        "wires": [
+            [
+                "81130f70-5adb-4e76-836e-346cb7e66ab1"
+            ]
+        ]
+    },
+    {
+        "id": "81130f70-5adb-4e76-836e-346cb7e66ab1",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "5b18e95e-bd6a-4cf0-ba18-3c3c78362f7c",
+        "name": "upeak_amb_PF1A = Function(fs199, name=\"upeak_amb_P...",
+        "script": "upeak_amb_PF1A = Function(fs199, name=\"upeak_amb_PF1A\").interpolate(vel_mag_peak_amb, allow_missing_dofs=True)",
+        "language": "python",
+        "displayoutput": true,
+        "x": 6780,
+        "y": 280,
+        "wires": [
+            [
+                "6dcc0e46-0175-4e76-8381-7f2257ad14e3"
+            ]
+        ]
+    },
+    {
+        "id": "6dcc0e46-0175-4e76-8381-7f2257ad14e3",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "5b18e95e-bd6a-4cf0-ba18-3c3c78362f7c",
+        "name": "umean_amb_PF1A = Function(fs199, name=\"umean_amb_P...",
+        "script": "umean_amb_PF1A = Function(fs199, name=\"umean_amb_PF1A\").interpolate(vel_mag_mean_amb, allow_missing_dofs=True)",
+        "language": "python",
+        "displayoutput": true,
+        "x": 7180,
+        "y": 280,
+        "wires": [
+            [
+                "1a18485b-c305-41f1-9c3b-f83e23af41e6"
+            ]
+        ]
+    },
+    {
+        "id": "1a18485b-c305-41f1-9c3b-f83e23af41e6",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "5b18e95e-bd6a-4cf0-ba18-3c3c78362f7c",
+        "name": "upeak_reldiff_full = Function(fs199, name=\"upeak_r...",
+        "script": "upeak_reldiff_full = Function(fs199, name=\"upeak_reldiff_full\").interpolate((vmag_peak_fld_arr - upeak_amb_PF1A)/upeak_amb_PF1A * 100)\numean_reldiff_full = Function(fs199, name=\"umean_reldiff_full\").interpolate((vmag_mean_fld_arr - umean_amb_PF1A)/umean_amb_PF1A * 100)",
+        "language": "python",
+        "displayoutput": true,
+        "x": 7580,
+        "y": 280,
+        "wires": [
+            [
+                "675e010e-d76c-4c65-9524-9ca15a8cab8b"
+            ]
+        ]
+    },
+    {
+        "id": "675e010e-d76c-4c65-9524-9ca15a8cab8b",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "5b18e95e-bd6a-4cf0-ba18-3c3c78362f7c",
+        "name": "map_show(0, upeak_reldiff_full, mesh199, colormap=...",
+        "script": "map_show(0, upeak_reldiff_full, mesh199, colormap=\"RdBu_r\", clabel=r\"$C_{|\\mathbf{u}|_\\max}$, %\", \n               show_title=False, levels=np.linspace(-100, 100, 21)\n        )\nmap_show(0, umean_reldiff_full, mesh199, colormap=\"RdBu_r\", clabel=r\"$C_\\overline{|\\mathbf{u}|}$, %\", \n               show_title=False, levels=np.linspace(-100, 100, 21)\n        )",
+        "language": "python",
+        "displayoutput": true,
+        "x": 7980,
+        "y": 280,
+        "wires": [
+            [
+                "ad9e24bc-99db-4f38-a89a-6d5268be46dc"
+            ]
+        ]
+    },
+    {
+        "id": "ad9e24bc-99db-4f38-a89a-6d5268be46dc",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "fc7cadf4-94ff-4618-8435-94d17d59f20f",
+        "name": "velmag_peak_reldiff_full = Function(fs199, name=\"v...",
+        "script": "velmag_peak_reldiff_full = Function(fs199, name=\"velmag_peak_diff_arr\").interpolate((vmag_peak_fld_arr - vel_mag_peak_amb)/vel_mag_peak_amb * 100)\nvelmag_mean_reldiff_full = Function(fs199, name=\"velmag_mean_diff_arr\").interpolate((vmag_mean_fld_arr - vel_mag_mean_amb)/vel_mag_mean_amb * 100)",
+        "language": "python",
+        "displayoutput": true,
+        "x": 8380,
+        "y": 280,
+        "wires": [
+            [
+                "9fccf026-8b21-4a3b-8172-c3967a04caa9"
+            ]
+        ]
+    },
+    {
+        "id": "9fccf026-8b21-4a3b-8172-c3967a04caa9",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "fc7cadf4-94ff-4618-8435-94d17d59f20f",
+        "name": "map_show(0, velmag_peak_reldiff_full, mesh2d, colo...",
+        "script": "map_show(0, velmag_peak_reldiff_full, mesh2d, colormap=\"RdBu_r\", \n            clabel=r\"$\\Delta {|\\mathbf{u}|_\\max} \\, / \\, {|\\mathbf{u}|_\\max}$, %\", \n            show_title=False, levels=np.linspace(-100, 100, 21),\n            savefile='umax_diff_full.png'\n        )\nmap_show(0, velmag_mean_reldiff_full, mesh2d, colormap=\"RdBu_r\", \n            clabel=r\"$\\Delta \\overline{|\\mathbf{u}|} \\, / \\, \\overline{|\\mathbf{u}|}$, %\", \n            show_title=False, levels=np.linspace(-100, 100, 21),\n            savefile='umean_diff_full.png'\n        )",
+        "language": "python",
+        "displayoutput": true,
+        "x": 8780,
+        "y": 280,
+        "wires": [
+            [
+                "ba69cc49-7a2b-4c8b-b72d-28b49879e4dc"
+            ]
+        ]
+    },
+    {
+        "id": "ba69cc49-7a2b-4c8b-b72d-28b49879e4dc",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "fc7cadf4-94ff-4618-8435-94d17d59f20f",
+        "name": "map_show_compact(0, velmag_peak_reldiff_full, mesh...",
+        "script": "map_show_compact(0, velmag_peak_reldiff_full, mesh199, colormap=\"RdBu_r\", \n                 # clabel=r\"$\\Delta {|\\mathbf{u}|_\\max} \\, / \\, {|\\mathbf{u}|_\\max}$, %\", \n               title_='(b)', levels=np.linspace(-100, 100, 21),\n                 savefile='_umax_diff_full.png'\n        )\nmap_show_compact(0, velmag_mean_reldiff_full, mesh199, colormap=\"RdBu_r\", \n                 # clabel=r\"$\\Delta \\overline{|\\mathbf{u}|} \\, / \\, \\overline{|\\mathbf{u}|}$, %\", \n               title_='(b)', levels=np.linspace(-100, 100, 21),\n                 savefile='_umean_diff_full.png'\n        )",
+        "language": "python",
+        "displayoutput": true,
+        "x": 9180,
+        "y": 280,
+        "wires": [
+            [
+                "d86cdc6d-d301-4fed-a4b4-fa3f7e1d4b04"
+            ]
+        ]
+    },
+    {
+        "id": "d86cdc6d-d301-4fed-a4b4-fa3f7e1d4b04",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "fc7cadf4-94ff-4618-8435-94d17d59f20f",
+        "name": "map_show(0, velmag_peak_reldiff_full, mesh199, col...",
+        "script": "map_show(0, velmag_peak_reldiff_full, mesh199, colormap=\"RdBu_r\", clabel=r\"$C_{|\\mathbf{u}|_\\max}$, %\", \n               show_title=False, levels=np.linspace(-100, 100, 21)\n        )\nmap_show(0, velmag_mean_reldiff_full, mesh199, colormap=\"RdBu_r\", clabel=r\"$C_\\overline{|\\mathbf{u}|}$, %\", \n               show_title=False, levels=np.linspace(-100, 100, 21)\n        )",
+        "language": "python",
+        "displayoutput": true,
+        "x": 9580,
+        "y": 280,
+        "wires": [
+            [
+                "d6ced9b4-04b0-4e99-90da-7ab87eb2fdf0"
+            ]
+        ]
+    },
+    {
+        "id": "d6ced9b4-04b0-4e99-90da-7ab87eb2fdf0",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "fc7cadf4-94ff-4618-8435-94d17d59f20f",
+        "name": "velmag_peak_diff_arr_v5 = Function(fs199, name=\"ve...",
+        "script": "velmag_peak_diff_arr_v5 = Function(fs199, name=\"velmag_peak_diff_arr\").interpolate(vmag_peak_fld_arr - vel_mag_peak_amb)\nvelmag_mean_diff_arr_v5 = Function(fs199, name=\"velmag_mean_diff_arr\").interpolate(vmag_mean_fld_arr - vel_mag_mean_amb)",
+        "language": "python",
+        "displayoutput": true,
+        "x": 9980,
+        "y": 280,
+        "wires": [
+            [
+                "cd81e8f9-00b3-4336-9a81-38de648152dd"
+            ]
+        ]
+    },
+    {
+        "id": "cd81e8f9-00b3-4336-9a81-38de648152dd",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "fc7cadf4-94ff-4618-8435-94d17d59f20f",
+        "name": "map_show(0, velmag_peak_diff_arr_v5, mesh199, colo...",
+        "script": "map_show(0, velmag_peak_diff_arr_v5, mesh199, colormap=\"RdBu_r\", clabel=r\"$\\Delta | \\mathbf{u} |$, m/s\", \n               show_title=False, levels=np.linspace(-0.9, 0.9, 19))\nmap_show(0, velmag_mean_diff_arr_v5, mesh199, colormap=\"RdBu_r\", clabel=r\"$\\Delta | \\mathbf{u} |$, m/s\", \n               show_title=False, levels=np.linspace(-0.9, 0.9, 19))",
+        "language": "python",
+        "displayoutput": true,
+        "x": 10380,
+        "y": 280,
+        "wires": [
+            [
+                "154d7a8d-c55b-46f8-8d63-23919567be1b"
+            ]
+        ]
+    },
+    {
+        "id": "154d7a8d-c55b-46f8-8d63-23919567be1b",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "3c89fce8-4475-4706-b4e8-44b1630959d1",
+        "name": "def plot_vector(vector_field, mesh, show_mesh=True...",
+        "script": "def plot_vector(vector_field, mesh, show_mesh=True, title_=\"\", **options):\n    \"\"\" Plot the `field` using `colormap` \n        `options` for tricontourf the field\n    \"\"\"\n    fig = plt.figure(figsize=(6,3))\n    axes = fig.gca()\n    vecs = quiver(vector_field, axes=axes, **options) # scale=20 to 50 is good for velocity\n    # contours = tricontourf(field, axes=axes,\n    #                     cmap=colormap, **options)\n    if show_mesh:\n        triplot(mesh, axes=axes,\n                interior_kw={\"linewidths\":0.05,\"edgecolors\":'0.1','alpha':0.5})\n    axes.set_xlim([X_LL, X_LL + X_EXT])\n    axes.set_ylim([Y_LL, Y_LL + Y_EXT])\n    axes.set_aspect(\"equal\")\n    offset_x = lambda x, _: f'{(x - X_LL)/1000:g}'\n    offset_y = lambda y, _: f'{(y - Y_LL)/1000:g}'\n    axes.xaxis.set_major_formatter(offset_x)\n    axes.yaxis.set_major_formatter(offset_y)\n    plt.title(title_)\n    plt.xlabel('Easting (km)')\n    plt.ylabel('Northing (km)')\n    plt.tight_layout()\n    plt.show()",
+        "language": "python",
+        "displayoutput": true,
+        "x": 10780,
+        "y": 280,
+        "wires": [
+            [
+                "9c7f67b8-89ef-4da3-9bb4-b83e4d4f47c6"
+            ]
+        ]
+    },
+    {
+        "id": "9c7f67b8-89ef-4da3-9bb4-b83e4d4f47c6",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "3c89fce8-4475-4706-b4e8-44b1630959d1",
+        "name": "with CheckpointFile(\"ramp_PF0_mesh.h5\", 'r') as h5...",
+        "script": "with CheckpointFile(\"ramp_PF0_mesh.h5\", 'r') as h5f_ramp:\n    mesh0 = h5f_ramp.load_mesh()\n\nvfs = VectorFunctionSpace(mesh0, 'CG', 1)\n\nwith CheckpointFile(f'case_PF1-N/outputs/hdf5/Velocity2d_{3:05d}.h5', 'r') as h5f_amb_vel:\n    mesh2d = h5f_amb_vel.load_mesh()\n    velo_amb = h5f_amb_vel.load_function(mesh2d, name=\"velocity\")\n\nvector_amb = firedrake.interpolate(velo_amb, vfs, allow_missing_dofs=False)\nplot_vector(vector_amb, mesh0, show_mesh=True)",
+        "language": "python",
+        "displayoutput": true,
+        "x": 11180,
+        "y": 280,
+        "wires": [
+            [
+                "4a430f8f-3912-4c58-a6cc-796173cc58c3"
+            ]
+        ]
+    },
+    {
+        "id": "4a430f8f-3912-4c58-a6cc-796173cc58c3",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "3c89fce8-4475-4706-b4e8-44b1630959d1",
+        "name": "with CheckpointFile(f'case_PF1-N/outputs/hdf5/Velo...",
+        "script": "with CheckpointFile(f'case_PF1-N/outputs/hdf5/Velocity2d_{3:05d}.h5', 'r') as h5f_amb_vel:\n    vel_amb_PF1 = h5f_amb_vel.load_function(mesh2d, name=\"velocity\")\n    \nplot_vector(vel_amb_PF1, mesh2d, show_mesh=True)",
+        "language": "python",
+        "displayoutput": true,
+        "x": 11580,
+        "y": 280,
+        "wires": [
+            [
+                "89929d18-b332-4863-801e-f952bd7e9325"
+            ]
+        ]
+    },
+    {
+        "id": "89929d18-b332-4863-801e-f952bd7e9325",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "3c89fce8-4475-4706-b4e8-44b1630959d1",
+        "name": "i = 3",
+        "script": "i = 3\nwith CheckpointFile(f'case_PF1-N/outputs/hdf5/Velocity2d_{i:05d}.h5', 'r') as h5f_amb_vel:\n    vel_amb = h5f_amb_vel.load_function(mesh2d, name=\"velocity\")\n    u_amb = vel_amb.sub(0)\n    v_amb = vel_amb.sub(1)\nmap_show(i, u_amb, colormap=\"RdBu\", \n         clabel='longitudinal U-Vel., m/s', levels=np.linspace(-1.5,1.5,13))\nmap_show(i, v_amb, colormap=\"RdBu\", \n         clabel='latitudinal V-Vel., m/s', levels=np.linspace(-1.5,1.5,13))",
+        "language": "python",
+        "displayoutput": true,
+        "x": 11980,
+        "y": 280,
+        "wires": [
+            [
+                "c3769e94-df91-4ef6-8281-16fccd830e71"
+            ]
+        ]
+    },
+    {
+        "id": "c3769e94-df91-4ef6-8281-16fccd830e71",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "c94f1888-bf3f-4bf2-99cb-2d405bc33c76",
+        "name": "import warnings",
+        "script": "import warnings\nwarnings.simplefilter(\"ignore\")\n\nDX, DY = 100, 100\nNX = X_EXT // DX\nNY = Y_EXT // DY\n\nmesh_rect = RectangleMesh(NX, NY, X_LL+NX*DX, Y_LL+NY*DY, X_LL, Y_LL)\nvfs_rect = VectorFunctionSpace(mesh_rect, 'CG', 1)",
+        "language": "python",
+        "displayoutput": true,
+        "x": 12380,
+        "y": 280,
+        "wires": [
+            [
+                "a15980da-07bd-4d65-a5c6-fd2585b4324f"
+            ]
+        ]
+    },
+    {
+        "id": "a15980da-07bd-4d65-a5c6-fd2585b4324f",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "c94f1888-bf3f-4bf2-99cb-2d405bc33c76",
+        "name": "triplot(mesh_rect, interior_kw={\"linewidths\":0.05,...",
+        "script": "triplot(mesh_rect, interior_kw={\"linewidths\":0.05,\"edgecolors\":'0.1','alpha':0.5})\nplt.show()",
+        "language": "python",
+        "displayoutput": true,
+        "x": 12780,
+        "y": 280,
+        "wires": [
+            [
+                "1f476d6d-2001-4dd1-9903-a30f5a60cb9d"
+            ]
+        ]
+    },
+    {
+        "id": "1f476d6d-2001-4dd1-9903-a30f5a60cb9d",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "c94f1888-bf3f-4bf2-99cb-2d405bc33c76",
+        "name": "vector_amb_rect = firedrake.interpolate(velo_amb, ...",
+        "script": "vector_amb_rect = firedrake.interpolate(velo_amb, vfs_rect, allow_missing_dofs=True)\nplot_vector(vector_amb_rect, mesh_rect, show_mesh=True)",
+        "language": "python",
+        "displayoutput": true,
+        "x": 13180,
+        "y": 280,
+        "wires": [
+            [
+                "80e65883-1a6b-4dca-9509-4fb79c9c998c"
+            ]
+        ]
+    },
+    {
+        "id": "80e65883-1a6b-4dca-9509-4fb79c9c998c",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "d2a58c7e-7cc6-41cb-939e-073aca9296f1",
+        "name": "def field_and_vector(field, vector_field, mesh, sh...",
+        "script": "def field_and_vector(field, vector_field, mesh, show_mesh=True, colormap=\"PiYG\",\n                     clabel='Surface Elevation, m', format_num='%.1E', \n                     refveclen=1, veclegend=r'$10^6 J m/s$', vecposx=0.5, vecposy=0.9, coordinates='figure',\n                     title_=\"\", save_file=\"\", **options):\n    \"\"\" Plot the `field` using `colormap` \n        superimposing `vector_field` on top\n        Used for energy flux, thus format number in scientific notation `%.E`\n    \"\"\"\n    fig = plt.figure(figsize=(7,3.5))\n    axes = fig.gca()\n    contours = tricontourf(field, axes=axes, cmap=colormap, **options)\n    vecs = firedrake.pyplot.quiver(vector_field, axes=axes, color='k')\n    axes.quiverkey(vecs, vecposx, vecposy, \n                   refveclen, veclegend, labelpos='E',)\n    # qcbar = fig.colorbar(vecs, format='%.1f', label=\"Energy flux, MW/m\", fraction=0.046, pad=0.12)\n    cbar = fig.colorbar(contours, label=clabel, ax=axes,\n                        format=format_num, fraction=0.046, pad=0.04)  # https://stackoverflow.com/a/26720422\n    if show_mesh:\n        triplot(mesh, axes=axes,\n                interior_kw={\"linewidths\":0.05,\"edgecolors\":'0.1','alpha':0.0})\n    axes.set_xlim([X_LL, X_LL + X_EXT])\n    axes.set_ylim([Y_LL, Y_LL + Y_EXT])\n    axes.set_aspect(\"equal\")\n    offset_x = lambda x, _: f'{(x - X_LL)/1000:g}'\n    offset_y = lambda y, _: f'{(y - Y_LL)/1000:g}'\n    axes.xaxis.set_major_formatter(offset_x)\n    axes.yaxis.set_major_formatter(offset_y)\n    plt.title(title_)\n    plt.xlabel('Easting (km)')\n    plt.ylabel('Northing (km)')\n    plt.tight_layout()\n    if save_file != \"\":\n        plt.savefig(save_file)\n    plt.show()",
+        "language": "python",
+        "displayoutput": true,
+        "x": 13580,
+        "y": 280,
+        "wires": [
+            [
+                "5f6191f6-611c-4f44-89f7-93bc998cf9f7"
+            ]
+        ]
+    },
+    {
+        "id": "5f6191f6-611c-4f44-89f7-93bc998cf9f7",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "886dd8c9-70a9-4b38-a805-fffbe0d0069e",
+        "name": "RHO = 1025",
+        "script": "RHO = 1025\nGRAV = 9.81\nstep = 28\n\nwith CheckpointFile(os.path.join(\"case_PF0-N_visc5/outputs/hdf5\", f\"Velocity2d_{step:05d}.h5\"), 'r') as h5f_amb_velo: # case_PF1-N\n    mesh2d = h5f_amb_velo.load_mesh()\n    fs = get_functionspace(mesh2d, \"CG\", 1)\n    velo_amb = h5f_amb_velo.load_function(mesh2d, name=\"velocity\")\n    uu_amb = velo_amb.sub(0)\n    vv_amb = velo_amb.sub(1)\n    vel_mag_amb = Function(fs, name=\"vel_mag_amb\").interpolate((uu_amb**2 + vv_amb**2)**0.5)\nwith CheckpointFile(os.path.join(\"case_PF0-N_visc5/outputs/hdf5\", f\"Elevation2d_{step:05d}.h5\"), 'r') as h5f_amb_elev:\n    # mesh2d = h5f_amb_elev.load_mesh()\n    # fs = get_functionspace(mesh2d, \"CG\", 1)\n    elev_amb = h5f_amb_elev.load_function(mesh2d, name=\"elevation\")\n\nwith CheckpointFile(os.path.join(\"case_PF0-N_visc5/outputs\", \"end_of_run_export.h5\"), 'r') as h5f_end:\n    # mesh2d = h5f_end.load_mesh()\n    bathy = h5f_end.load_function(mesh2d, name=\"bathymetry\")",
+        "language": "python",
+        "displayoutput": true,
+        "x": 13980,
+        "y": 280,
+        "wires": [
+            [
+                "b4358b43-b9f0-477a-9391-d2e150d928c2"
+            ]
+        ]
+    },
+    {
+        "id": "b4358b43-b9f0-477a-9391-d2e150d928c2",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "886dd8c9-70a9-4b38-a805-fffbe0d0069e",
+        "name": "KE = 0.5 * RHO * vel_mag_amb**2 * (bathy + elev_am...",
+        "script": "KE = 0.5 * RHO * vel_mag_amb**2 * (bathy + elev_amb)\nPE = RHO * GRAV * elev_amb * (bathy + elev_amb)",
+        "language": "python",
+        "displayoutput": true,
+        "x": 14380,
+        "y": 280,
+        "wires": [
+            [
+                "caa5848d-ed60-4cb5-acfb-d1bcdd95a247"
+            ]
+        ]
+    },
+    {
+        "id": "caa5848d-ed60-4cb5-acfb-d1bcdd95a247",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "886dd8c9-70a9-4b38-a805-fffbe0d0069e",
+        "name": "plot_vector(velo_amb, mesh2d, show_mesh=True, scal...",
+        "script": "plot_vector(velo_amb, mesh2d, show_mesh=True, scale=50)",
+        "language": "python",
+        "displayoutput": true,
+        "x": 14780,
+        "y": 280,
+        "wires": [
+            [
+                "2e6d81ee-869f-4fba-b4d8-c25391bb9a25"
+            ]
+        ]
+    },
+    {
+        "id": "2e6d81ee-869f-4fba-b4d8-c25391bb9a25",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "886dd8c9-70a9-4b38-a805-fffbe0d0069e",
+        "name": "plot_vector(velo_amb * KE, mesh2d, show_mesh=True,...",
+        "script": "plot_vector(velo_amb * KE, mesh2d, show_mesh=True, scale=5E6)",
+        "language": "python",
+        "displayoutput": true,
+        "x": 15180,
+        "y": 280,
+        "wires": [
+            [
+                "f7221a99-a736-48f8-bc89-65fa65905284"
+            ]
+        ]
+    },
+    {
+        "id": "f7221a99-a736-48f8-bc89-65fa65905284",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "886dd8c9-70a9-4b38-a805-fffbe0d0069e",
+        "name": "plot_vector(velo_amb * PE, mesh2d, show_mesh=True,...",
+        "script": "plot_vector(velo_amb * PE, mesh2d, show_mesh=True, scale=5E6)",
+        "language": "python",
+        "displayoutput": true,
+        "x": 15580,
+        "y": 280,
+        "wires": [
+            [
+                "f3d5d2fa-4881-48ea-a9f2-c0bb22c122d5"
+            ]
+        ]
+    },
+    {
+        "id": "f3d5d2fa-4881-48ea-a9f2-c0bb22c122d5",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "886dd8c9-70a9-4b38-a805-fffbe0d0069e",
+        "name": "plot_vector(velo_amb * (PE + KE), mesh2d, show_mes...",
+        "script": "plot_vector(velo_amb * (PE + KE), mesh2d, show_mesh=True, scale=1.5E7)",
+        "language": "python",
+        "displayoutput": true,
+        "x": 15980,
+        "y": 280,
+        "wires": [
+            [
+                "ff48048b-42b4-46b6-811e-e2861fefbf53"
+            ]
+        ]
+    },
+    {
+        "id": "ff48048b-42b4-46b6-811e-e2861fefbf53",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "886dd8c9-70a9-4b38-a805-fffbe0d0069e",
+        "name": "F_KE_x = 0.5 * RHO * vel_mag_amb**2 * (bathy + ele...",
+        "script": "F_KE_x = 0.5 * RHO * vel_mag_amb**2 * (bathy + elev_amb) * uu_amb\nF_KE_y = 0.5 * RHO * vel_mag_amb**2 * (bathy + elev_amb) * vv_amb\n\nF_PE_x = RHO * GRAV * elev_amb * (bathy + elev_amb) * uu_amb\nF_PE_y = RHO * GRAV * elev_amb * (bathy + elev_amb) * vv_amb\n\nF_KE = (F_KE_x**2 + F_KE_y**2)**0.5\nF_PE = (F_PE_x**2 + F_PE_y**2)**0.5\nF = F_KE + F_PE",
+        "language": "python",
+        "displayoutput": true,
+        "x": 16380,
+        "y": 280,
+        "wires": [
+            [
+                "6d90159f-d775-43be-bd1f-e06b77d8cb9d"
+            ]
+        ]
+    },
+    {
+        "id": "6d90159f-d775-43be-bd1f-e06b77d8cb9d",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "886dd8c9-70a9-4b38-a805-fffbe0d0069e",
+        "name": "F_KE_amb = Function(fs, name=\"F_KE_amb\").interpola...",
+        "script": "F_KE_amb = Function(fs, name=\"F_KE_amb\").interpolate(F_KE)\nF_PE_amb = Function(fs, name=\"F_PE_amb\").interpolate(F_PE)\nF_amb = Function(fs, name=\"F_amb\").interpolate(F)",
+        "language": "python",
+        "displayoutput": true,
+        "x": 16780,
+        "y": 280,
+        "wires": [
+            [
+                "e5faf319-120e-4442-b36d-148db068b8a7"
+            ]
+        ]
+    },
+    {
+        "id": "e5faf319-120e-4442-b36d-148db068b8a7",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "886dd8c9-70a9-4b38-a805-fffbe0d0069e",
+        "name": "map_show(2, F_KE_amb, colormap=\"Purples\", clabel=\"...",
+        "script": "map_show(2, F_KE_amb, colormap=\"Purples\", clabel=\"KE Flux, J*m/s\")  # more correctly, W/m\nmap_show(2, F_PE_amb, colormap=\"Purples\", clabel=\"PE Flux, J*m/s\")\nmap_show(2, F_amb, colormap=\"Purples\", clabel=\"Energy Flux, J*m/s\")",
+        "language": "python",
+        "displayoutput": true,
+        "x": 17180,
+        "y": 280,
+        "wires": [
+            [
+                "5a087705-14ac-45d2-aeff-657b43c3e94c"
+            ]
+        ]
+    },
+    {
+        "id": "5a087705-14ac-45d2-aeff-657b43c3e94c",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "886dd8c9-70a9-4b38-a805-fffbe0d0069e",
+        "name": "E_tot = Function(fs, name=\"E_tot\").interpolate((PE...",
+        "script": "E_tot = Function(fs, name=\"E_tot\").interpolate((PE + KE)*1E-6)",
+        "language": "python",
+        "displayoutput": true,
+        "x": 17580,
+        "y": 280,
+        "wires": [
+            [
+                "a6f35de4-b152-4d48-a3a6-6a4bd2f4026b"
+            ]
+        ]
+    },
+    {
+        "id": "a6f35de4-b152-4d48-a3a6-6a4bd2f4026b",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "886dd8c9-70a9-4b38-a805-fffbe0d0069e",
+        "name": "field_and_vector(E_tot, velo_amb * (PE + KE), mesh...",
+        "script": "field_and_vector(E_tot, velo_amb * (PE + KE), mesh2d, show_mesh=True, colormap=\"Purples\", clabel=r\"Total energy density, J/m$^2$\", scale=1.5E7)",
+        "language": "python",
+        "displayoutput": true,
+        "x": 17980,
+        "y": 280,
+        "wires": [
+            [
+                "a99b9c14-3590-4196-9b00-182e0a27a0c3"
+            ]
+        ]
+    },
+    {
+        "id": "a99b9c14-3590-4196-9b00-182e0a27a0c3",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "886dd8c9-70a9-4b38-a805-fffbe0d0069e",
+        "name": "flux_amb_rect = firedrake.interpolate(velo_amb * (...",
+        "script": "flux_amb_rect = firedrake.interpolate(velo_amb * (PE + KE)*1E-6, vfs_rect, allow_missing_dofs=True)",
+        "language": "python",
+        "displayoutput": true,
+        "x": 18380,
+        "y": 280,
+        "wires": [
+            [
+                "68d0f4aa-dbed-4b68-b26f-3bd13300f248"
+            ]
+        ]
+    },
+    {
+        "id": "68d0f4aa-dbed-4b68-b26f-3bd13300f248",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "886dd8c9-70a9-4b38-a805-fffbe0d0069e",
+        "name": "field_and_vector(E_tot, flux_amb_rect, mesh_rect, ...",
+        "script": "field_and_vector(E_tot, flux_amb_rect, mesh_rect, show_mesh=True, \n                 colormap=\"Purples\", # clim_=[0, 4], \n                 # c_ticks=[0,1,2,3,4],\n                 # c_tick_labels=[str(ct) for ct in [0,1,2,3,4]],\n                 refveclen=1, veclegend=r'$10^6$ J m/s', vecposx=0.6, vecposy=0.92,\n                 levels=np.linspace(0,0.4,9), \n                 format_num='%.2f',\n                 clabel=r\"Total energy density, MJ/m$^2$\", scale=1.5E7)",
+        "language": "python",
+        "displayoutput": true,
+        "x": 18780,
+        "y": 280,
+        "wires": [
+            [
+                "b19ef519-b903-4340-b7f0-0beaa005ea62"
+            ]
+        ]
+    },
+    {
+        "id": "b19ef519-b903-4340-b7f0-0beaa005ea62",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "886dd8c9-70a9-4b38-a805-fffbe0d0069e",
+        "name": "field_and_vector(bathy, flux_amb_rect, mesh_rect, ...",
+        "script": "field_and_vector(bathy, flux_amb_rect, mesh_rect, show_mesh=True, \n                 colormap=\"Grays\", \n                 levels=np.linspace(0,50,6), format_num='%d',\n                 clabel=r\"Bathymetry, m\", scale=1.2E7,\n                 save_file='Eflux8_bathy.pdf',\n                )",
+        "language": "python",
+        "displayoutput": true,
+        "x": 19180,
+        "y": 280,
+        "wires": [
+            [
+                "ff70d9c5-e86b-44bf-8cee-447f270b7b12"
+            ]
+        ]
+    },
+    {
+        "id": "ff70d9c5-e86b-44bf-8cee-447f270b7b12",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "8afc3ff4-6684-4144-8387-58db43a11f1f",
+        "name": "def compare_and_plot_flux(baseline, modified, ",
+        "script": "def compare_and_plot_flux(baseline, modified, \n                     folder='figout',\n                     quantity='E',\n                     scenario='pilot',\n                     subfig='(a)',\n                     fformat='pdf', contourline=False,\n                     levels=np.linspace(-6, 6, 13),\n                    ):\n    \"\"\" Plot and save files (*.png) separately for field difference between\n        baseline and modified scenarios, both flood and ebb stages.\n\n        :param baseline: name of baseline case (also name of folder) (`str`)\n        :param modified: name of modified case (also name of folder) (`str`)\n        :param folder: name of the output folder to store image (`str`)\n        :param quantity: name of quantity (to include in file name) (`str`)\n        :param scenario: name of scenario (to include in file name) (`str`)\n        :param subfig: e.g. (a), (b), (c), (d), to annotate in figures (`str`)\n        :param fformat: export file format (`'png'`, `'pdf'`) (`str`)\n        :param levels: list of values for color bar (`list int`)\n    \"\"\"\n    from copy import copy, deepcopy\n    phases = [\n                ('fld', 1, 19, 10), \n                ('ebb', 19, 37, 28),\n             ]\n    for phase_name, phase_start, phase_end, phase_rep in phases:\n        # (fixed) bathymetry\n        with CheckpointFile(f\"{baseline}/outputs/end_of_run_export.h5\", 'r') as h5f_end:\n            mesh2d = h5f_end.load_mesh()\n            fs = get_functionspace(mesh2d, \"CG\", 1)\n            bathy = h5f_end.load_function(mesh2d, name=\"bathymetry\")\n        \n        for step in range(phase_start, phase_end):\n            with CheckpointFile(f'{baseline}/outputs/hdf5/Velocity2d_{step:05d}.h5', 'r') as h5f_base_velo:\n                velo_base = h5f_base_velo.load_function(mesh2d, name=\"velocity\")\n                uu_base = velo_base.sub(0)\n                vv_base = velo_base.sub(1)\n                vmag_base = (uu_base**2 + vv_base**2)**0.5\n            \n            with CheckpointFile(f\"{baseline}/outputs/hdf5/Elevation2d_{step:05d}.h5\", 'r') as h5f_base_elev:\n                # mesh2d = h5f_base_elev.load_mesh()\n                # fs = get_functionspace(mesh2d, \"CG\", 1)\n                elev_base = h5f_base_elev.load_function(mesh2d, name=\"elevation\")\n    \n            KE = 0.5 * RHO * vmag_base**2 * (bathy + elev_base)\n            PE = RHO * GRAV * elev_base * (bathy + elev_base)\n            TE = KE + PE\n            Eflux = TE * vmag_base\n\n            if step == phase_start:\n                Eflux_max = Eflux\n                Eflux_avg = Eflux\n                TE_max = TE\n                TE_avg = TE\n            else:\n                Eflux_max = conditional(gt(Eflux, Eflux_max), Eflux, Eflux_max)\n                Eflux_avg = Eflux_avg + Eflux\n                TE_max = conditional(gt(TE, TE_max), TE, TE_max)\n                TE_avg = TE_avg + TE\n\n            if step == phase_rep:\n                print('Phase name', phase_name, 'representative', phase_rep)\n                velo_rep_base = deepcopy(velo_base)\n                TE_rep_base = copy(TE)\n        \n        Eflux_max_base = Function(fs, name=f\"Eflux_peak_{phase_name}_base\").interpolate(Eflux_max)\n        Eflux_mean_base = Function(fs, name=f\"Eflux_mean_{phase_name}_base\").interpolate(Eflux_avg / (phase_end - phase_start + 1))\n        \n        for step in range(phase_start, phase_end):\n            with CheckpointFile(f'{modified}/outputs/hdf5/Velocity2d_{step:05d}.h5', 'r') as h5f_modf_velo:\n                velo_modf = h5f_modf_velo.load_function(mesh2d, name=\"velocity\")\n                uu_modf = velo_modf.sub(0)\n                vv_modf = velo_modf.sub(1)\n                vmag_modf = (uu_modf**2 + vv_modf**2)**0.5\n    \n            with CheckpointFile(f\"{baseline}/outputs/hdf5/Elevation2d_{step:05d}.h5\", 'r') as h5f_modf_elev:\n                # mesh2d = h5f_modf_elev.load_mesh()\n                # fs = get_functionspace(mesh2d, \"CG\", 1)\n                elev_modf = h5f_modf_elev.load_function(mesh2d, name=\"elevation\")\n    \n            KE = 0.5 * RHO * vmag_modf**2 * (bathy + elev_modf)\n            PE = RHO * GRAV * elev_modf * (bathy + elev_modf)\n            TE = KE + PE\n            Eflux = TE * vmag_modf\n\n            \n            if step == phase_start:\n                Eflux_max = Eflux\n                Eflux_avg = Eflux\n                TE_max = TE\n                TE_avg = TE\n            else:\n                Eflux_max = conditional(gt(Eflux, Eflux_max), Eflux, Eflux_max)\n                Eflux_avg = Eflux_avg + Eflux\n                TE_max = conditional(gt(TE, TE_max), TE, TE_max)\n                TE_avg = TE_avg + TE\n        \n        Eflux_max_modf = Function(fs, name=f\"Eflux_max_{phase_name}_modf\").interpolate(Eflux_max)\n        Eflux_mean_modf = Function(fs, name=f\"Eflux_mean_{phase_name}_modf\").interpolate(Eflux_avg / (phase_end - phase_start + 1))\n        \n        Eflux_max_reldiff = Function(fs, name=f\"Eflux_max_{phase_name}_diff\").interpolate((Eflux_max_modf - Eflux_max_base)/ Eflux_max_base * 100)\n        Eflux_mean_reldiff = Function(fs, name=f\"Eflux_mean_{phase_name}_diff\").interpolate((Eflux_mean_modf - Eflux_mean_base)/ Eflux_mean_base * 100)\n    \n        Eflux_base_rect = firedrake.interpolate(velo_rep_base * abs(TE_rep_base)/1E6, vfs_rect, allow_missing_dofs=True)  # velo_rep_base * TE_rep_base/1E6\n\n        \n        quiver_compact(0, Eflux_max_reldiff, Eflux_base_rect, mesh2d, colormap=\"RdBu_r\", clims=(-80,80),\n                         # clabel=r\"$\\Delta {|\\mathbf{u}|_\\max} \\, / \\, {|\\mathbf{u}|_\\max}$, %\",\n                         arrowwidth=0.02, # line of quiver vectors\n                         refveclen=1, veclegend=r'$10^6$ W/m', labelsep=-0.1, vecposx=0.46, vecposy=0.92,\n                         title_=subfig, levels=levels, contourline=contourline,\n                         savefile=os.path.join(folder, f'{quantity}_max_diff_{scenario}_{phase_name}.{fformat}')\n                )\n        quiver_compact(0, Eflux_mean_reldiff, Eflux_base_rect, mesh2d, colormap=\"RdBu_r\", clims=(-80,80),\n                         # clabel=r\"$\\Delta \\overline{|\\mathbf{u}|} \\, / \\, \\overline{|\\mathbf{u}|}$, %\", \n                         arrowwidth=0.02, # line of quiver vectors\n                         refveclen=1, veclegend=r'$10^6$ W/m', labelsep=-0.1, vecposx=0.46, vecposy=0.92,\n                         title_=subfig, levels=levels, contourline=contourline,\n                         savefile=os.path.join(folder, f'{quantity}_mean_diff_{scenario}_{phase_name}.{fformat}')\n                )",
+        "language": "python",
+        "displayoutput": true,
+        "x": 19580,
+        "y": 280,
+        "wires": [
+            [
+                "0464841b-d4c6-411a-8e90-7aaee5a13c60"
+            ]
+        ]
+    },
+    {
+        "id": "0464841b-d4c6-411a-8e90-7aaee5a13c60",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "8afc3ff4-6684-4144-8387-58db43a11f1f",
+        "name": "compare_and_plot_flux('case_PF0-N_visc5', 'case_PF...",
+        "script": "compare_and_plot_flux('case_PF0-N_visc5', 'case_PF0-G_visc5',\n                     folder='fig_out',\n                     quantity='E',\n                     scenario='0G',\n                     subfig='(a)',\n                     fformat='pdf',\n                     levels=np.linspace(-8, 8, 17),\n                    )  ",
+        "language": "python",
+        "displayoutput": true,
+        "x": 19980,
+        "y": 280,
+        "wires": [
+            [
+                "7f2188c3-7193-4e88-9b4b-4a9f718e4847"
+            ]
+        ]
+    },
+    {
+        "id": "7f2188c3-7193-4e88-9b4b-4a9f718e4847",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "7bf3eb7b-c075-48f6-8c5d-0cc78e76532f",
+        "name": "compare_and_plot_flux('case_PF0-AN_visc5', 'case_P...",
+        "script": "compare_and_plot_flux('case_PF0-AN_visc5', 'case_PF0-A_visc5',\n                     folder='fig_out',\n                     quantity='E',\n                     scenario='0A',\n                     subfig='(b)',\n                     fformat='pdf',\n                     levels=np.linspace(-100, 100, 11),\n                    )",
+        "language": "python",
+        "displayoutput": true,
+        "x": 20380,
+        "y": 280,
+        "wires": [
+            [
+                "8d16d529-1d8a-42f9-8f41-396899a4aa36"
+            ]
+        ]
+    },
+    {
+        "id": "8d16d529-1d8a-42f9-8f41-396899a4aa36",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "4d245159-4956-4bde-ba43-7965d6e6b1a0",
+        "name": "compare_and_plot_flux('case_PF1-N_visc5', 'case_PF...",
+        "script": "compare_and_plot_flux('case_PF1-N_visc5', 'case_PF1-G_visc5',\n                     folder='fig_out',\n                     quantity='E',\n                     scenario='1G',\n                     subfig='(c)',\n                     fformat='pdf',\n                     levels=np.linspace(-8, 8, 17),\n                    )",
+        "language": "python",
+        "displayoutput": true,
+        "x": 20780,
+        "y": 280,
+        "wires": [
+            [
+                "3f00e8d1-205a-41ed-b290-12d3e4f07fdf"
+            ]
+        ]
+    },
+    {
+        "id": "3f00e8d1-205a-41ed-b290-12d3e4f07fdf",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "396c15ea-e59c-48ad-adae-3fa3ff754e14",
+        "name": "compare_and_plot_flux('case_PF1-AN_visc5___1', 'ca...",
+        "script": "compare_and_plot_flux('case_PF1-AN_visc5___1', 'case_PF1-A_visc5___1', \n                     folder='fig_out',\n                     quantity='E',\n                     scenario='1A',\n                     subfig='(d)',\n                     fformat='pdf', contourline=False,\n                     levels=np.linspace(-100, 100, 11),\n                    )",
+        "language": "python",
+        "displayoutput": true,
+        "x": 21180,
+        "y": 280,
+        "wires": [
+            [
+                "4cba9af8-0101-43ab-bf6a-3c4ad23c46c5"
+            ]
+        ]
+    },
+    {
+        "id": "4cba9af8-0101-43ab-bf6a-3c4ad23c46c5",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "c495ac2a-5c23-4d34-bcac-27eab5d7ca23",
+        "name": "flux_amb_rect = firedrake.interpolate(velo_amb * (...",
+        "script": "flux_amb_rect = firedrake.interpolate(velo_amb * (PE + KE)/1E6, vfs_rect, allow_missing_dofs=True)\n\nfield_and_vector(E_tot, flux_amb_rect, mesh_rect, show_mesh=True, \n                 colormap=\"Purples\", # clim_=[0, 4], \n                 # c_ticks=[0,1,2,3,4],\n                 # c_tick_labels=[str(ct) for ct in [0,1,2,3,4]],\n                 refveclen=1, veclegend=r'$10^6$ J m/s', vecposx=0.6, vecposy=0.92,\n                 levels=np.linspace(0,0.4,9), \n                 format_num='%.2f',\n                 clabel=r\"Total energy density, MJ/m$^2$\", scale=1.5E7)",
+        "language": "python",
+        "displayoutput": true,
+        "x": 21580,
+        "y": 280,
+        "wires": [
+            [
+                "2d0e7a33-999e-487f-bd82-e3c7839f772f"
+            ]
+        ]
+    },
+    {
+        "id": "2d0e7a33-999e-487f-bd82-e3c7839f772f",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "c495ac2a-5c23-4d34-bcac-27eab5d7ca23",
+        "name": "field_and_vector(Etot_diff, flux_grp_rect, mesh_re...",
+        "script": "field_and_vector(Etot_diff, flux_grp_rect, mesh_rect, show_mesh=True, \n                 colormap=\"Purples\",\n                 levels=np.linspace(0,250,6), \n                 format_num='%d',\n                 clabel=r\"$\\Delta$E, kJ/m$^2$\", scale=1.2E7,\n                 save_file='Eflux12grp_Etot.pdf',\n                )",
+        "language": "python",
+        "displayoutput": true,
+        "x": 21980,
+        "y": 280,
+        "wires": [
+            [
+                "0224554b-1324-408d-92b3-07e9141a1cc5"
+            ]
+        ]
+    },
+    {
+        "id": "0224554b-1324-408d-92b3-07e9141a1cc5",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "c495ac2a-5c23-4d34-bcac-27eab5d7ca23",
+        "name": "RHO = 1025",
+        "script": "RHO = 1025\nGRAV = 9.81\nstep = 2\n\nwith CheckpointFile(os.path.join(\"arr\", f\"Velocity2d_{step:05d}.h5\"), 'r') as h5f_arr_velo:\n    mesh2d = h5f_arr_velo.load_mesh()\n    # fsg = fs\n    fsa = get_functionspace(mesh2d, \"CG\", 1)\n    velo_arr = h5f_arr_velo.load_function(mesh2d, name=\"uv_2d\")\n    uu_arr = velo_arr.sub(0)\n    vv_arr = velo_arr.sub(1)\n    vel_mag_arr = Function(fsa, name=\"vel_mag_arr\").interpolate((uu_arr**2 + vv_arr**2)**0.5)\nwith CheckpointFile(os.path.join(\"arr\", f\"Elevation2d_{step:05d}.h5\"), 'r') as h5f_arr_elev:\n    # mesh2d = h5f_amb_elev.load_mesh()\n    # fs = get_functionspace(mesh2d, \"CG\", 1)\n    elev_arr = h5f_arr_elev.load_function(mesh2d, name=\"elev_2d\")\n\nwith CheckpointFile(os.path.join(\"arr\", \"end_of_run_export.h5\"), 'r') as h5f_end:\n    # mesh2d = h5f_end.load_mesh()\n    bathy = h5f_end.load_function(mesh2d, name=\"bathymetry\")",
+        "language": "python",
+        "displayoutput": true,
+        "x": 22380,
+        "y": 280,
+        "wires": [
+            [
+                "01401177-a33a-4b2b-a215-c35272900c5e"
+            ]
+        ]
+    },
+    {
+        "id": "01401177-a33a-4b2b-a215-c35272900c5e",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "c495ac2a-5c23-4d34-bcac-27eab5d7ca23",
+        "name": "KE_arr = 0.5 * RHO * vel_mag_arr**2 * (bathy + ele...",
+        "script": "KE_arr = 0.5 * RHO * vel_mag_arr**2 * (bathy + elev_arr)\nPE_arr = RHO * GRAV * elev_arr * (bathy + elev_arr)\nE_tot_arr = Function(fsa, name=\"E_tot_arr\").interpolate(PE_arr + KE_arr)\nflux_arr_rect = firedrake.interpolate(velo_arr * (PE_arr + KE_arr) / 1E6, vfs_rect, allow_missing_dofs=True)",
+        "language": "python",
+        "displayoutput": true,
+        "x": 22780,
+        "y": 280,
+        "wires": [
+            [
+                "b9085044-2bcd-46ca-809c-2bcd89e526b9"
+            ]
+        ]
+    },
+    {
+        "id": "b9085044-2bcd-46ca-809c-2bcd89e526b9",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "c495ac2a-5c23-4d34-bcac-27eab5d7ca23",
+        "name": "E_tot_arr4 = Function(fsg, name=\"E_tot_arr4\").inte...",
+        "script": "E_tot_arr4 = Function(fsg, name=\"E_tot_arr4\").interpolate(E_tot_arr, allow_missing_dofs=True)",
+        "language": "python",
+        "displayoutput": true,
+        "x": 23180,
+        "y": 280,
+        "wires": [
+            [
+                "c8fb789c-b3c5-4b41-9a10-3599d56ac28c"
+            ]
+        ]
+    },
+    {
+        "id": "c8fb789c-b3c5-4b41-9a10-3599d56ac28c",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "c495ac2a-5c23-4d34-bcac-27eab5d7ca23",
+        "name": "field_and_vector(E_tot_arr4, flux_grp_rect, mesh_r...",
+        "script": "field_and_vector(E_tot_arr4, flux_grp_rect, mesh_rect, show_mesh=True, \n                 colormap=\"Purples\",\n                 levels=np.linspace(0,250,6), \n                 format_num='%d',\n                 clabel=r\"$\\Delta$E, kJ/m$^2$\", scale=1.2E7,\n                 save_file='Eflux12grp_Etot.pdf',\n                )",
+        "language": "python",
+        "displayoutput": true,
+        "x": 23580,
+        "y": 280,
+        "wires": [
+            [
+                "7d315ca8-1652-4543-9432-bd460ceccebd"
+            ]
+        ]
+    },
+    {
+        "id": "7d315ca8-1652-4543-9432-bd460ceccebd",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "c495ac2a-5c23-4d34-bcac-27eab5d7ca23",
+        "name": "# Starting from the last successful statement...",
+        "script": "# Starting from the last successful statement...\nEtot_diff = Function(fs, name=\"Etot_diff\").interpolate(1E-3 * ((PE_grp + KE_grp) - (PE + KE)), allow_missing_dofs=True)",
+        "language": "python",
+        "displayoutput": true,
+        "x": 23980,
+        "y": 280,
+        "wires": [
+            [
+                "9a9358d2-e885-4d52-a6bd-4e14b422c5e6"
+            ]
+        ]
+    },
+    {
+        "id": "9a9358d2-e885-4d52-a6bd-4e14b422c5e6",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "c495ac2a-5c23-4d34-bcac-27eab5d7ca23",
+        "name": "Etot_diff = Function(fsg, name=\"Etot_diff\").interp...",
+        "script": "Etot_diff = Function(fsg, name=\"Etot_diff\").interpolate(1E-3 * (E_tot_arr4 - (PE + KE)), allow_missing_dofs=True)",
+        "language": "python",
+        "displayoutput": true,
+        "x": 24380,
+        "y": 280,
+        "wires": [
+            [
+                "319abe10-3355-4ae8-9439-dc499cc7268e"
+            ]
+        ]
+    },
+    {
+        "id": "319abe10-3355-4ae8-9439-dc499cc7268e",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "c495ac2a-5c23-4d34-bcac-27eab5d7ca23",
+        "name": "E_tot_arr4 = Function(fsg, name=\"E_tot_arr4\").inte...",
+        "script": "E_tot_arr4 = Function(fsg, name=\"E_tot_arr4\").interpolate(PE_arr + KE_arr, allow_missing_dofs=True)",
+        "language": "python",
+        "displayoutput": true,
+        "x": 24780,
+        "y": 280,
+        "wires": [
+            [
+                "7c452ada-af19-4d62-b0df-85c3c9245a70"
+            ]
+        ]
+    },
+    {
+        "id": "7c452ada-af19-4d62-b0df-85c3c9245a70",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "c495ac2a-5c23-4d34-bcac-27eab5d7ca23",
+        "name": "Etot_diff_arr = Function(fsg, name=\"Etot_diff_arr\"...",
+        "script": "Etot_diff_arr = Function(fsg, name=\"Etot_diff_arr\").interpolate(1E-3 * ((PE_arr + KE_arr) - (PE + KE)), allow_missing_dofs=True)",
+        "language": "python",
+        "displayoutput": true,
+        "x": 25180,
+        "y": 280,
+        "wires": [
+            [
+                "391ef868-aaf0-48a8-b892-66742dd9a008"
+            ]
+        ]
+    },
+    {
+        "id": "391ef868-aaf0-48a8-b892-66742dd9a008",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "c495ac2a-5c23-4d34-bcac-27eab5d7ca23",
+        "name": "field_and_vector(bathy, flux_arr_rect, mesh_rect, ...",
+        "script": "field_and_vector(bathy, flux_arr_rect, mesh_rect, show_mesh=True, \n                 colormap=\"Grays\",\n                 levels=np.linspace(0,50,11), format_num='%d',\n                 clabel=r\"Bathymetry, m\", scale=1.2E7,\n                 save_file='Eflux8arr_bathy.pdf',\n                )",
+        "language": "python",
+        "displayoutput": true,
+        "x": 25580,
+        "y": 280,
+        "wires": [
+            [
+                "e71695c1-9e7a-4fc4-8128-03bf611d728b"
+            ]
+        ]
+    },
+    {
+        "id": "e71695c1-9e7a-4fc4-8128-03bf611d728b",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "c495ac2a-5c23-4d34-bcac-27eab5d7ca23",
+        "name": "# Erroneous",
+        "script": "# Erroneous\nE_tot_diff4 = Function(fs, name=\"E_tot_diff4\").interpolate(E_tot_grp - E_tot)",
+        "language": "python",
+        "displayoutput": true,
+        "x": 25980,
+        "y": 280,
+        "wires": [
+            [
+                "62f445fe-62a8-4cd7-9a15-4d54bdc36186"
+            ]
+        ]
+    },
+    {
+        "id": "62f445fe-62a8-4cd7-9a15-4d54bdc36186",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "c495ac2a-5c23-4d34-bcac-27eab5d7ca23",
+        "name": "from firedrake.output.vtk_output import VTKFile",
+        "script": "from firedrake.output.vtk_output import VTKFile\nVTKFile('E_tot.pvd').write(E_tot)",
+        "language": "python",
+        "displayoutput": true,
+        "x": 26380,
+        "y": 280,
+        "wires": [
+            [
+                "4b35da6d-87ed-4261-a419-167c4f6565f6"
+            ]
+        ]
+    },
+    {
+        "id": "4b35da6d-87ed-4261-a419-167c4f6565f6",
+        "type": "notebook-node",
+        "z": "e6016786cd22663d",
+        "g": "345b2f65-17ec-4019-94d9-9e41457a6347",
+        "name": "power_amb = np.loadtxt('case_PF1-G_debug/out_DT/po...",
+        "script": "power_amb = np.loadtxt('case_PF1-G_debug/out_DT/powers_1d.csv', delimiter=',')\nplt.plot(power_amb)\nplt.xlabel('Time step')\nplt.ylabel('Power, kW')\nplt.grid(True)\nplt.tight_layout()\nplt.show()",
+        "language": "python",
+        "displayoutput": true,
+        "x": 26780,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    }
+]
