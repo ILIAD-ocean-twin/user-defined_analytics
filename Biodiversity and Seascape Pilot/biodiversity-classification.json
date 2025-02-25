@@ -1,0 +1,275 @@
+[
+    {
+        "id": "0d8d40b09faf647d",
+        "type": "tab",
+        "label": "Biodiversity classification",
+        "disabled": false
+    },
+    {
+        "id": "792bc500-8c40-4756-821d-487dbd1f7782",
+        "type": "inject",
+        "z": "0d8d40b09faf647d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 80,
+        "wires": [
+            [
+                "b391625f-ca1b-425e-8ed7-dad1ad1a4467"
+            ]
+        ]
+    },
+    {
+        "id": "b391625f-ca1b-425e-8ed7-dad1ad1a4467",
+        "type": "notebook-node",
+        "z": "0d8d40b09faf647d",
+        "name": "import pandas as pd",
+        "script": "import pandas as pd\nimport os\nos.environ['USE_PYGEOS'] = '0'\nimport geopandas as gpd\nfrom osgeo import gdal\nimport rasterio\n\nimport matplotlib.pyplot as plt\nfrom shapely.geometry import Point\n\nfrom sklearn.model_selection import train_test_split\n\nfrom sklearn.ensemble import RandomForestClassifier\nfrom sklearn.svm import SVC\nfrom sklearn import metrics\nfrom sklearn.metrics  import accuracy_score\nfrom os import path as op\n\nfrom marine_species import *",
+        "language": "python",
+        "displayoutput": true,
+        "x": 370,
+        "y": 80,
+        "wires": [
+            [
+                "16e8f917-3588-403c-b48f-179f2b295f13"
+            ]
+        ]
+    },
+    {
+        "id": "16e8f917-3588-403c-b48f-179f2b295f13",
+        "type": "notebook-node",
+        "z": "0d8d40b09faf647d",
+        "name": "# raster_file = './Parameter_Composite2.tif'",
+        "script": "# raster_file = './Parameter_Composite2.tif'\nraster_file = '/workspace/shared/Copernicus_Marine/DTOs/Biodiversity&seascape/Biodiversty/Parameter_Composite2.tif'\nband_names = get_band_names(raster_file)",
+        "language": "python",
+        "displayoutput": true,
+        "x": 600,
+        "y": 80,
+        "wires": [
+            [
+                "353f07fc-7c98-42b4-93ca-2ff71de432d9"
+            ]
+        ]
+    },
+    {
+        "id": "353f07fc-7c98-42b4-93ca-2ff71de432d9",
+        "type": "notebook-node",
+        "z": "0d8d40b09faf647d",
+        "name": "# trainingPointsPath = './shikmona-speicesFinal.gp...",
+        "script": "# trainingPointsPath = './shikmona-speicesFinal.gpkg'\ntrainingPointsPath = '/workspace/shared/Copernicus_Marine/DTOs/Biodiversity&seascape/Biodiversty/New/abundance_by_positionSHP.shp'\ntrainingPoints  = gpd.read_file(trainingPointsPath)\n\n#Add A new site ID\ntrainingPoints['SiteID'] = trainingPoints.index\n\n# Save to file the updated training site\ntrainingPoints.to_file('/workspace/shared/Copernicus_Marine/DTOs/Biodiversity&seascape/Biodiversty/TrainingPoints_SiteID.gpkg', OVERWRITE=True)\ntrainingPoints.head()",
+        "language": "python",
+        "displayoutput": true,
+        "x": 830,
+        "y": 80,
+        "wires": [
+            [
+                "f189827f-d8d5-4136-abe8-57e9100a41a7"
+            ]
+        ]
+    },
+    {
+        "id": "f189827f-d8d5-4136-abe8-57e9100a41a7",
+        "type": "notebook-node",
+        "z": "0d8d40b09faf647d",
+        "name": "signatureFile = generate_signature_file('/workspac...",
+        "script": "signatureFile = generate_signature_file('/workspace/shared/Copernicus_Marine/DTOs/Biodiversity&seascape/Biodiversty/TrainingPoints_SiteID.gpkg', raster_file, band_names)\nsignatureFile",
+        "language": "python",
+        "displayoutput": true,
+        "x": 1060,
+        "y": 80,
+        "wires": [
+            [
+                "a9b6fc71-e217-4a06-886d-f0fb9fb31118"
+            ]
+        ]
+    },
+    {
+        "id": "a9b6fc71-e217-4a06-886d-f0fb9fb31118",
+        "type": "notebook-node",
+        "z": "0d8d40b09faf647d",
+        "name": "unique_values = sorted(signatureFile['Class'].uniq...",
+        "script": "unique_values = sorted(signatureFile['Class'].unique())\nprint(unique_values)",
+        "language": "python",
+        "displayoutput": true,
+        "x": 140,
+        "y": 180,
+        "wires": [
+            [
+                "6142ec2b-6b46-4f82-a40a-5463edc59801"
+            ]
+        ]
+    },
+    {
+        "id": "6142ec2b-6b46-4f82-a40a-5463edc59801",
+        "type": "notebook-node",
+        "z": "0d8d40b09faf647d",
+        "name": "signatureFile = signatureFile.drop('SiteID', axis=...",
+        "script": "signatureFile = signatureFile.drop('SiteID', axis=1).dropna()\nX =  signatureFile.drop('Class', axis=1)\ny = signatureFile[[\"Class\"]]",
+        "language": "python",
+        "displayoutput": true,
+        "x": 370,
+        "y": 180,
+        "wires": [
+            [
+                "f6d719b2-cf0b-43c2-8e5d-29c4eee1e6a7"
+            ]
+        ]
+    },
+    {
+        "id": "f6d719b2-cf0b-43c2-8e5d-29c4eee1e6a7",
+        "type": "notebook-node",
+        "z": "0d8d40b09faf647d",
+        "name": "# Split the dataset into training and testing sets",
+        "script": "# Split the dataset into training and testing sets\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state = 10)",
+        "language": "python",
+        "displayoutput": true,
+        "x": 600,
+        "y": 180,
+        "wires": [
+            [
+                "99379be6-d181-462b-bbcb-612e1732039b"
+            ]
+        ]
+    },
+    {
+        "id": "99379be6-d181-462b-bbcb-612e1732039b",
+        "type": "notebook-node",
+        "z": "0d8d40b09faf647d",
+        "name": "%%time",
+        "script": "%%time\nRFclf =  RandomForestClassifier( random_state = 42)\nRFclf.fit(X_train, y_train)",
+        "language": "python",
+        "displayoutput": true,
+        "x": 830,
+        "y": 180,
+        "wires": [
+            [
+                "beb7036e-6980-44f6-b47c-bf2d43523641"
+            ]
+        ]
+    },
+    {
+        "id": "beb7036e-6980-44f6-b47c-bf2d43523641",
+        "type": "notebook-node",
+        "z": "0d8d40b09faf647d",
+        "name": "%%time",
+        "script": "%%time\n# Create and train the SVM classifier\nsvmclf = SVC(kernel='linear')\nsvmclf.fit(X_train, y_train)",
+        "language": "python",
+        "displayoutput": true,
+        "x": 1060,
+        "y": 180,
+        "wires": [
+            [
+                "abbe1c8e-6127-4ef3-a33c-274d22f3bb07"
+            ]
+        ]
+    },
+    {
+        "id": "abbe1c8e-6127-4ef3-a33c-274d22f3bb07",
+        "type": "notebook-node",
+        "z": "0d8d40b09faf647d",
+        "name": "y_pred = RFclf.predict(X_test)",
+        "script": "y_pred = RFclf.predict(X_test)\nresult1 = accuracy_score(y_test,y_pred)\nprint(\"Accuracy:\",result1)",
+        "language": "python",
+        "displayoutput": true,
+        "x": 140,
+        "y": 280,
+        "wires": [
+            [
+                "16097d3a-02e9-484c-a6ea-7f0702b2a82b"
+            ]
+        ]
+    },
+    {
+        "id": "16097d3a-02e9-484c-a6ea-7f0702b2a82b",
+        "type": "notebook-node",
+        "z": "0d8d40b09faf647d",
+        "name": "y_pred = svmclf.predict(X_test)",
+        "script": "y_pred = svmclf.predict(X_test)\nresult2 = accuracy_score(y_test,y_pred)\nprint(\"Accuracy:\",result2)",
+        "language": "python",
+        "displayoutput": true,
+        "x": 370,
+        "y": 280,
+        "wires": [
+            [
+                "3285ee4c-61f4-49b1-b3ba-300a556c45be"
+            ]
+        ]
+    },
+    {
+        "id": "3285ee4c-61f4-49b1-b3ba-300a556c45be",
+        "type": "notebook-node",
+        "z": "0d8d40b09faf647d",
+        "name": "bestModel = max(result1, result2)",
+        "script": "bestModel = max(result1, result2)\nbestModel",
+        "language": "python",
+        "displayoutput": true,
+        "x": 600,
+        "y": 280,
+        "wires": [
+            [
+                "d77a8f67-60a2-4f2a-8f0b-c417d7304641"
+            ]
+        ]
+    },
+    {
+        "id": "d77a8f67-60a2-4f2a-8f0b-c417d7304641",
+        "type": "notebook-node",
+        "z": "0d8d40b09faf647d",
+        "name": "X = X.values",
+        "script": "X = X.values\ny = y.values.ravel()",
+        "language": "python",
+        "displayoutput": true,
+        "x": 830,
+        "y": 280,
+        "wires": [
+            [
+                "e84716a3-8055-44bc-bdc6-a5a948fa1489"
+            ]
+        ]
+    },
+    {
+        "id": "e84716a3-8055-44bc-bdc6-a5a948fa1489",
+        "type": "notebook-node",
+        "z": "0d8d40b09faf647d",
+        "name": "%%time",
+        "script": "%%time\nRFclf.fit(X, y)",
+        "language": "python",
+        "displayoutput": true,
+        "x": 1060,
+        "y": 280,
+        "wires": [
+            [
+                "1392c040-705e-4bc5-833c-3f9be704f66a"
+            ]
+        ]
+    },
+    {
+        "id": "1392c040-705e-4bc5-833c-3f9be704f66a",
+        "type": "notebook-node",
+        "z": "0d8d40b09faf647d",
+        "name": "%%time",
+        "script": "%%time\n\nclassifiedImg = op.join( \"/workspace/shared/Copernicus_Marine/DTOs/Biodiversity&seascape/Biodiversty/Classified_Species.tif\")\n\nclassify_and_save(raster_file, classifiedImg, RFclf)",
+        "language": "python",
+        "displayoutput": true,
+        "x": 140,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    }
+]
