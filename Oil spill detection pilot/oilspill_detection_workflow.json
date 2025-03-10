@@ -1,0 +1,239 @@
+[
+    {
+        "id": "68810146b8235491",
+        "type": "tab",
+        "label": "oilspill detection",
+        "disabled": false
+    },
+    {
+        "id": "93449db1-dd42-4e68-ab04-422a8a78ab81",
+        "type": "group",
+        "z": "68810146b8235491",
+        "name": "Automation script to download Sentinel-1 SAR image...",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "375e7e9e-7893-4e6a-ac9f-52a379dfe9b5",
+            "e080a831-63b7-4387-8438-71519839e1fb",
+            "677b2bbe-5502-47ba-a13c-4155e532fb9d"
+        ],
+        "x": 144,
+        "y": 239,
+        "w": 1162,
+        "h": 82
+    },
+    {
+        "id": "3162f41b-1263-41c0-a685-8b66406d9764",
+        "type": "group",
+        "z": "68810146b8235491",
+        "name": "Import necessary libraries and define global varia...",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "8798997d-4de5-4d9d-a694-4dfecc2d2d26"
+        ],
+        "x": 1484,
+        "y": 239,
+        "w": 325,
+        "h": 82
+    },
+    {
+        "id": "1fba004e-dfe4-409f-9530-1ae89a440e7b",
+        "type": "group",
+        "z": "68810146b8235491",
+        "name": "Download Sentinel-1 SAR images",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "ca73da8f-cfa2-4f38-ba43-6f5f2d49f501"
+        ],
+        "x": 1724,
+        "y": 239,
+        "w": 492,
+        "h": 82
+    },
+    {
+        "id": "ed6787cf-f07f-4728-ae30-2d4a5d5a7a06",
+        "type": "group",
+        "z": "68810146b8235491",
+        "name": "Run image processing",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "d278b36e-b53d-4140-9fb1-e827cf1fbe6a",
+            "a1373f6e-80c6-4fa9-8ebe-af79287609d2",
+            "c169efc1-4a1d-4e77-b4c0-a309002700f9"
+        ],
+        "x": 2124,
+        "y": 239,
+        "w": 1132,
+        "h": 82
+    },
+    {
+        "id": "01451499-37cf-4d5c-a9ed-098fe168ce7d",
+        "type": "inject",
+        "z": "68810146b8235491",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 80,
+        "wires": [
+            [
+                "375e7e9e-7893-4e6a-ac9f-52a379dfe9b5"
+            ]
+        ]
+    },
+    {
+        "id": "375e7e9e-7893-4e6a-ac9f-52a379dfe9b5",
+        "type": "notebook-node",
+        "z": "68810146b8235491",
+        "g": "93449db1-dd42-4e68-ab04-422a8a78ab81",
+        "name": "!pip install -q pandas numpy requests loguru foliu...",
+        "script": "!pip install -q pandas numpy requests loguru folium",
+        "language": "python",
+        "displayoutput": true,
+        "x": 380,
+        "y": 280,
+        "wires": [
+            [
+                "e080a831-63b7-4387-8438-71519839e1fb"
+            ]
+        ]
+    },
+    {
+        "id": "e080a831-63b7-4387-8438-71519839e1fb",
+        "type": "notebook-node",
+        "z": "68810146b8235491",
+        "g": "93449db1-dd42-4e68-ab04-422a8a78ab81",
+        "name": "## print python version used by the platform",
+        "script": "## print python version used by the platform\nfrom platform import python_version\nprint(\"Python version: \" + python_version());\n\n## install ESA-SNAP v10 (copy the below and execute in your terminal)\n#wget https://download.esa.int/step/snap/10_0/installers/esa-snap_sentinel_linux-10.0.0.sh\n#chmod +x esa-snap_sentinel_linux-10.0.0.sh\n#./esa-snap_sentinel_linux-10.0.0.sh\n#rm -Rf esa-snap_sentinel_linux-10.0.0.sh",
+        "language": "python",
+        "displayoutput": true,
+        "x": 780,
+        "y": 280,
+        "wires": [
+            [
+                "677b2bbe-5502-47ba-a13c-4155e532fb9d"
+            ]
+        ]
+    },
+    {
+        "id": "677b2bbe-5502-47ba-a13c-4155e532fb9d",
+        "type": "notebook-node",
+        "z": "68810146b8235491",
+        "g": "93449db1-dd42-4e68-ab04-422a8a78ab81",
+        "name": "import pandas as pd",
+        "script": "import pandas as pd\nimport numpy as np\nfrom pathlib import Path\nimport subprocess\nfrom loguru import logger\nimport folium\nfrom utils import *",
+        "language": "python",
+        "displayoutput": true,
+        "x": 1180,
+        "y": 280,
+        "wires": [
+            [
+                "8798997d-4de5-4d9d-a694-4dfecc2d2d26"
+            ]
+        ]
+    },
+    {
+        "id": "8798997d-4de5-4d9d-a694-4dfecc2d2d26",
+        "type": "notebook-node",
+        "z": "68810146b8235491",
+        "g": "3162f41b-1263-41c0-a685-8b66406d9764",
+        "name": "Cell 1",
+        "script": "\n# Define directories and bounding box\nresults_dir = './AutomationProcess'\nsnap_xml_dir = './snap_xmls'\n\nbbox = {\n    \"lonmin\": 22.4, \"latmin\": 38.8,\n    \"lonmax\": 27.1, \"latmax\": 41.1\n}\nduration = 3 #days\ntoday = pd.Timestamp.today()\n\n\n# Create a map centered around the bounding box\nm = folium.Map(location=[(bbox['latmin'] + bbox['latmax']) / 2, (bbox['lonmin'] + bbox['lonmax']) / 2], zoom_start=8)\n\n# Add the bounding box to the map\nfolium.Rectangle(\n    bounds=[\n        [bbox['latmin'], bbox['lonmin']],\n        [bbox['latmax'], bbox['lonmax']]\n    ],\n    color='blue',\n    fill=True,\n    fill_opacity=0.2\n).add_to(m)\nm.options['zoomControl'] = False\nm.options['scrollWheelZoom'] = False\nm.options['doubleClickZoom'] = False\n\n# Display the map\nm",
+        "language": "python",
+        "displayoutput": true,
+        "x": 1580,
+        "y": 280,
+        "wires": [
+            [
+                "ca73da8f-cfa2-4f38-ba43-6f5f2d49f501"
+            ]
+        ]
+    },
+    {
+        "id": "ca73da8f-cfa2-4f38-ba43-6f5f2d49f501",
+        "type": "notebook-node",
+        "z": "68810146b8235491",
+        "g": "1fba004e-dfe4-409f-9530-1ae89a440e7b",
+        "name": "retrieved = download_images(username= \"ecolabduth@...",
+        "script": "retrieved = download_images(username= \"ecolabduth@gmail.com\", password=\"ENV_ecolab_duth1\", bbox=bbox, start_date=today, duration=duration, fdir=results_dir)\nretrieved.head()",
+        "language": "python",
+        "displayoutput": true,
+        "x": 1980,
+        "y": 280,
+        "wires": [
+            [
+                "d278b36e-b53d-4140-9fb1-e827cf1fbe6a"
+            ]
+        ]
+    },
+    {
+        "id": "d278b36e-b53d-4140-9fb1-e827cf1fbe6a",
+        "type": "notebook-node",
+        "z": "68810146b8235491",
+        "g": "ed6787cf-f07f-4728-ae30-2d4a5d5a7a06",
+        "name": "processed = process_images(results_dir, snap_xml_d...",
+        "script": "processed = process_images(results_dir, snap_xml_dir)\nprocessed.head()",
+        "language": "python",
+        "displayoutput": true,
+        "x": 2380,
+        "y": 280,
+        "wires": [
+            [
+                "a1373f6e-80c6-4fa9-8ebe-af79287609d2"
+            ]
+        ]
+    },
+    {
+        "id": "a1373f6e-80c6-4fa9-8ebe-af79287609d2",
+        "type": "notebook-node",
+        "z": "68810146b8235491",
+        "g": "ed6787cf-f07f-4728-ae30-2d4a5d5a7a06",
+        "name": "Cell 2",
+        "script": "",
+        "language": "python",
+        "displayoutput": true,
+        "x": 2780,
+        "y": 280,
+        "wires": [
+            [
+                "c169efc1-4a1d-4e77-b4c0-a309002700f9"
+            ]
+        ]
+    },
+    {
+        "id": "c169efc1-4a1d-4e77-b4c0-a309002700f9",
+        "type": "notebook-node",
+        "z": "68810146b8235491",
+        "g": "ed6787cf-f07f-4728-ae30-2d4a5d5a7a06",
+        "name": "Cell 3",
+        "script": "",
+        "language": "python",
+        "displayoutput": true,
+        "x": 3180,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    }
+]
