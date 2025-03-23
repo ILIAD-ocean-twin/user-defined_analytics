@@ -1,0 +1,1189 @@
+<http://tds.ramani.ujuizi.com/AQM#> <http://purl.org/dc/terms/creator> _:b0_b0;
+    <http://purl.org/dc/terms/description> "Half-Degree Cells Authority File (HCAF) containing environmental parameters information and projections for 1950, 1999, 2016, 2050, and 2100. Calculated by processing the data on AquaMaps.org"@en;
+    <http://purl.org/dc/terms/format> "OpenDAP";
+    <http://purl.org/dc/terms/title> "Half-Degree Cells Authority File Calculated by processing the data on AquaMaps"@en;
+    a <http://www.w3.org/2002/07/owl#Ontology>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Half-Degree Cells Authority File (HCAF) containing environmental parameters information and projections for 1950, 1999, 2016, 2050, and 2100. Calculated by processing the data on AquaMaps.org"@en;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Half-Degree Cells Authority File Calculated by processing the data on AquaMaps"@en;
+    <http://www.w3.org/ns/dcat#accessURL> "https://semflow.ujuizi.com/dodsC/673562c2af4cf40a63158d47";
+    <http://www.w3.org/ns/dcat#endpointURL> "http://tds.ramani.ujuizi.com/thredds/dodsC/aquamapsNativeGlobal".
+<http://www.w3.org/2002/07/owl#equivalentClass> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Abyssal>, <http://tds.ramani.ujuizi.com/AQM#Area0_20>, <http://tds.ramani.ujuizi.com/AQM#Area20_40>, <http://tds.ramani.ujuizi.com/AQM#Area40_60>, <http://tds.ramani.ujuizi.com/AQM#Area60_80>, <http://tds.ramani.ujuizi.com/AQM#Area80_100>, <http://tds.ramani.ujuizi.com/AQM#AreaBelow100>, <http://tds.ramani.ujuizi.com/AQM#CellArea>, <http://tds.ramani.ujuizi.com/AQM#Coral>, <http://tds.ramani.ujuizi.com/AQM#CountryMain>, <http://tds.ramani.ujuizi.com/AQM#CountrySecond>, <http://tds.ramani.ujuizi.com/AQM#CountryThird>, <http://tds.ramani.ujuizi.com/AQM#DepthMax>, <http://tds.ramani.ujuizi.com/AQM#DepthMean>, <http://tds.ramani.ujuizi.com/AQM#DepthMin>, <http://tds.ramani.ujuizi.com/AQM#DepthSD>, <http://tds.ramani.ujuizi.com/AQM#EEZ>, <http://tds.ramani.ujuizi.com/AQM#ELimit>, <http://tds.ramani.ujuizi.com/AQM#ElevationMax>, <http://tds.ramani.ujuizi.com/AQM#ElevationMean>, <http://tds.ramani.ujuizi.com/AQM#ElevationMin>, <http://tds.ramani.ujuizi.com/AQM#ElevationSD>, <http://tds.ramani.ujuizi.com/AQM#Estuary>, <http://tds.ramani.ujuizi.com/AQM#FAOAreaIn>, <http://tds.ramani.ujuizi.com/AQM#FAOAreaM>, <http://tds.ramani.ujuizi.com/AQM#IceConAnn>, <http://tds.ramani.ujuizi.com/AQM#IceConFal>, <http://tds.ramani.ujuizi.com/AQM#IceConSpr>, <http://tds.ramani.ujuizi.com/AQM#IceConSum>, <http://tds.ramani.ujuizi.com/AQM#IceConWin>, <http://tds.ramani.ujuizi.com/AQM#IslandsNo>, <http://tds.ramani.ujuizi.com/AQM#LME>, <http://tds.ramani.ujuizi.com/AQM#LMEBorder>, <http://tds.ramani.ujuizi.com/AQM#LOICZID>, <http://tds.ramani.ujuizi.com/AQM#LandDist>, <http://tds.ramani.ujuizi.com/AQM#MEOW>, <http://tds.ramani.ujuizi.com/AQM#MPA>, <http://tds.ramani.ujuizi.com/AQM#NLimit>, <http://tds.ramani.ujuizi.com/AQM#OceanArea>, <http://tds.ramani.ujuizi.com/AQM#OceanBasin>, <http://tds.ramani.ujuizi.com/AQM#PWater>, <http://tds.ramani.ujuizi.com/AQM#PrimProdMean>, <http://tds.ramani.ujuizi.com/AQM#SBTAnMean>, <http://tds.ramani.ujuizi.com/AQM#SLimit>, <http://tds.ramani.ujuizi.com/AQM#SSTAnMean>, <http://tds.ramani.ujuizi.com/AQM#SSTAnSD>, <http://tds.ramani.ujuizi.com/AQM#SSTMnMax>, <http://tds.ramani.ujuizi.com/AQM#SSTMnMin>, <http://tds.ramani.ujuizi.com/AQM#SSTMnRange>, <http://tds.ramani.ujuizi.com/AQM#SalinityBMean>, <http://tds.ramani.ujuizi.com/AQM#SalinityMax>, <http://tds.ramani.ujuizi.com/AQM#SalinityMean>, <http://tds.ramani.ujuizi.com/AQM#SalinityMin>, <http://tds.ramani.ujuizi.com/AQM#Seamount>, <http://tds.ramani.ujuizi.com/AQM#Shelf>, <http://tds.ramani.ujuizi.com/AQM#Slope>, <http://tds.ramani.ujuizi.com/AQM#TidalRange>, <http://tds.ramani.ujuizi.com/AQM#WLimit>, <http://tds.ramani.ujuizi.com/AQM#WaveHeight>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "equivalentClass"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing>.
+<http://tds.ramani.ujuizi.com/AQM#Abyssal> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Abyssal";
+    <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/iliad/oim/ext/semflow/abyssal_area>;
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "Abyssal area - The water area of the cell that lies within the abyssal zone    4000m depth   based on min max elevation and proportion in depth zone ";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://www.w3.org/2002/07/owl#Thing>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "Abyssal";
+    <http://tds.ramani.ujuizi.com/AQM#units> "square km".
+<http://tds.ramani.ujuizi.com/AQM#Area0_20> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Area0_20";
+    <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/iliad/oim/ext/semflow/area_at_depth_0_20m>;
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "Area at depth - Area in cell from 0 20 m depth  in square kilometers  as provided by Smith and Sandwell  Bathymetry and Elevation ";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://www.w3.org/2002/07/owl#Thing>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "Area0_20";
+    <http://tds.ramani.ujuizi.com/AQM#units> "square km".
+<http://tds.ramani.ujuizi.com/AQM#Area20_40> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Area20_40";
+    <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/iliad/oim/ext/semflow/area_at_depth_20_40m>;
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "Area at depth - Area in cell from 20 40 m depth  in square kilometers  as provided by Smith and Sandwell  Bathymetry and Elevation ";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://www.w3.org/2002/07/owl#Thing>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "Area20_40";
+    <http://tds.ramani.ujuizi.com/AQM#units> "square km".
+<http://tds.ramani.ujuizi.com/AQM#Area40_60> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Area40_60";
+    <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/iliad/oim/ext/semflow/area_at_depth_40_60m>;
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "Area at depth - Area in cell from 40 60 m depth  in square kilometers  as provided by Smith and Sandwell  Bathymetry and Elevation ";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://www.w3.org/2002/07/owl#Thing>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "Area40_60";
+    <http://tds.ramani.ujuizi.com/AQM#units> "square km".
+<http://tds.ramani.ujuizi.com/AQM#Area60_80> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Area60_80";
+    <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/iliad/oim/ext/semflow/area_at_depth_60_80m>;
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "Area at depth - Area in cell 60 80 m depth  in square kilometers  as provided by Smith and Sandwell  Bathymetry and Elevation ";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://www.w3.org/2002/07/owl#Thing>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "Area60_80";
+    <http://tds.ramani.ujuizi.com/AQM#units> "square km".
+<http://tds.ramani.ujuizi.com/AQM#Area80_100> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Area80_100";
+    <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/iliad/oim/ext/semflow/area_at_depth_80_100m>;
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "Area at depth - Area in cell from 80 100 m depth  in square kilometers  as provided by Smith and Sandwell  Bathymetry and Elevation ";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://www.w3.org/2002/07/owl#Thing>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "Area80_100";
+    <http://tds.ramani.ujuizi.com/AQM#units> "square km".
+<http://tds.ramani.ujuizi.com/AQM#AreaBelow100> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "AreaBelow100";
+    <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/iliad/oim/ext/semflow/area_at_depth_above_100m>;
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "Area at depth - Area in cell below 100 m depth  in square kilometers  as provided by Smith and Sandwell  Bathymetry and Elevation ";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://www.w3.org/2002/07/owl#Thing>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "AreaBelow100";
+    <http://tds.ramani.ujuizi.com/AQM#units> "square km".
+<http://tds.ramani.ujuizi.com/AQM#CellArea> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "CellArea";
+    <http://www.w3.org/2002/07/owl#equivalentClass> <http://vocab.nerc.ac.uk/standard_name/cell_area/>;
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "Cell area - The total area inside the cell in square kilometers  using WGS84 and Miller cylindrical projection  KGS description  ";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://www.w3.org/2002/07/owl#Thing>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "CellArea";
+    <http://tds.ramani.ujuizi.com/AQM#units> "square km".
+<http://tds.ramani.ujuizi.com/AQM#Contributor_Search> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This section allows a data provider to include information about those that contribute to a data product in the metadata for the product. This is important for many reasons."@en;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Contributor Search"@en;
+    <http://tds.ramani.ujuizi.com/AQM#contributor_name> "Various contributors to AquaMaps HCAF development";
+    <http://tds.ramani.ujuizi.com/AQM#contributor_role> "Data analysis and environmental modeling".
+<http://tds.ramani.ujuizi.com/AQM#Coral> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Coral";
+    <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/iliad/oim/ext/semflow/coral_proportion>;
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "Coral proportion - Proportion of whole  even non water  cell covered by coral WCMC pixelclassify   NOT corrected to 284 300 sq km globally World Atlas of Coral Reefs UNEP WCMC 2001 ";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://www.w3.org/2002/07/owl#Thing>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "Coral";
+    <http://tds.ramani.ujuizi.com/AQM#units> "percent".
+<http://tds.ramani.ujuizi.com/AQM#CountryMain> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "CountryMain";
+    <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/iliad/oim/ext/semflow/country_main>;
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "Country - UN code number of country  island or area to which the largest land area of this cell belongs  for all inland and coastal cells ";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://www.w3.org/2002/07/owl#Thing>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "CountryMain";
+    <http://tds.ramani.ujuizi.com/AQM#units> "N.A.".
+<http://tds.ramani.ujuizi.com/AQM#CountrySecond> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "CountrySecond";
+    <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/iliad/oim/ext/semflow/country_second>;
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "CountrySecond - UN code number of country  island or area to which the second largest land area of this cell belongs  for all inland and coastal cells  ";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://www.w3.org/2002/07/owl#Thing>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "CountrySecond";
+    <http://tds.ramani.ujuizi.com/AQM#units> "N.A.".
+<http://tds.ramani.ujuizi.com/AQM#CountryThird> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "CountryThird";
+    <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/iliad/oim/ext/semflow/country_third>;
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "CountryThird - UN code number of country  island or area to which the third largest land area of this cell belongs  for all inland and coastal cells ";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://www.w3.org/2002/07/owl#Thing>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "CountryThird";
+    <http://tds.ramani.ujuizi.com/AQM#units> "N.A.".
+<http://tds.ramani.ujuizi.com/AQM#Creator_Search> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This group includes attributes that could support searches for people/institutions/projects that are responsible for datasets. This information is also critical for the correct attribution of the people and institutions that produce datasets."@en;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Creator Search"@en;
+    <http://tds.ramani.ujuizi.com/AQM#acknowledgement> "Data provided by AquaMaps. Visit https://www.aquamaps.org/ for more details.";
+    <http://tds.ramani.ujuizi.com/AQM#creator_email> "info@aquamaps.org";
+    <http://tds.ramani.ujuizi.com/AQM#creator_name> "AquaMaps Team";
+    <http://tds.ramani.ujuizi.com/AQM#creator_url> "https://www.aquamaps.org/";
+    <http://tds.ramani.ujuizi.com/AQM#date_created> "2019-10-01";
+    <http://tds.ramani.ujuizi.com/AQM#date_issued> "2019-10-01";
+    <http://tds.ramani.ujuizi.com/AQM#date_modified> "2019-10-01";
+    <http://tds.ramani.ujuizi.com/AQM#institution> "ISTI-CNR";
+    <http://tds.ramani.ujuizi.com/AQM#project> "AquaMaps".
+<http://tds.ramani.ujuizi.com/AQM#Dataset> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "A collection of data that is listed in the catalog."@en;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Dataset"@en.
+<http://tds.ramani.ujuizi.com/AQM#DepthMax> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "DepthMax";
+    <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/iliad/oim/ext/semflow/depth_maximum>;
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "Depth - maximum - Maximum ETOPO 2min bathymetry  negative  elevation in 30min cell ";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://www.w3.org/2002/07/owl#Thing>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "DepthMax";
+    <http://tds.ramani.ujuizi.com/AQM#units> "meters".
+<http://tds.ramani.ujuizi.com/AQM#DepthMean> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "DepthMean";
+    <http://www.w3.org/2002/07/owl#equivalentClass> <http://vocab.nerc.ac.uk/standard_name/depth/>;
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "Depth - mean - Mean ETOPO 2min bathymetry  negative  elevation in 30min cell ";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://tds.ramani.ujuizi.com/AQM#DepthUncertainty>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "http://www.uncertml.org/statistics/mean";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "DepthMean";
+    <http://tds.ramani.ujuizi.com/AQM#units> "meters".
+<http://tds.ramani.ujuizi.com/AQM#DepthMin> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "DepthMin";
+    <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/iliad/oim/ext/semflow/depth_minimum>;
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "Depth - minimum - Minimum ETOPO 2min bathymetry  negative  elevation in 30min cell ";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://www.w3.org/2002/07/owl#Thing>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "DepthMin";
+    <http://tds.ramani.ujuizi.com/AQM#units> "meters".
+<http://tds.ramani.ujuizi.com/AQM#DepthSD> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "DepthSD";
+    <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/iliad/oim/ext/semflow/depth_standard_deviation>;
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "Depth - standard deviation - Standard deviation of mean bottom depth below sea level in meters  as provided by ETOPO2  ";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://tds.ramani.ujuizi.com/AQM#DepthUncertainty>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "http://www.uncertml.org/statistics/standard-deviation";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "DepthSD";
+    <http://tds.ramani.ujuizi.com/AQM#units> "meters".
+<http://tds.ramani.ujuizi.com/AQM#DepthUncertainty> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "DepthUncertainty"@en;
+    <http://www.w3.org/2002/07/owl#equivalentClass> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#ancillary_variables> "DepthMean DepthSD";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "DepthUncertainty";
+    <http://tds.ramani.ujuizi.com/AQM#ref> "http://www.uncertml.org/statistics/statistics-collection";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "DepthUncertainty";
+    <http://tds.ramani.ujuizi.com/AQM#units> "meters".
+<http://tds.ramani.ujuizi.com/AQM#EEZ> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "EEZ";
+    <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/iliad/oim/ext/semflow/eez>;
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "Exclusive economic zone - Code number of country  island or area to which EEZ area of this cell belongs  for all coastal and oceanic cells ";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://www.w3.org/2002/07/owl#Thing>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "EEZ";
+    <http://tds.ramani.ujuizi.com/AQM#units> "N.A.".
+<http://tds.ramani.ujuizi.com/AQM#ELimit> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "ELimit";
+    <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/iliad/oim/ext/semflow/eastern_boundary_longitude>;
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "Easternmost limit - Eastern boundary of cell in decimal degrees latitude  positive in E hemisphere  negative in W hemisphere   ";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://www.w3.org/2002/07/owl#Thing>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "ELimit";
+    <http://tds.ramani.ujuizi.com/AQM#units> "decimal degrees".
+<http://tds.ramani.ujuizi.com/AQM#ElevationMax> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "ElevationMax";
+    <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/iliad/oim/ext/semflow/elevation_maximum>;
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "Elevation - maximum - Maximum elevation above sea level in cell in meters  as provided by ETOPO2  ";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://www.w3.org/2002/07/owl#Thing>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "ElevationMax";
+    <http://tds.ramani.ujuizi.com/AQM#units> "meters".
+<http://tds.ramani.ujuizi.com/AQM#ElevationMean> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "ElevationMean";
+    <http://www.w3.org/2002/07/owl#equivalentClass> <http://vocab.nerc.ac.uk/standard_name/sea_floor_depth_below_mean_sea_level/>;
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "Elevation - mean - Mean elevation above sea level in meters  as provided by ETOPO2 ";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://www.w3.org/2002/07/owl#Thing>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "ElevationMean";
+    <http://tds.ramani.ujuizi.com/AQM#units> "meters".
+<http://tds.ramani.ujuizi.com/AQM#ElevationMin> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "ElevationMin";
+    <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/iliad/oim/ext/semflow/elevation_minimum>;
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "Elevation - minimum - Minimum elevation above sea level in meters  as provided by ETOPO2 ";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://www.w3.org/2002/07/owl#Thing>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "ElevationMin";
+    <http://tds.ramani.ujuizi.com/AQM#units> "meters".
+<http://tds.ramani.ujuizi.com/AQM#ElevationSD> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "ElevationSD";
+    <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/iliad/oim/ext/semflow/elevation_standard_deviation>;
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "Elevation - standard deviation - Standard deviation of mean elevation above sea level in meters  as provided by ETOPO2 ";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://www.w3.org/2002/07/owl#Thing>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "ElevationSD";
+    <http://tds.ramani.ujuizi.com/AQM#units> "meters".
+<http://tds.ramani.ujuizi.com/AQM#Estuary> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Estuary";
+    <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/iliad/oim/ext/semflow/estuary_area>;
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "Estuary area - Area of estuaries in the cell ";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://www.w3.org/2002/07/owl#Thing>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "Estuary";
+    <http://tds.ramani.ujuizi.com/AQM#units> "square km".
+<http://tds.ramani.ujuizi.com/AQM#Extent_Search> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This basic extent information supports spatial/temporal searches that are increasingly important as the number of map based search interfaces increases. Many of the attributes included in this spiral can be calculated from the data if the file is compliant with the NetCDF Climate and Forecast (CF) Metadata Convention."@en;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Extent Search"@en;
+    <http://tds.ramani.ujuizi.com/AQM#geospatial_lat_max> "90";
+    <http://tds.ramani.ujuizi.com/AQM#geospatial_lat_min> "-90";
+    <http://tds.ramani.ujuizi.com/AQM#geospatial_lon_max> "180";
+    <http://tds.ramani.ujuizi.com/AQM#geospatial_lon_min> "-180";
+    <http://tds.ramani.ujuizi.com/AQM#geospatial_vertical_max> "0";
+    <http://tds.ramani.ujuizi.com/AQM#geospatial_vertical_min> "0";
+    <http://tds.ramani.ujuizi.com/AQM#time_coverage_end> "2100-09-24T23:00:00";
+    <http://tds.ramani.ujuizi.com/AQM#time_coverage_start> "1950-01-01T00:00:00".
+<http://tds.ramani.ujuizi.com/AQM#FAOAreaIn> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "FAOAreaIn";
+    <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/iliad/oim/ext/semflow/fao_inland_area>;
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "FAO area - inland - Integer code number of FAO statistical area into which this cell falls  for all inland and coastal cells ";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://www.w3.org/2002/07/owl#Thing>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "FAOAreaIn";
+    <http://tds.ramani.ujuizi.com/AQM#units> "N.A.".
+<http://tds.ramani.ujuizi.com/AQM#FAOAreaM> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "FAOAreaM";
+    <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/iliad/oim/ext/semflow/fao_marine_area>;
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "FAO area - marine - Integer code number of FAO statistical area into which this cell falls  for all oceanic and coastal cells ";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://www.w3.org/2002/07/owl#Thing>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "FAOAreaM";
+    <http://tds.ramani.ujuizi.com/AQM#units> "N.A.".
+<http://tds.ramani.ujuizi.com/AQM#IceConAnn> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "IceConAnn";
+    <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/iliad/oim/ext/semflow/sea_ice_concentration_annual_mean>;
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "Ice concentration - Mean annual ice cover in percent";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://www.w3.org/2002/07/owl#Thing>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "IceConAnn";
+    <http://tds.ramani.ujuizi.com/AQM#units> "0-1 area proportion".
+<http://tds.ramani.ujuizi.com/AQM#IceConFal> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "IceConFal";
+    <http://www.w3.org/2002/07/owl#equivalentClass> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "Ice concentration - autumn";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://www.w3.org/2002/07/owl#Thing>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "IceConFal";
+    <http://tds.ramani.ujuizi.com/AQM#units> "empty".
+<http://tds.ramani.ujuizi.com/AQM#IceConSpr> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "IceConSpr";
+    <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/iliad/oim/ext/semflow/sea_ice_concentration_annual_mean>;
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "Ice concentation  - spring";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://www.w3.org/2002/07/owl#Thing>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "IceConSpr";
+    <http://tds.ramani.ujuizi.com/AQM#units> "empty".
+<http://tds.ramani.ujuizi.com/AQM#IceConSum> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "IceConSum";
+    <http://www.w3.org/2002/07/owl#equivalentClass> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "Ice concentration - summer";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://www.w3.org/2002/07/owl#Thing>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "IceConSum";
+    <http://tds.ramani.ujuizi.com/AQM#units> "empty".
+<http://tds.ramani.ujuizi.com/AQM#IceConWin> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "IceConWin";
+    <http://www.w3.org/2002/07/owl#equivalentClass> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "Ice concentration - winter";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://www.w3.org/2002/07/owl#Thing>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "IceConWin";
+    <http://tds.ramani.ujuizi.com/AQM#units> "empty".
+<http://tds.ramani.ujuizi.com/AQM#Identification> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "As metadata are shared between national and international repositories it is becoming increasing important to be able to unambiguously identify and refer to specific records. This is facilitated by including an identifier in the metadata. Some mechanism must exist for ensuring that these identifiers are unique. This is accomplished by specifying the naming authority or namespace for the identifier. It is the responsibility of the manager of the namespace to ensure that the identifiers in that namespace are unique. Identifying the Metadata Convention being used in the file and providing a link to more complete metadata, possibly using a different convention, are also important."@en;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Identification"@en;
+    <http://tds.ramani.ujuizi.com/AQM#Metadata_Conventions> "CF-1.0";
+    <http://tds.ramani.ujuizi.com/AQM#id> "aquamapsNativeGlobal";
+    <http://tds.ramani.ujuizi.com/AQM#metadata_link> "https://semflow.ujuizi.com/dodsC/673562c2af4cf40a63158d47";
+    <http://tds.ramani.ujuizi.com/AQM#naming_authority> "Half-Degree Cells Authority File (HCAF)".
+<http://tds.ramani.ujuizi.com/AQM#IslandsNo> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "IslandsNo";
+    <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/iliad/oim/ext/semflow/number_of_islands>;
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "Number of islands - Number  integer  of coastal or oceanic islands contained in cell  as provided by the World Vector Shoreline database ";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://www.w3.org/2002/07/owl#Thing>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "IslandsNo";
+    <http://tds.ramani.ujuizi.com/AQM#units> "N.A.".
+<http://tds.ramani.ujuizi.com/AQM#LME> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "LME";
+    <http://www.w3.org/2002/07/owl#equivalentClass> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "Large marine ecosystem - Integer code number of the large marine ecosystem to which this cell belongs ";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://www.w3.org/2002/07/owl#Thing>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "LME";
+    <http://tds.ramani.ujuizi.com/AQM#units> "N.A.".
+<http://tds.ramani.ujuizi.com/AQM#LMEBorder> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "LMEBorder";
+    <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/iliad/oim/ext/semflow/lme_border>;
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "LMEBorder - Tags whether or not cell lies along the border of an LME  ";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://www.w3.org/2002/07/owl#Thing>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "LMEBorder";
+    <http://tds.ramani.ujuizi.com/AQM#units> "empty".
+<http://tds.ramani.ujuizi.com/AQM#LOICZID> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "LOICZID";
+    <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/iliad/oim/ext/semflow/loicz_cell_identifier>;
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "LOICZ ID - LOICZ ID numbers are long integers from 1 to 259200  They begin with the cell centered at 89 75 degrees N latitude and 179 75 degrees W latitude and proceed from West to East ";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://www.w3.org/2002/07/owl#Thing>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "LOICZID";
+    <http://tds.ramani.ujuizi.com/AQM#units> "N.A.".
+<http://tds.ramani.ujuizi.com/AQM#LandDist> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "LandDist";
+    <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/iliad/oim/ext/semflow/land_distance>;
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "Land distance - Distance  km  to the nearest coastal cell  water cells only  ";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://www.w3.org/2002/07/owl#Thing>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "LandDist";
+    <http://tds.ramani.ujuizi.com/AQM#units> "kilometers".
+<http://tds.ramani.ujuizi.com/AQM#MEOW> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "MEOW";
+    <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/iliad/oim/ext/semflow/marine_ecoregion>;
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "Marine Ecoregions of the World - A Bioregionalization of Coastal and Shelf Areas";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://www.w3.org/2002/07/owl#Thing>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "MEOW";
+    <http://tds.ramani.ujuizi.com/AQM#units> "empty".
+<http://tds.ramani.ujuizi.com/AQM#MPA> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "MPA";
+    <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/iliad/oim/ext/semflow/marine_protected_area>;
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "Marine protected area - Proportion of cell covered by marine protected area ";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://www.w3.org/2002/07/owl#Thing>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "MPA";
+    <http://tds.ramani.ujuizi.com/AQM#units> "0-1 area proportion".
+<http://tds.ramani.ujuizi.com/AQM#Metadata_Conventions> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This attribute should be set to \"Unidata Dataset Discovery v1.0\" for NetCDF files that follow this convention."@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Identification>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Metadata_Conventions"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#NLimit> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "NLimit";
+    <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/iliad/oim/ext/semflow/northern_boundary_latitude>;
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "Northernmost limit - Northern boundary of cell in decimal degrees latitude  positive in N hemisphere  negative in S hemisphere  ";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://www.w3.org/2002/07/owl#Thing>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "NLimit";
+    <http://tds.ramani.ujuizi.com/AQM#units> "decimal degrees".
+<http://tds.ramani.ujuizi.com/AQM#OceanArea> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "OceanArea";
+    <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/iliad/oim/ext/semflow/ocean_area>;
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "Ocean area - The area in the cell that is normally covered by sea water or permanent ice  in square kilometers  KGS description   ";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://www.w3.org/2002/07/owl#Thing>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "OceanArea";
+    <http://tds.ramani.ujuizi.com/AQM#units> "square km".
+<http://tds.ramani.ujuizi.com/AQM#OceanBasin> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "OceanBasin";
+    <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/iliad/oim/ext/semflow/ocean_basin>;
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "Ocean basin - Major ocean basins of world with north and south sub basins separated by latitudinal data from literature ";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://www.w3.org/2002/07/owl#Thing>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "OceanBasin";
+    <http://tds.ramani.ujuizi.com/AQM#units> "N.A.".
+<http://tds.ramani.ujuizi.com/AQM#Other_Attributes> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This group includes attributes that don't seem to fit in the other categories."@en;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Other Attributes"@en;
+    <http://tds.ramani.ujuizi.com/AQM#access_rights> "http://publications.europa.eu/resource/authority/access-right/PUBLIC";
+    <http://tds.ramani.ujuizi.com/AQM#accrual_periodicity> "https://publications.europa.eu/resource/authority/frequency/TRIDECENNIAL";
+    <http://tds.ramani.ujuizi.com/AQM#cdm_data_type> "grid";
+    <http://tds.ramani.ujuizi.com/AQM#conforms_to> "http://www.opengis.net/def/crs/EPSG/0/4258";
+    <http://tds.ramani.ujuizi.com/AQM#in_series> "Containing environmental parameters information and projections for 1950, 1999, 2016, 2050, and 2100";
+    <http://tds.ramani.ujuizi.com/AQM#landing_page> "https://semflow.ujuizi.com/project/NIY/datasets/673562c2af4cf40a63158d47";
+    <http://tds.ramani.ujuizi.com/AQM#language> "http://publications.europa.eu/resource/authority/language/ENG";
+    <http://tds.ramani.ujuizi.com/AQM#license> "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)";
+    <http://tds.ramani.ujuizi.com/AQM#principal_investigator_email> "info@aquamaps.org";
+    <http://tds.ramani.ujuizi.com/AQM#principal_investigator_name> "AquaMaps";
+    <http://tds.ramani.ujuizi.com/AQM#processing_level> "Quality controlled";
+    <http://tds.ramani.ujuizi.com/AQM#processor_email> "info@aquamaps.org";
+    <http://tds.ramani.ujuizi.com/AQM#processor_name> "AquaMaps";
+    <http://tds.ramani.ujuizi.com/AQM#provenance> "Created for AquaMaps to support environmental analysis of half-degree cells";
+    <http://tds.ramani.ujuizi.com/AQM#rights_holder_email> "info@aquamaps.org";
+    <http://tds.ramani.ujuizi.com/AQM#rights_holder_name> "AquaMaps";
+    <http://tds.ramani.ujuizi.com/AQM#spatial_resolution_in_meters> "55660";
+    <http://tds.ramani.ujuizi.com/AQM#temporal_resolution> "P1Y";
+    <http://tds.ramani.ujuizi.com/AQM#theme> "https://www.eionet.europa.eu/gemet/en/concept/15222";
+    <http://tds.ramani.ujuizi.com/AQM#version> "7";
+    <http://tds.ramani.ujuizi.com/AQM#version_notes> "Environmental dataset for AquaMaps HCAF version 7 released in October 2019";
+    <http://tds.ramani.ujuizi.com/AQM#was_derived_from> "https://eur-lex.europa.eu/eli/reg/2010/1089".
+<http://tds.ramani.ujuizi.com/AQM#Other_Extent_Information> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This information provides more details on the extent attributes than the basic information included in the Extent Spiral. Many of the attributes included in this spiral can be calculated from the data if the file is compliant with the NetCDF Climate and Forecast (CF) Metadata Convention ."@en;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Other Extent Information"@en;
+    <http://tds.ramani.ujuizi.com/AQM#geospatial_lat_resolution> "0.5 degrees";
+    <http://tds.ramani.ujuizi.com/AQM#geospatial_lat_units> "degrees_north";
+    <http://tds.ramani.ujuizi.com/AQM#geospatial_lon_resolution> "0.5 degrees";
+    <http://tds.ramani.ujuizi.com/AQM#geospatial_lon_units> "degrees_east";
+    <http://tds.ramani.ujuizi.com/AQM#geospatial_vertical_positive> "down";
+    <http://tds.ramani.ujuizi.com/AQM#geospatial_vertical_resolution> "variable";
+    <http://tds.ramani.ujuizi.com/AQM#geospatial_vertical_units> "meters";
+    <http://tds.ramani.ujuizi.com/AQM#time_coverage_duration> "19 years";
+    <http://tds.ramani.ujuizi.com/AQM#time_coverage_resolution> "variable";
+    <http://tds.ramani.ujuizi.com/AQM#time_coverage_units> "hours since 1950-01-01".
+<http://tds.ramani.ujuizi.com/AQM#PWater> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "PWater";
+    <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/iliad/oim/ext/semflow/water_proportion>;
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "Water proportion - Proportion of water in each cell ";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://www.w3.org/2002/07/owl#Thing>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "PWater";
+    <http://tds.ramani.ujuizi.com/AQM#units> "N.A.".
+<http://tds.ramani.ujuizi.com/AQM#PrimProdMean> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "PrimProdMean";
+    <http://www.w3.org/2002/07/owl#equivalentClass> <http://vocab.nerc.ac.uk/standard_name/net_primary_production_of_biomass_expressed_as_carbon_per_unit_volume_in_sea_water/>;
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "Primary productivity - Proportion of annual primary production in a cell";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://www.w3.org/2002/07/owl#Thing>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "PrimProdMean";
+    <http://tds.ramani.ujuizi.com/AQM#units> "mg C m-2 day-1".
+<http://tds.ramani.ujuizi.com/AQM#Publisher_Search> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This section allows a data provider to include contact information for the publisher of a data product in the metadata for the product."@en;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Publisher Search"@en;
+    <http://tds.ramani.ujuizi.com/AQM#publisher_email> "info@aquamaps.org";
+    <http://tds.ramani.ujuizi.com/AQM#publisher_name> "AquaMaps";
+    <http://tds.ramani.ujuizi.com/AQM#publisher_url> "https://www.aquamaps.org/".
+<http://tds.ramani.ujuizi.com/AQM#QualityMeasurement> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "A metric or evaluation measure associated with the quality of a dataset."@en;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Quality Measurement"@en;
+    <http://tds.ramani.ujuizi.com/AQM#metric_availability> "True";
+    <http://tds.ramani.ujuizi.com/AQM#metric_precision> "55660";
+    <http://tds.ramani.ujuizi.com/AQM#metric_semantic_accuracy> "80".
+<http://tds.ramani.ujuizi.com/AQM#QualityMetadata> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Metadata that describes the quality attributes of a dataset."@en;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Quality Metadata"@en;
+    <http://tds.ramani.ujuizi.com/AQM#certificate_target> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#quality_certificate> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#user_quality_feedback> "empty".
+<http://tds.ramani.ujuizi.com/AQM#SBTAnMean> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "SBTAnMean";
+    <http://www.w3.org/2002/07/owl#equivalentClass> <http://vocab.nerc.ac.uk/standard_name/sea_water_temperature/>;
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "Bottom temperature - Mean annual sea bottom temperature in degrees Celsius";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://www.w3.org/2002/07/owl#Thing>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "SBTAnMean";
+    <http://tds.ramani.ujuizi.com/AQM#units> "degC".
+<http://tds.ramani.ujuizi.com/AQM#SLimit> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "SLimit";
+    <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/iliad/oim/ext/semflow/southern_boundary_latitude>;
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "Sourthernmost limit - Southern boundary of cell in decimal degrees latitude  positive in N hemisphere  negative in S hemisphere  ";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://www.w3.org/2002/07/owl#Thing>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "SLimit";
+    <http://tds.ramani.ujuizi.com/AQM#units> "decimal degrees".
+<http://tds.ramani.ujuizi.com/AQM#SSTAnMean> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "SSTAnMean";
+    <http://www.w3.org/2002/07/owl#equivalentClass> <http://vocab.nerc.ac.uk/standard_name/sea_surface_temperature/>;
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "Surface temperature - Mean annual sea surface temperature in degree Celsius";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://tds.ramani.ujuizi.com/AQM#SSTAnUncertainty>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "http://www.uncertml.org/statistics/mean";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "SSTAnMean";
+    <http://tds.ramani.ujuizi.com/AQM#units> "degrees C".
+<http://tds.ramani.ujuizi.com/AQM#SSTAnSD> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "SSTAnSD";
+    <http://www.w3.org/2002/07/owl#equivalentClass> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "Surface temperature - standard deviation - Standard deviation of mean annual sea surface temperature in degree Celsius  as derived from NCEP SST Climatology  1982 1999   for all coastal and oceanic cells  ";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://tds.ramani.ujuizi.com/AQM#SSTAnUncertainty>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "http://www.uncertml.org/statistics/standard-deviation";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "SSTAnSD";
+    <http://tds.ramani.ujuizi.com/AQM#units> "degrees C".
+<http://tds.ramani.ujuizi.com/AQM#SSTAnUncertainty> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "SSTAnUncertainty"@en;
+    <http://www.w3.org/2002/07/owl#equivalentClass> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#ancillary_variables> "SSTAnMean SSTAnSD";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "SSTAnUncertainty";
+    <http://tds.ramani.ujuizi.com/AQM#ref> "http://www.uncertml.org/statistics/statistics-collection";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "SSTAnUncertainty";
+    <http://tds.ramani.ujuizi.com/AQM#units> "degrees C".
+<http://tds.ramani.ujuizi.com/AQM#SSTMnMax> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "SSTMnMax";
+    <http://www.w3.org/2002/07/owl#equivalentClass> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "Surface temperature - maximum - Mean annual maximum sea surface temperature in degree Celsius  as derived from NCEP SST Climatology  1982 1999   for all coastal and oceanic cells  ";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://www.w3.org/2002/07/owl#Thing>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "SSTMnMax";
+    <http://tds.ramani.ujuizi.com/AQM#units> "degrees C".
+<http://tds.ramani.ujuizi.com/AQM#SSTMnMin> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "SSTMnMin";
+    <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/iliad/oim/ext/semflow/surface_temperature_annual_mean>;
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "Surface temperature - minimum - Mean annual minimum sea surface temperature in degree Celsius  as derived from NCEP SST Climatology  1982 1999   for all coastal and oceanic cells  ";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://www.w3.org/2002/07/owl#Thing>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "SSTMnMin";
+    <http://tds.ramani.ujuizi.com/AQM#units> "degrees C".
+<http://tds.ramani.ujuizi.com/AQM#SSTMnRange> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "SSTMnRange";
+    <http://www.w3.org/2002/07/owl#equivalentClass> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "Surface temperature - range - Mean annual range of sea surface temperature in degree Celsius  as derived from NCEP SST Climatology  1982 1999   for all coastal and oceanic cells  ";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://www.w3.org/2002/07/owl#Thing>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "SSTMnRange";
+    <http://tds.ramani.ujuizi.com/AQM#units> "degrees C".
+<http://tds.ramani.ujuizi.com/AQM#SalinityBMean> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "SalinityBMean";
+    <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/iliad/oim/ext/semflow/sea_bottom_salinity>;
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "Bottom salinity - Mean annual bottom salinity in Practical Salinity Scale  PPS ";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://www.w3.org/2002/07/owl#Thing>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "SalinityBMean";
+    <http://tds.ramani.ujuizi.com/AQM#units> "PSU".
+<http://tds.ramani.ujuizi.com/AQM#SalinityMax> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "SalinityMax";
+    <http://www.w3.org/2002/07/owl#equivalentClass> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "Surface salinity - maximum - Maximum monthly salinity in psu as provided by the World Ocean Atlas  for all coastal and oceanic cells  ";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://www.w3.org/2002/07/owl#Thing>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "SalinityMax";
+    <http://tds.ramani.ujuizi.com/AQM#units> "PSU".
+<http://tds.ramani.ujuizi.com/AQM#SalinityMean> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "SalinityMean";
+    <http://www.w3.org/2002/07/owl#equivalentClass> <http://vocab.nerc.ac.uk/standard_name/sea_surface_salinity/>;
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "Surface salinity - Mean annual salinity in psu";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://www.w3.org/2002/07/owl#Thing>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "SalinityMean";
+    <http://tds.ramani.ujuizi.com/AQM#units> "PSU".
+<http://tds.ramani.ujuizi.com/AQM#SalinityMin> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "SalinityMin";
+    <http://www.w3.org/2002/07/owl#equivalentClass> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "Surface salinity - minimum - Minimum monthly salinity in psu as provided by the World Ocean Atlas  for all coastal and oceanic cells ";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://www.w3.org/2002/07/owl#Thing>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "SalinityMin";
+    <http://tds.ramani.ujuizi.com/AQM#units> "PSU".
+<http://tds.ramani.ujuizi.com/AQM#Seamount> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Seamount";
+    <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/iliad/oim/ext/semflow/seamount>;
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "Seamounts - Number of SAUP and known  GRD Gazetteer  SeamountsOnline  seamounts attributed to the cell ";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://www.w3.org/2002/07/owl#Thing>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "Seamount";
+    <http://tds.ramani.ujuizi.com/AQM#units> "empty".
+<http://tds.ramani.ujuizi.com/AQM#Shelf> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Shelf";
+    <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/iliad/oim/ext/semflow/shelf_area>;
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "Shelf area - The water area of the cell that lies within the shelf zone  0 200m depth   based on min max elevation and proportion in depth zone ";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://www.w3.org/2002/07/owl#Thing>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "Shelf";
+    <http://tds.ramani.ujuizi.com/AQM#units> "square km".
+<http://tds.ramani.ujuizi.com/AQM#Slope> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Slope";
+    <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/iliad/oim/ext/semflow/slope_area>;
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "Slope area - The water area of the cell that lies within the slope zone   200  4000m depth   based on min max elevation and proportion in depth zone ";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://www.w3.org/2002/07/owl#Thing>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "Slope";
+    <http://tds.ramani.ujuizi.com/AQM#units> "square km".
+<http://tds.ramani.ujuizi.com/AQM#Text_Search> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Text searches are a very important mechanism for data discovery. This group includes attributes that contain descriptive text that could be the target of these searches. Some of these attributes, for example title and summary, might also be displayed in the results of text searches."@en;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Text Search"@en;
+    <http://tds.ramani.ujuizi.com/AQM#comment> "Calculated by processing the data on AquaMaps.org";
+    <http://tds.ramani.ujuizi.com/AQM#history> "HCAF ver.7, 10/2019";
+    <http://tds.ramani.ujuizi.com/AQM#keywords> "marine biodiversity, climate change, environmental niche models, habitat suitability, climateprojections, RCP";
+    <http://tds.ramani.ujuizi.com/AQM#keywords_vocabulary> "GCMD Earth Science Keywords. Version 5.3.3";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name_vocabulary> "Climate and Forecast Standard Names";
+    <http://tds.ramani.ujuizi.com/AQM#summary> "Half-Degree Cells Authority File (HCAF) containing environmental parameters information and projections for 1950, 1999, 2016, 2050, and 2100. Calculated by processing the data on AquaMaps.org";
+    <http://tds.ramani.ujuizi.com/AQM#title> "Half-Degree Cells Authority File (HCAF) containing environmental parameters information and projections for 1950, 1999, 2016, 2050, and 2100. Calculated by processing the data on AquaMaps.org".
+<http://tds.ramani.ujuizi.com/AQM#TidalRange> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "TidalRange";
+    <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/iliad/oim/ext/semflow/tidal_range>;
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "Tidal range - Extent of tides in scaled discrete classes as provided by the original LOICZ Database  for all coastal and oceanic cells ";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://www.w3.org/2002/07/owl#Thing>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "TidalRange";
+    <http://tds.ramani.ujuizi.com/AQM#units> "meters".
+<http://tds.ramani.ujuizi.com/AQM#WLimit> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "WLimit";
+    <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/iliad/oim/ext/semflow/western_boundary_longitude>;
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "Westernmost limit - Western boundary of cell in decimal degrees latitude  positive in E hemisphere  negative in W hemisphere   ";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://www.w3.org/2002/07/owl#Thing>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "WLimit";
+    <http://tds.ramani.ujuizi.com/AQM#units> "decimal degrees".
+<http://tds.ramani.ujuizi.com/AQM#WaveHeight> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "WaveHeight";
+    <http://www.w3.org/2002/07/owl#equivalentClass> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#cell_methods> "time: mean in the cell";
+    <http://tds.ramani.ujuizi.com/AQM#long_name> "Wave height - Height of waves in scaled discrete classes as provided by the original LOICZ Database  for all coastal and oceanic cells ";
+    <http://tds.ramani.ujuizi.com/AQM#primary_variable> <http://www.w3.org/2002/07/owl#Thing>;
+    <http://tds.ramani.ujuizi.com/AQM#ref> "empty";
+    <http://tds.ramani.ujuizi.com/AQM#standard_name> "WaveHeight";
+    <http://tds.ramani.ujuizi.com/AQM#units> "meters".
+<http://tds.ramani.ujuizi.com/AQM#access_rights> <http://purl.org/dc/terms/contributor> "Firman wahyudhie";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "A description of the access conditions or restrictions for the dataset. ex. http://publications.europa.eu/resource/authority/access-right/PUBLIC"@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Other_Attributes>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "access_rights"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#accrual_periodicity> <http://purl.org/dc/terms/contributor> "Firman wahyudhie";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "The frequency with which new data is added or updated in the dataset. ex. http://publications.europa.eu/resource/authority/frequency/DAILY"@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Other_Attributes>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "accrual_periodicity"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#acknowledgement> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "A place to acknowledge various types of support for the project that produced this data."@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Creator_Search>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "acknowledgement"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#cdm_data_type> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "The data type, as derived from Unidata's Common Data Model Scientific Data types and understood by THREDDS. (This is a THREDDS \"dataType\", and is different from the CF NetCDF attribute 'featureType', which indicates a Discrete Sampling Geometry file in CF.)"@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Other_Attributes>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "cdm_data_type"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#cell_methods> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Abyssal>, <http://tds.ramani.ujuizi.com/AQM#Area0_20>, <http://tds.ramani.ujuizi.com/AQM#Area20_40>, <http://tds.ramani.ujuizi.com/AQM#Area40_60>, <http://tds.ramani.ujuizi.com/AQM#Area60_80>, <http://tds.ramani.ujuizi.com/AQM#Area80_100>, <http://tds.ramani.ujuizi.com/AQM#AreaBelow100>, <http://tds.ramani.ujuizi.com/AQM#CellArea>, <http://tds.ramani.ujuizi.com/AQM#Coral>, <http://tds.ramani.ujuizi.com/AQM#CountryMain>, <http://tds.ramani.ujuizi.com/AQM#CountrySecond>, <http://tds.ramani.ujuizi.com/AQM#CountryThird>, <http://tds.ramani.ujuizi.com/AQM#DepthMax>, <http://tds.ramani.ujuizi.com/AQM#DepthMean>, <http://tds.ramani.ujuizi.com/AQM#DepthMin>, <http://tds.ramani.ujuizi.com/AQM#DepthSD>, <http://tds.ramani.ujuizi.com/AQM#EEZ>, <http://tds.ramani.ujuizi.com/AQM#ELimit>, <http://tds.ramani.ujuizi.com/AQM#ElevationMax>, <http://tds.ramani.ujuizi.com/AQM#ElevationMean>, <http://tds.ramani.ujuizi.com/AQM#ElevationMin>, <http://tds.ramani.ujuizi.com/AQM#ElevationSD>, <http://tds.ramani.ujuizi.com/AQM#Estuary>, <http://tds.ramani.ujuizi.com/AQM#FAOAreaIn>, <http://tds.ramani.ujuizi.com/AQM#FAOAreaM>, <http://tds.ramani.ujuizi.com/AQM#IceConAnn>, <http://tds.ramani.ujuizi.com/AQM#IceConFal>, <http://tds.ramani.ujuizi.com/AQM#IceConSpr>, <http://tds.ramani.ujuizi.com/AQM#IceConSum>, <http://tds.ramani.ujuizi.com/AQM#IceConWin>, <http://tds.ramani.ujuizi.com/AQM#IslandsNo>, <http://tds.ramani.ujuizi.com/AQM#LME>, <http://tds.ramani.ujuizi.com/AQM#LMEBorder>, <http://tds.ramani.ujuizi.com/AQM#LOICZID>, <http://tds.ramani.ujuizi.com/AQM#LandDist>, <http://tds.ramani.ujuizi.com/AQM#MEOW>, <http://tds.ramani.ujuizi.com/AQM#MPA>, <http://tds.ramani.ujuizi.com/AQM#NLimit>, <http://tds.ramani.ujuizi.com/AQM#OceanArea>, <http://tds.ramani.ujuizi.com/AQM#OceanBasin>, <http://tds.ramani.ujuizi.com/AQM#PWater>, <http://tds.ramani.ujuizi.com/AQM#PrimProdMean>, <http://tds.ramani.ujuizi.com/AQM#SBTAnMean>, <http://tds.ramani.ujuizi.com/AQM#SLimit>, <http://tds.ramani.ujuizi.com/AQM#SSTAnMean>, <http://tds.ramani.ujuizi.com/AQM#SSTAnSD>, <http://tds.ramani.ujuizi.com/AQM#SSTMnMax>, <http://tds.ramani.ujuizi.com/AQM#SSTMnMin>, <http://tds.ramani.ujuizi.com/AQM#SSTMnRange>, <http://tds.ramani.ujuizi.com/AQM#SalinityBMean>, <http://tds.ramani.ujuizi.com/AQM#SalinityMax>, <http://tds.ramani.ujuizi.com/AQM#SalinityMean>, <http://tds.ramani.ujuizi.com/AQM#SalinityMin>, <http://tds.ramani.ujuizi.com/AQM#Seamount>, <http://tds.ramani.ujuizi.com/AQM#Shelf>, <http://tds.ramani.ujuizi.com/AQM#Slope>, <http://tds.ramani.ujuizi.com/AQM#TidalRange>, <http://tds.ramani.ujuizi.com/AQM#WLimit>, <http://tds.ramani.ujuizi.com/AQM#WaveHeight>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "cell_methods"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#certificate_target> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "The intended target or purpose for which the dataset is certified or meets specific standards. ex. https://certificates.theodi.org/en/datasets/393"@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#QualityMetadata>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "certificate_target"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#comment> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Miscellaneous information about the data, not captured elsewhere. This attribute is defined in the CF Conventions."@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Text_Search>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "comment"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#conforms_to> <http://purl.org/dc/terms/contributor> "Firman wahyudhie";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "A standard or specification to which the dataset adheres. ex. http://www.opengis.net/def/crs/EPSG/0/4258"@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Other_Attributes>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "conforms_to"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#contributor_name> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "The name of any individuals, projects, or institutions that contributed to the creation of this data. May be presented as free text, or in a structured format compatible with conversion to ncML (e.g., insensitive to changes in whitespace, including end-of-line characters)."@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Contributor_Search>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "contributor_name"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#contributor_role> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "The role of any individuals, projects, or institutions that contributed to the creation of this data. May be presented as free text, or in a structured format compatible with conversion to ncML (e.g., insensitive to changes in whitespace, including end-of-line characters). Multiple roles should be presented in the same order and number as the names in contributor_names."@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Contributor_Search>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "contributor_role"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#creator_email> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "The email address of the person (or other creator type specified by the creator_type attribute) principally responsible for creating this data."@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Creator_Search>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "creator_email"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#creator_name> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "The name of the person (or other creator type specified by the creator_type attribute) principally responsible for creating this data."@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Creator_Search>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "creator_name"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#creator_url> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "The URL of the person (or other creator type specified by the creator_type attribute) principally responsible for creating this data."@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Creator_Search>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "creator_url"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#date_created> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "The date on which this version of the data was created. (Modification of values implies a new version, hence this would be assigned the date of the most recent values modification.) Metadata changes are not considered when assigning the date_created. The ISO 8601:2004 extended date format is recommended, as described in the Attribute Content Guidance section."@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Creator_Search>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "date_created"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#date_issued> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "The date on which this data (including all modifications) was formally issued (i.e., made available to a wider audience). Note that these apply just to the data, not the metadata. The ISO 8601:2004 extended date format is recommended, as described in the Attributes Content Guidance section."@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Creator_Search>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "date_issued"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#date_modified> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "The date on which the data was last modified. Note that this applies just to the data, not the metadata. The ISO 8601:2004 extended date format is recommended, as described in the Attributes Content Guidance section."@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Creator_Search>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "date_modified"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#geospatial_lat_max> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Describes a simple upper latitude limit; may be part of a 2- or 3-dimensional bounding region. Geospatial_lat_max specifies the northernmost latitude covered by the dataset."@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Extent_Search>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "geospatial_lat_max"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#geospatial_lat_min> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Describes a simple lower latitude limit; may be part of a 2- or 3-dimensional bounding region. Geospatial_lat_min specifies the southernmost latitude covered by the dataset."@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Extent_Search>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "geospatial_lat_min"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#geospatial_lat_resolution> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Information about the targeted spacing of points in latitude. Recommend describing resolution as a number value followed by the units. Examples: '100 meters', '0.1 degree'"@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Other_Extent_Information>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "geospatial_lat_resolution"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#geospatial_lat_units> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Units for the latitude axis described in \"geospatial_lat_min\" and \"geospatial_lat_max\" attributes. These are presumed to be \"degree_north\"; other options from udunits may be specified instead."@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Other_Extent_Information>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "geospatial_lat_units"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#geospatial_lon_max> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Describes a simple longitude limit; may be part of a 2- or 3-dimensional bounding region. geospatial_lon_max specifies the easternmost longitude covered by the dataset. Cases where geospatial_lon_min is greater than geospatial_lon_max indicate the bounding box extends from geospatial_lon_max, through the longitude range discontinuity meridian (either the antimeridian for -180:180 values, or Prime Meridian for 0:360 values), to geospatial_lon_min; for example, geospatial_lon_min=170 and geospatial_lon_max=-175 incorporates 15 degrees of longitude (ranges 170 to 180 and -180 to -175)."@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Extent_Search>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "geospatial_lon_max"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#geospatial_lon_min> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Describes a simple longitude limit; may be part of a 2- or 3-dimensional bounding region. geospatial_lon_min specifies the westernmost longitude covered by the dataset. See also geospatial_lon_max."@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Extent_Search>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "geospatial_lon_min"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#geospatial_lon_resolution> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Information about the targeted spacing of points in longitude. Recommend describing resolution as a number value followed by units. Examples: '100 meters', '0.1 degree'"@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Other_Extent_Information>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "geospatial_lon_resolution"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#geospatial_lon_units> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Units for the longitude axis described in \"geospatial_lon_min\" and \"geospatial_lon_max\" attributes. These are presumed to be \"degree_east\"; other options from udunits may be specified instead."@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Other_Extent_Information>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "geospatial_lon_units"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#geospatial_vertical_max> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Describes the numerically larger vertical limit; may be part of a 2- or 3-dimensional bounding region. See geospatial_vertical_positive and geospatial_vertical_units."@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Extent_Search>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "geospatial_vertical_max"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#geospatial_vertical_min> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Describes the numerically smaller vertical limit; may be part of a 2- or 3-dimensional bounding region. See geospatial_vertical_positive and geospatial_vertical_units."@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Extent_Search>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "geospatial_vertical_min"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#geospatial_vertical_positive> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "One of 'up' or 'down'. If up, vertical values are interpreted as 'altitude', with negative values corresponding to below the reference datum (e.g., under water). If down, vertical values are interpreted as 'depth', positive values correspond to below the reference datum. Note that if geospatial_vertical_positive is down ('depth' orientation), the geospatial_vertical_min attribute specifies the data's vertical location furthest from the earth's center, and the geospatial_vertical_max attribute specifies the location closest to the earth's center."@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Other_Extent_Information>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "geospatial_vertical_positive"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#geospatial_vertical_resolution> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Information about the targeted vertical spacing of points. Example: '25 meters'"@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Other_Extent_Information>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "geospatial_vertical_resolution"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#geospatial_vertical_units> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Units for the vertical axis described in \"geospatial_vertical_min\" and \"geospatial_vertical_max\" attributes. The default is EPSG:4979 (height above the ellipsoid, in meters); other vertical coordinate reference systems may be specified. Note that the common oceanographic practice of using pressure for a vertical coordinate, while not strictly a depth, can be specified using the unit bar. Examples: 'EPSG:5829' (instantaneous height above sea level), 'EPSG:5831' (instantaneous depth below sea level)."@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Other_Extent_Information>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "geospatial_vertical_units"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#hasContributorSearch> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> ""@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Dataset>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "hasContributorSearch"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://tds.ramani.ujuizi.com/AQM#Contributor_Search>.
+<http://tds.ramani.ujuizi.com/AQM#hasCreatorSearch> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> ""@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Dataset>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "hasCreatorSearch"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://tds.ramani.ujuizi.com/AQM#Creator_Search>.
+<http://tds.ramani.ujuizi.com/AQM#hasExtentSearch> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> ""@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Dataset>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "hasExtentSearch"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://tds.ramani.ujuizi.com/AQM#Extent_Search>.
+<http://tds.ramani.ujuizi.com/AQM#hasIdentification> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> ""@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Dataset>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "hasIdentification"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://tds.ramani.ujuizi.com/AQM#Identification>.
+<http://tds.ramani.ujuizi.com/AQM#hasOtherAttributes> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> ""@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Dataset>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "hasOtherAttributes"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://tds.ramani.ujuizi.com/AQM#Other_Attributes>.
+<http://tds.ramani.ujuizi.com/AQM#hasOtherExtentInformation> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> ""@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Dataset>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "hasOtherExtentInformation"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://tds.ramani.ujuizi.com/AQM#Other_Extent_Information>.
+<http://tds.ramani.ujuizi.com/AQM#hasPublisherSearch> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> ""@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Dataset>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "hasPublisherSearch"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://tds.ramani.ujuizi.com/AQM#Publisher_Search>.
+<http://tds.ramani.ujuizi.com/AQM#hasQualityMeasurement> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a dataset to its quality measurement."@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Dataset>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "has Quality Measurement"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://tds.ramani.ujuizi.com/AQM#QualityMeasurement>.
+<http://tds.ramani.ujuizi.com/AQM#hasQualityMetadata> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a dataset to its quality metadata."@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Dataset>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "has Quality Metadata"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://tds.ramani.ujuizi.com/AQM#QualityMetadata>.
+<http://tds.ramani.ujuizi.com/AQM#hasTextSearch> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> ""@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Dataset>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "hasTextSearch"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://tds.ramani.ujuizi.com/AQM#Text_Search>.
+<http://tds.ramani.ujuizi.com/AQM#hasVariable> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Dataset>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "hasVariable"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://tds.ramani.ujuizi.com/AQM#Abyssal>, <http://tds.ramani.ujuizi.com/AQM#Area0_20>, <http://tds.ramani.ujuizi.com/AQM#Area20_40>, <http://tds.ramani.ujuizi.com/AQM#Area40_60>, <http://tds.ramani.ujuizi.com/AQM#Area60_80>, <http://tds.ramani.ujuizi.com/AQM#Area80_100>, <http://tds.ramani.ujuizi.com/AQM#AreaBelow100>, <http://tds.ramani.ujuizi.com/AQM#CellArea>, <http://tds.ramani.ujuizi.com/AQM#Coral>, <http://tds.ramani.ujuizi.com/AQM#CountryMain>, <http://tds.ramani.ujuizi.com/AQM#CountrySecond>, <http://tds.ramani.ujuizi.com/AQM#CountryThird>, <http://tds.ramani.ujuizi.com/AQM#DepthMax>, <http://tds.ramani.ujuizi.com/AQM#DepthMean>, <http://tds.ramani.ujuizi.com/AQM#DepthMin>, <http://tds.ramani.ujuizi.com/AQM#DepthSD>, <http://tds.ramani.ujuizi.com/AQM#EEZ>, <http://tds.ramani.ujuizi.com/AQM#ELimit>, <http://tds.ramani.ujuizi.com/AQM#ElevationMax>, <http://tds.ramani.ujuizi.com/AQM#ElevationMean>, <http://tds.ramani.ujuizi.com/AQM#ElevationMin>, <http://tds.ramani.ujuizi.com/AQM#ElevationSD>, <http://tds.ramani.ujuizi.com/AQM#Estuary>, <http://tds.ramani.ujuizi.com/AQM#FAOAreaIn>, <http://tds.ramani.ujuizi.com/AQM#FAOAreaM>, <http://tds.ramani.ujuizi.com/AQM#IceConAnn>, <http://tds.ramani.ujuizi.com/AQM#IceConFal>, <http://tds.ramani.ujuizi.com/AQM#IceConSpr>, <http://tds.ramani.ujuizi.com/AQM#IceConSum>, <http://tds.ramani.ujuizi.com/AQM#IceConWin>, <http://tds.ramani.ujuizi.com/AQM#IslandsNo>, <http://tds.ramani.ujuizi.com/AQM#LME>, <http://tds.ramani.ujuizi.com/AQM#LMEBorder>, <http://tds.ramani.ujuizi.com/AQM#LOICZID>, <http://tds.ramani.ujuizi.com/AQM#LandDist>, <http://tds.ramani.ujuizi.com/AQM#MEOW>, <http://tds.ramani.ujuizi.com/AQM#MPA>, <http://tds.ramani.ujuizi.com/AQM#NLimit>, <http://tds.ramani.ujuizi.com/AQM#OceanArea>, <http://tds.ramani.ujuizi.com/AQM#OceanBasin>, <http://tds.ramani.ujuizi.com/AQM#PWater>, <http://tds.ramani.ujuizi.com/AQM#PrimProdMean>, <http://tds.ramani.ujuizi.com/AQM#SBTAnMean>, <http://tds.ramani.ujuizi.com/AQM#SLimit>, <http://tds.ramani.ujuizi.com/AQM#SSTAnMean>, <http://tds.ramani.ujuizi.com/AQM#SSTAnSD>, <http://tds.ramani.ujuizi.com/AQM#SSTMnMax>, <http://tds.ramani.ujuizi.com/AQM#SSTMnMin>, <http://tds.ramani.ujuizi.com/AQM#SSTMnRange>, <http://tds.ramani.ujuizi.com/AQM#SalinityBMean>, <http://tds.ramani.ujuizi.com/AQM#SalinityMax>, <http://tds.ramani.ujuizi.com/AQM#SalinityMean>, <http://tds.ramani.ujuizi.com/AQM#SalinityMin>, <http://tds.ramani.ujuizi.com/AQM#Seamount>, <http://tds.ramani.ujuizi.com/AQM#Shelf>, <http://tds.ramani.ujuizi.com/AQM#Slope>, <http://tds.ramani.ujuizi.com/AQM#TidalRange>, <http://tds.ramani.ujuizi.com/AQM#WLimit>, <http://tds.ramani.ujuizi.com/AQM#WaveHeight>.
+<http://tds.ramani.ujuizi.com/AQM#history> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Provides an audit trail for modifications to the original data. This attribute is also in the NetCDF Users Guide: 'This is a character array with a line for each invocation of a program that has modified the dataset. Well-behaved generic netCDF applications should append a line containing: date, time of day, user name, program name and command arguments.' To include a more complete description you can append a reference to an ISO Lineage entity; see NOAA EDM ISO Lineage guidance."@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Text_Search>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "history"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#id> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "An identifier for the data set, provided by and unique within its naming authority. The combination of the \"naming authority\" and the \"id\" should be globally unique, but the id can be globally unique by itself also. IDs can be URLs, URNs, DOIs, meaningful text strings, a local key, or any other unique string of characters. The id should not include white space characters."@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Identification>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "id"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#in_series> <http://purl.org/dc/terms/contributor> "Firman wahyudhie";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates if the dataset is part of a larger dataset series or collection. ex. Bee population"@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Other_Attributes>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "in_series"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#institution> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "The name of the institution principally responsible for originating this data. This attribute is recommended by the CF convention."@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Creator_Search>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "institution"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#keywords> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "A comma-separated list of key words and/or phrases. Keywords may be common words or phrases, terms from a controlled vocabulary (GCMD is often used), or URIs for terms from a controlled vocabulary (see also \"keywords_vocabulary\" attribute)."@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Text_Search>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "keywords"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#keywords_vocabulary> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "If you are following a guideline for the words/phrases in your \"keywords\" attribute, put the name of that guideline here."@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Text_Search>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "keywords_vocabulary"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#landing_page> <http://purl.org/dc/terms/contributor> "Firman wahyudhie";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "A web page providing detailed information or access to the dataset. ex. http://dcat.example.org/dataset-002.html"@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Other_Attributes>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "landing_page"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#language> <http://purl.org/dc/terms/contributor> "Firman wahyudhie";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "The language in which the dataset or its metadata is available. ex. http://publications.europa.eu/resource/authority/language/ENG"@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Other_Attributes>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "language"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#license> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Provide the URL to a standard or specific license, enter \"Freely Distributed\" or \"None\", or describe any restrictions to data access and distribution in free text."@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Other_Attributes>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "license"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#long_name> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Abyssal>, <http://tds.ramani.ujuizi.com/AQM#Area0_20>, <http://tds.ramani.ujuizi.com/AQM#Area20_40>, <http://tds.ramani.ujuizi.com/AQM#Area40_60>, <http://tds.ramani.ujuizi.com/AQM#Area60_80>, <http://tds.ramani.ujuizi.com/AQM#Area80_100>, <http://tds.ramani.ujuizi.com/AQM#AreaBelow100>, <http://tds.ramani.ujuizi.com/AQM#CellArea>, <http://tds.ramani.ujuizi.com/AQM#Coral>, <http://tds.ramani.ujuizi.com/AQM#CountryMain>, <http://tds.ramani.ujuizi.com/AQM#CountrySecond>, <http://tds.ramani.ujuizi.com/AQM#CountryThird>, <http://tds.ramani.ujuizi.com/AQM#DepthMax>, <http://tds.ramani.ujuizi.com/AQM#DepthMean>, <http://tds.ramani.ujuizi.com/AQM#DepthMin>, <http://tds.ramani.ujuizi.com/AQM#DepthSD>, <http://tds.ramani.ujuizi.com/AQM#EEZ>, <http://tds.ramani.ujuizi.com/AQM#ELimit>, <http://tds.ramani.ujuizi.com/AQM#ElevationMax>, <http://tds.ramani.ujuizi.com/AQM#ElevationMean>, <http://tds.ramani.ujuizi.com/AQM#ElevationMin>, <http://tds.ramani.ujuizi.com/AQM#ElevationSD>, <http://tds.ramani.ujuizi.com/AQM#Estuary>, <http://tds.ramani.ujuizi.com/AQM#FAOAreaIn>, <http://tds.ramani.ujuizi.com/AQM#FAOAreaM>, <http://tds.ramani.ujuizi.com/AQM#IceConAnn>, <http://tds.ramani.ujuizi.com/AQM#IceConFal>, <http://tds.ramani.ujuizi.com/AQM#IceConSpr>, <http://tds.ramani.ujuizi.com/AQM#IceConSum>, <http://tds.ramani.ujuizi.com/AQM#IceConWin>, <http://tds.ramani.ujuizi.com/AQM#IslandsNo>, <http://tds.ramani.ujuizi.com/AQM#LME>, <http://tds.ramani.ujuizi.com/AQM#LMEBorder>, <http://tds.ramani.ujuizi.com/AQM#LOICZID>, <http://tds.ramani.ujuizi.com/AQM#LandDist>, <http://tds.ramani.ujuizi.com/AQM#MEOW>, <http://tds.ramani.ujuizi.com/AQM#MPA>, <http://tds.ramani.ujuizi.com/AQM#NLimit>, <http://tds.ramani.ujuizi.com/AQM#OceanArea>, <http://tds.ramani.ujuizi.com/AQM#OceanBasin>, <http://tds.ramani.ujuizi.com/AQM#PWater>, <http://tds.ramani.ujuizi.com/AQM#PrimProdMean>, <http://tds.ramani.ujuizi.com/AQM#SBTAnMean>, <http://tds.ramani.ujuizi.com/AQM#SLimit>, <http://tds.ramani.ujuizi.com/AQM#SSTAnMean>, <http://tds.ramani.ujuizi.com/AQM#SSTAnSD>, <http://tds.ramani.ujuizi.com/AQM#SSTMnMax>, <http://tds.ramani.ujuizi.com/AQM#SSTMnMin>, <http://tds.ramani.ujuizi.com/AQM#SSTMnRange>, <http://tds.ramani.ujuizi.com/AQM#SalinityBMean>, <http://tds.ramani.ujuizi.com/AQM#SalinityMax>, <http://tds.ramani.ujuizi.com/AQM#SalinityMean>, <http://tds.ramani.ujuizi.com/AQM#SalinityMin>, <http://tds.ramani.ujuizi.com/AQM#Seamount>, <http://tds.ramani.ujuizi.com/AQM#Shelf>, <http://tds.ramani.ujuizi.com/AQM#Slope>, <http://tds.ramani.ujuizi.com/AQM#TidalRange>, <http://tds.ramani.ujuizi.com/AQM#WLimit>, <http://tds.ramani.ujuizi.com/AQM#WaveHeight>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "long_name"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#metadata_link> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This attribute provides a link to a complete metadata record for this dataset or the collection that contains this dataset. This attribute is not included in Version 1 of the Unidata Attribute Convention for Data Discovery. It is recommended here because a complete metadata collection for a dataset will likely contain more information than can be included in granule formats. This attribute contains a link to that information."@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Identification>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "metadata_link"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#metric_availability> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Dataset page is available and dereferenceable, the value is True/False"@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#QualityMeasurement>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "metric_availability"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#metric_precision> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Spatial resolution of a dataset expressed as distance in meters, ex. 1000"@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#QualityMeasurement>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "metric_precision"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#metric_semantic_accuracy> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Percentage of spatial elements that are found accurate according to methodology XYZ, ex. 98.2"@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#QualityMeasurement>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "metric_semantic_accuracy"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#naming_authority> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "The organization that provides the initial id (see above) for the dataset. The naming authority should be uniquely specified by this attribute. We recommend using reverse-DNS naming for the naming authority; URIs are also acceptable. Example: 'edu.ucar.unidata'."@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Identification>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "naming_authority"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#primary_variable> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Abyssal>, <http://tds.ramani.ujuizi.com/AQM#Area0_20>, <http://tds.ramani.ujuizi.com/AQM#Area20_40>, <http://tds.ramani.ujuizi.com/AQM#Area40_60>, <http://tds.ramani.ujuizi.com/AQM#Area60_80>, <http://tds.ramani.ujuizi.com/AQM#Area80_100>, <http://tds.ramani.ujuizi.com/AQM#AreaBelow100>, <http://tds.ramani.ujuizi.com/AQM#CellArea>, <http://tds.ramani.ujuizi.com/AQM#Coral>, <http://tds.ramani.ujuizi.com/AQM#CountryMain>, <http://tds.ramani.ujuizi.com/AQM#CountrySecond>, <http://tds.ramani.ujuizi.com/AQM#CountryThird>, <http://tds.ramani.ujuizi.com/AQM#DepthMax>, <http://tds.ramani.ujuizi.com/AQM#DepthMean>, <http://tds.ramani.ujuizi.com/AQM#DepthMin>, <http://tds.ramani.ujuizi.com/AQM#DepthSD>, <http://tds.ramani.ujuizi.com/AQM#EEZ>, <http://tds.ramani.ujuizi.com/AQM#ELimit>, <http://tds.ramani.ujuizi.com/AQM#ElevationMax>, <http://tds.ramani.ujuizi.com/AQM#ElevationMean>, <http://tds.ramani.ujuizi.com/AQM#ElevationMin>, <http://tds.ramani.ujuizi.com/AQM#ElevationSD>, <http://tds.ramani.ujuizi.com/AQM#Estuary>, <http://tds.ramani.ujuizi.com/AQM#FAOAreaIn>, <http://tds.ramani.ujuizi.com/AQM#FAOAreaM>, <http://tds.ramani.ujuizi.com/AQM#IceConAnn>, <http://tds.ramani.ujuizi.com/AQM#IceConFal>, <http://tds.ramani.ujuizi.com/AQM#IceConSpr>, <http://tds.ramani.ujuizi.com/AQM#IceConSum>, <http://tds.ramani.ujuizi.com/AQM#IceConWin>, <http://tds.ramani.ujuizi.com/AQM#IslandsNo>, <http://tds.ramani.ujuizi.com/AQM#LME>, <http://tds.ramani.ujuizi.com/AQM#LMEBorder>, <http://tds.ramani.ujuizi.com/AQM#LOICZID>, <http://tds.ramani.ujuizi.com/AQM#LandDist>, <http://tds.ramani.ujuizi.com/AQM#MEOW>, <http://tds.ramani.ujuizi.com/AQM#MPA>, <http://tds.ramani.ujuizi.com/AQM#NLimit>, <http://tds.ramani.ujuizi.com/AQM#OceanArea>, <http://tds.ramani.ujuizi.com/AQM#OceanBasin>, <http://tds.ramani.ujuizi.com/AQM#PWater>, <http://tds.ramani.ujuizi.com/AQM#PrimProdMean>, <http://tds.ramani.ujuizi.com/AQM#SBTAnMean>, <http://tds.ramani.ujuizi.com/AQM#SLimit>, <http://tds.ramani.ujuizi.com/AQM#SSTAnMean>, <http://tds.ramani.ujuizi.com/AQM#SSTAnSD>, <http://tds.ramani.ujuizi.com/AQM#SSTMnMax>, <http://tds.ramani.ujuizi.com/AQM#SSTMnMin>, <http://tds.ramani.ujuizi.com/AQM#SSTMnRange>, <http://tds.ramani.ujuizi.com/AQM#SalinityBMean>, <http://tds.ramani.ujuizi.com/AQM#SalinityMax>, <http://tds.ramani.ujuizi.com/AQM#SalinityMean>, <http://tds.ramani.ujuizi.com/AQM#SalinityMin>, <http://tds.ramani.ujuizi.com/AQM#Seamount>, <http://tds.ramani.ujuizi.com/AQM#Shelf>, <http://tds.ramani.ujuizi.com/AQM#Slope>, <http://tds.ramani.ujuizi.com/AQM#TidalRange>, <http://tds.ramani.ujuizi.com/AQM#WLimit>, <http://tds.ramani.ujuizi.com/AQM#WaveHeight>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "primary_variable"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Thing>.
+<http://tds.ramani.ujuizi.com/AQM#principal_investigator_email> <http://purl.org/dc/terms/contributor> "Firman wahyudhie";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "The email address of the principal investigator responsible for the dataset."@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Other_Attributes>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "principal_investigator_email"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#principal_investigator_name> <http://purl.org/dc/terms/contributor> "Firman wahyudhie";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "The name of the principal investigator responsible for the dataset."@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Other_Attributes>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "principal_investigator_name"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#processing_level> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "A textual description of the processing (or quality control) level of the data."@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Other_Attributes>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "processing_level"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#processor_email> <http://purl.org/dc/terms/contributor> "Firman wahyudhie";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "The email address of the organization or individual who processed the dataset."@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Other_Attributes>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "processor_email"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#processor_name> <http://purl.org/dc/terms/contributor> "Firman wahyudhie";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "The name of the organization or individual who processed the dataset."@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Other_Attributes>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "processor_name"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#project> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "The name of the project(s) principally responsible for originating this data. Multiple projects can be separated by commas, as described under Attribute Content Guidelines. Examples: 'PATMOS-X', 'Extended Continental Shelf Project'."@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Creator_Search>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "project"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#provenance> <http://purl.org/dc/terms/contributor> "Firman wahyudhie";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Information about the origin, history, or derivation of the dataset."@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Other_Attributes>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "provenance"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#publisher_email> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "The email address of the person (or other entity specified by the publisher_type attribute) responsible for publishing the data file or product to users, with its current metadata and format."@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Publisher_Search>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "publisher_email"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#publisher_name> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "The name of the person (or other entity specified by the publisher_type attribute) responsible for publishing the data file or product to users, with its current metadata and format."@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Publisher_Search>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "publisher_name"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#publisher_url> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "The URL of the person (or other entity specified by the publisher_type attribute) responsible for publishing the data file or product to users, with its current metadata and format."@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Publisher_Search>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "publisher_url"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#quality_certificate> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "A certificate or documentation that attests to the quality standards met by the dataset. ex. https://certificates.theodi.org/en/datasets/393/certificate"@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#QualityMetadata>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "quality_certificate"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#ref> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Abyssal>, <http://tds.ramani.ujuizi.com/AQM#Area0_20>, <http://tds.ramani.ujuizi.com/AQM#Area20_40>, <http://tds.ramani.ujuizi.com/AQM#Area40_60>, <http://tds.ramani.ujuizi.com/AQM#Area60_80>, <http://tds.ramani.ujuizi.com/AQM#Area80_100>, <http://tds.ramani.ujuizi.com/AQM#AreaBelow100>, <http://tds.ramani.ujuizi.com/AQM#CellArea>, <http://tds.ramani.ujuizi.com/AQM#Coral>, <http://tds.ramani.ujuizi.com/AQM#CountryMain>, <http://tds.ramani.ujuizi.com/AQM#CountrySecond>, <http://tds.ramani.ujuizi.com/AQM#CountryThird>, <http://tds.ramani.ujuizi.com/AQM#DepthMax>, <http://tds.ramani.ujuizi.com/AQM#DepthMean>, <http://tds.ramani.ujuizi.com/AQM#DepthMin>, <http://tds.ramani.ujuizi.com/AQM#DepthSD>, <http://tds.ramani.ujuizi.com/AQM#EEZ>, <http://tds.ramani.ujuizi.com/AQM#ELimit>, <http://tds.ramani.ujuizi.com/AQM#ElevationMax>, <http://tds.ramani.ujuizi.com/AQM#ElevationMean>, <http://tds.ramani.ujuizi.com/AQM#ElevationMin>, <http://tds.ramani.ujuizi.com/AQM#ElevationSD>, <http://tds.ramani.ujuizi.com/AQM#Estuary>, <http://tds.ramani.ujuizi.com/AQM#FAOAreaIn>, <http://tds.ramani.ujuizi.com/AQM#FAOAreaM>, <http://tds.ramani.ujuizi.com/AQM#IceConAnn>, <http://tds.ramani.ujuizi.com/AQM#IceConFal>, <http://tds.ramani.ujuizi.com/AQM#IceConSpr>, <http://tds.ramani.ujuizi.com/AQM#IceConSum>, <http://tds.ramani.ujuizi.com/AQM#IceConWin>, <http://tds.ramani.ujuizi.com/AQM#IslandsNo>, <http://tds.ramani.ujuizi.com/AQM#LME>, <http://tds.ramani.ujuizi.com/AQM#LMEBorder>, <http://tds.ramani.ujuizi.com/AQM#LOICZID>, <http://tds.ramani.ujuizi.com/AQM#LandDist>, <http://tds.ramani.ujuizi.com/AQM#MEOW>, <http://tds.ramani.ujuizi.com/AQM#MPA>, <http://tds.ramani.ujuizi.com/AQM#NLimit>, <http://tds.ramani.ujuizi.com/AQM#OceanArea>, <http://tds.ramani.ujuizi.com/AQM#OceanBasin>, <http://tds.ramani.ujuizi.com/AQM#PWater>, <http://tds.ramani.ujuizi.com/AQM#PrimProdMean>, <http://tds.ramani.ujuizi.com/AQM#SBTAnMean>, <http://tds.ramani.ujuizi.com/AQM#SLimit>, <http://tds.ramani.ujuizi.com/AQM#SSTAnMean>, <http://tds.ramani.ujuizi.com/AQM#SSTAnSD>, <http://tds.ramani.ujuizi.com/AQM#SSTMnMax>, <http://tds.ramani.ujuizi.com/AQM#SSTMnMin>, <http://tds.ramani.ujuizi.com/AQM#SSTMnRange>, <http://tds.ramani.ujuizi.com/AQM#SalinityBMean>, <http://tds.ramani.ujuizi.com/AQM#SalinityMax>, <http://tds.ramani.ujuizi.com/AQM#SalinityMean>, <http://tds.ramani.ujuizi.com/AQM#SalinityMin>, <http://tds.ramani.ujuizi.com/AQM#Seamount>, <http://tds.ramani.ujuizi.com/AQM#Shelf>, <http://tds.ramani.ujuizi.com/AQM#Slope>, <http://tds.ramani.ujuizi.com/AQM#TidalRange>, <http://tds.ramani.ujuizi.com/AQM#WLimit>, <http://tds.ramani.ujuizi.com/AQM#WaveHeight>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "ref"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#rights_holder_email> <http://purl.org/dc/terms/contributor> "Firman wahyudhie";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "The email address of the individual or organization holding the rights to the dataset."@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Other_Attributes>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "rights_holder_email"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#rights_holder_name> <http://purl.org/dc/terms/contributor> "Firman wahyudhie";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "The name of the individual or organization holding the rights to the dataset."@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Other_Attributes>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "rights_holder_name"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#spatial_resolution_in_meters> <http://purl.org/dc/terms/contributor> "Firman wahyudhie";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "The smallest spatial distance represented in the dataset, expressed in meters. ex. 10"@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Other_Attributes>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "spatial_resolution_in_meters"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#standard_name> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Abyssal>, <http://tds.ramani.ujuizi.com/AQM#Area0_20>, <http://tds.ramani.ujuizi.com/AQM#Area20_40>, <http://tds.ramani.ujuizi.com/AQM#Area40_60>, <http://tds.ramani.ujuizi.com/AQM#Area60_80>, <http://tds.ramani.ujuizi.com/AQM#Area80_100>, <http://tds.ramani.ujuizi.com/AQM#AreaBelow100>, <http://tds.ramani.ujuizi.com/AQM#CellArea>, <http://tds.ramani.ujuizi.com/AQM#Coral>, <http://tds.ramani.ujuizi.com/AQM#CountryMain>, <http://tds.ramani.ujuizi.com/AQM#CountrySecond>, <http://tds.ramani.ujuizi.com/AQM#CountryThird>, <http://tds.ramani.ujuizi.com/AQM#DepthMax>, <http://tds.ramani.ujuizi.com/AQM#DepthMean>, <http://tds.ramani.ujuizi.com/AQM#DepthMin>, <http://tds.ramani.ujuizi.com/AQM#DepthSD>, <http://tds.ramani.ujuizi.com/AQM#EEZ>, <http://tds.ramani.ujuizi.com/AQM#ELimit>, <http://tds.ramani.ujuizi.com/AQM#ElevationMax>, <http://tds.ramani.ujuizi.com/AQM#ElevationMean>, <http://tds.ramani.ujuizi.com/AQM#ElevationMin>, <http://tds.ramani.ujuizi.com/AQM#ElevationSD>, <http://tds.ramani.ujuizi.com/AQM#Estuary>, <http://tds.ramani.ujuizi.com/AQM#FAOAreaIn>, <http://tds.ramani.ujuizi.com/AQM#FAOAreaM>, <http://tds.ramani.ujuizi.com/AQM#IceConAnn>, <http://tds.ramani.ujuizi.com/AQM#IceConFal>, <http://tds.ramani.ujuizi.com/AQM#IceConSpr>, <http://tds.ramani.ujuizi.com/AQM#IceConSum>, <http://tds.ramani.ujuizi.com/AQM#IceConWin>, <http://tds.ramani.ujuizi.com/AQM#IslandsNo>, <http://tds.ramani.ujuizi.com/AQM#LME>, <http://tds.ramani.ujuizi.com/AQM#LMEBorder>, <http://tds.ramani.ujuizi.com/AQM#LOICZID>, <http://tds.ramani.ujuizi.com/AQM#LandDist>, <http://tds.ramani.ujuizi.com/AQM#MEOW>, <http://tds.ramani.ujuizi.com/AQM#MPA>, <http://tds.ramani.ujuizi.com/AQM#NLimit>, <http://tds.ramani.ujuizi.com/AQM#OceanArea>, <http://tds.ramani.ujuizi.com/AQM#OceanBasin>, <http://tds.ramani.ujuizi.com/AQM#PWater>, <http://tds.ramani.ujuizi.com/AQM#PrimProdMean>, <http://tds.ramani.ujuizi.com/AQM#SBTAnMean>, <http://tds.ramani.ujuizi.com/AQM#SLimit>, <http://tds.ramani.ujuizi.com/AQM#SSTAnMean>, <http://tds.ramani.ujuizi.com/AQM#SSTAnSD>, <http://tds.ramani.ujuizi.com/AQM#SSTMnMax>, <http://tds.ramani.ujuizi.com/AQM#SSTMnMin>, <http://tds.ramani.ujuizi.com/AQM#SSTMnRange>, <http://tds.ramani.ujuizi.com/AQM#SalinityBMean>, <http://tds.ramani.ujuizi.com/AQM#SalinityMax>, <http://tds.ramani.ujuizi.com/AQM#SalinityMean>, <http://tds.ramani.ujuizi.com/AQM#SalinityMin>, <http://tds.ramani.ujuizi.com/AQM#Seamount>, <http://tds.ramani.ujuizi.com/AQM#Shelf>, <http://tds.ramani.ujuizi.com/AQM#Slope>, <http://tds.ramani.ujuizi.com/AQM#TidalRange>, <http://tds.ramani.ujuizi.com/AQM#WLimit>, <http://tds.ramani.ujuizi.com/AQM#WaveHeight>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "standard_name"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#standard_name_vocabulary> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "The name and version of the controlled vocabulary from which variable standard names are taken. (Values for any standard_name attribute must come from the CF Standard Names vocabulary for the data file or product to comply with CF.) Example: 'CF Standard Name Table v27'."@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Text_Search>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "standard_name_vocabulary"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#summary> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "A paragraph describing the dataset."@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Text_Search>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "summary"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#temporal_resolution> <http://purl.org/dc/terms/contributor> "Firman wahyudhie";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "The time intervals at which data is collected or represented in the dataset. ex. PT15M"@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Other_Attributes>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "temporal_resolution"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#theme> <http://purl.org/dc/terms/contributor> "Firman wahyudhie";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "A category or subject area describing the main topic of the dataset. ex. http://www.eionet.europa.eu/gemet/concept/12301"@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Other_Attributes>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "theme"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#time_coverage_duration> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Describes the duration of the data set. Use ISO 8601:2004 duration format, preferably the extended format as recommended in the Attribute Content Guidance section."@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Other_Extent_Information>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "time_coverage_duration"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#time_coverage_end> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Describes the time of the last data point in the data set. Use ISO 8601:2004 date format, preferably the extended format as recommended in the Attribute Content Guidance section."@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Extent_Search>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "time_coverage_end"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#time_coverage_resolution> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Describes the targeted time period between each value in the data set. Use ISO 8601:2004 duration format, preferably the extended format as recommended in the Attribute Content Guidance section."@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Other_Extent_Information>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "time_coverage_resolution"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#time_coverage_start> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Describes the time of the first data point in the data set. Use the ISO 8601:2004 date format, preferably the extended format as recommended in the Attribute Content Guidance section."@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Extent_Search>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "time_coverage_start"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#time_coverage_units> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "This attribute is calculated using the CF Conventions"@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Other_Extent_Information>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "time_coverage_units"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#title> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "A short description of the dataset."@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Text_Search>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "title"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#units> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Abyssal>, <http://tds.ramani.ujuizi.com/AQM#Area0_20>, <http://tds.ramani.ujuizi.com/AQM#Area20_40>, <http://tds.ramani.ujuizi.com/AQM#Area40_60>, <http://tds.ramani.ujuizi.com/AQM#Area60_80>, <http://tds.ramani.ujuizi.com/AQM#Area80_100>, <http://tds.ramani.ujuizi.com/AQM#AreaBelow100>, <http://tds.ramani.ujuizi.com/AQM#CellArea>, <http://tds.ramani.ujuizi.com/AQM#Coral>, <http://tds.ramani.ujuizi.com/AQM#CountryMain>, <http://tds.ramani.ujuizi.com/AQM#CountrySecond>, <http://tds.ramani.ujuizi.com/AQM#CountryThird>, <http://tds.ramani.ujuizi.com/AQM#DepthMax>, <http://tds.ramani.ujuizi.com/AQM#DepthMean>, <http://tds.ramani.ujuizi.com/AQM#DepthMin>, <http://tds.ramani.ujuizi.com/AQM#DepthSD>, <http://tds.ramani.ujuizi.com/AQM#EEZ>, <http://tds.ramani.ujuizi.com/AQM#ELimit>, <http://tds.ramani.ujuizi.com/AQM#ElevationMax>, <http://tds.ramani.ujuizi.com/AQM#ElevationMean>, <http://tds.ramani.ujuizi.com/AQM#ElevationMin>, <http://tds.ramani.ujuizi.com/AQM#ElevationSD>, <http://tds.ramani.ujuizi.com/AQM#Estuary>, <http://tds.ramani.ujuizi.com/AQM#FAOAreaIn>, <http://tds.ramani.ujuizi.com/AQM#FAOAreaM>, <http://tds.ramani.ujuizi.com/AQM#IceConAnn>, <http://tds.ramani.ujuizi.com/AQM#IceConFal>, <http://tds.ramani.ujuizi.com/AQM#IceConSpr>, <http://tds.ramani.ujuizi.com/AQM#IceConSum>, <http://tds.ramani.ujuizi.com/AQM#IceConWin>, <http://tds.ramani.ujuizi.com/AQM#IslandsNo>, <http://tds.ramani.ujuizi.com/AQM#LME>, <http://tds.ramani.ujuizi.com/AQM#LMEBorder>, <http://tds.ramani.ujuizi.com/AQM#LOICZID>, <http://tds.ramani.ujuizi.com/AQM#LandDist>, <http://tds.ramani.ujuizi.com/AQM#MEOW>, <http://tds.ramani.ujuizi.com/AQM#MPA>, <http://tds.ramani.ujuizi.com/AQM#NLimit>, <http://tds.ramani.ujuizi.com/AQM#OceanArea>, <http://tds.ramani.ujuizi.com/AQM#OceanBasin>, <http://tds.ramani.ujuizi.com/AQM#PWater>, <http://tds.ramani.ujuizi.com/AQM#PrimProdMean>, <http://tds.ramani.ujuizi.com/AQM#SBTAnMean>, <http://tds.ramani.ujuizi.com/AQM#SLimit>, <http://tds.ramani.ujuizi.com/AQM#SSTAnMean>, <http://tds.ramani.ujuizi.com/AQM#SSTAnSD>, <http://tds.ramani.ujuizi.com/AQM#SSTMnMax>, <http://tds.ramani.ujuizi.com/AQM#SSTMnMin>, <http://tds.ramani.ujuizi.com/AQM#SSTMnRange>, <http://tds.ramani.ujuizi.com/AQM#SalinityBMean>, <http://tds.ramani.ujuizi.com/AQM#SalinityMax>, <http://tds.ramani.ujuizi.com/AQM#SalinityMean>, <http://tds.ramani.ujuizi.com/AQM#SalinityMin>, <http://tds.ramani.ujuizi.com/AQM#Seamount>, <http://tds.ramani.ujuizi.com/AQM#Shelf>, <http://tds.ramani.ujuizi.com/AQM#Slope>, <http://tds.ramani.ujuizi.com/AQM#TidalRange>, <http://tds.ramani.ujuizi.com/AQM#WLimit>, <http://tds.ramani.ujuizi.com/AQM#WaveHeight>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "units"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#user_quality_feedback> <http://purl.org/dc/terms/contributor> "ramani ujuizi";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "Feedback from users regarding the quality, reliability, or usability of the dataset. ex. Four stars"@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#QualityMetadata>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "user_quality_feedback"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#version> <http://purl.org/dc/terms/contributor> "Firman wahyudhie";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "The version identifier for the dataset, indicating updates or revisions."@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Other_Attributes>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "version"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#version_notes> <http://purl.org/dc/terms/contributor> "Firman wahyudhie";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "A description of changes or updates introduced in this version of the dataset."@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Other_Attributes>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "version_notes"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+<http://tds.ramani.ujuizi.com/AQM#was_derived_from> <http://purl.org/dc/terms/contributor> "Firman wahyudhie";
+    a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#comment> "A reference to a dataset from which the current dataset was derived. ex. http://data.europa.eu/eli/reg/2010/1089"@en;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://tds.ramani.ujuizi.com/AQM#Other_Attributes>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "was_derived_from"@en;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal>.
+_:b0_b0 <http://xmlns.com/foaf/0.1/mbox> "mlandunkosana@gmail.com";
+    <http://xmlns.com/foaf/0.1/name> "Nkosana Daniel Mlandu".
